@@ -12,6 +12,7 @@
 
 .fit .inner {
   display: flex;
+  position: relative;
 }
 
 /* 맞춤사료 메인화면 */
