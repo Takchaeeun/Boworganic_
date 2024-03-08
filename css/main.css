@@ -2,8 +2,7 @@
 @import url("font.css");
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -18,12 +17,14 @@ html {
 }
 a {
   text-decoration: none;
+  color: #333;
 }
 img {
   vertical-align: middle;
 }
 .wrap {
   width: 100%;
+  position: relative;
 }
 /* 공통클래스 */
 .inner {
@@ -34,88 +35,4 @@ img {
 }
 /* 안내창 */
 
-/* -- 민주 영역 -- */
-
-/*-- 희승 영역 -- */
-/* 뉴스 */
-.news {
-  width: 100%;
-  height: 48.44vw;
-  /* height: 930px */
-  /* height: 100%; */
-  background-color: aqua;
-  background: url(../images/news-bg.jpg) no-repeat center/cover;
-}
-
-.news p.news-subTitle {
-  font-size: 20px;
-  color: #fff;
-}
-
-.news h2.news-title {
-  font-size: 95px;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 65px;
-}
-
-.news .inner {
-  padding-top: 200px;
-}
-
-.news-box {
-  background-color: #fff;
-  padding: 35px;
-}
-
-
-/* -- 채은 영역 -- */
-/* instagram영역 */
-.instagram-wrap {
-}
-.insta-title {
-  text-align: center;
-  line-height: 22px;
-  margin-bottom: 30px;
-}
-.insta-title p {
-  font-size: 23px;
-  color: black;
-  font-weight: 600;
-}
-.insta-title span {
-  font-size: 14px;
-  color: #c0c0c0;
-}
-.insta-img {
-  width: 50%;
-  display: flex;
-  height: 140px;
-  gap: 3%;
-  margin: 0 auto;
-}
-.insta-img a {
-  width: calc(100% / 4);
-  height: 100%;
-  /* display: flex; */
-}
-.insta-img a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15%;
-  object-fit: cover;
-}
-.insta-ft {
-  height: 32px;
-}
-.insta-bt {
-  width: 8%;
-  height: 100%;
-  border-radius: solid;
-  font-size: 14px;
-  color: #fff;
-  background-color: #77bd82;
-  border: none;
-  border-radius: 100px;
-}
 

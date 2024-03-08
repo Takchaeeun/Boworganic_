@@ -1,0 +1,229 @@
+@charset "utf-8";
+@import url(main.css);
+@import url(font.css);
+/* -- 민주 영역 -- */
+.header {
+    /* position: fixed; */
+    width: 95%;
+    min-height: 50px;
+    max-height: 85px;
+    height: 6.427vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    z-index: 9999;
+    /* background-color: #0000003a; */
+  }
+  /* 호버했을때 */
+  .header:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #000;
+  }
+  .header:hover a {
+    color: #333;
+  }
+  .header:hover .logo2 {
+    display: block;
+  }
+  .header:hover .logo {
+    border: 1px solid #000;
+  }
+  .header:hover .header-right {
+    border: 1px solid #000;
+  }
+  .header:hover .menu {
+    border: 1px solid #000;
+  }
+  
+  .logo {
+    width: 15%;
+    height: 100%;
+    padding: 1%;
+    border: 0.1px solid #fff;
+    /* background-color: rgb(158, 118, 43); */
+  }
+  .logo a {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    /* background-color: #77bd82; */
+  }
+  .logo a img {
+    position: relative;
+    display: block;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  .logo2 {
+    display: none;
+    position: absolute;
+    width: 13%;
+    height: 100%;
+    padding: 1%;
+    /* background-color: rgb(158, 118, 43); */
+  }
+  .logo2 a {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    /* background-color: #77bd82; */
+  }
+  .logo2 a img {
+    position: relative;
+    display: block;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  /* 메뉴영역 */
+  .menu {
+    width: 80%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+  }
+  .menu ul {
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+  }
+  
+  .menu a {
+    color: #fff;
+  }
+  /* 로그인&회원가입영역 */
+  .header-right {
+    width: 18%;
+    height: 100%;
+    /* background-color: rgb(65, 119, 119); */
+    padding: 1%;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+  }
+  .header-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-right a {
+    color: #fff;
+  }
+  /* 모바일메뉴 */
+  .mb-menu {
+    display: none;
+    position: absolute;
+    left: 97%;
+    padding: 1%;
+  }
+  .fa-solid {
+    font-size: large;
+  }
+  /* 비주얼 */
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide .box {
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .swiper-slide p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    z-index: 999;
+    padding-bottom: 7%;
+  }
+  .swiper-slide h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 5rem;
+    z-index: 999;
+  }
+  .swiper-slide .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    z-index: 999;
+    border: 1px solid #fff;
+    background: #ffffff00;
+    color: #fff;
+    margin-top: 5%;
+    padding: 1%;
+  }
+  .swiper-slide .button:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  /* 컨텐츠 */
+  
+  .content .text {
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    padding: 5%;
+    margin: 3%;
+  }
+  .content span {
+    color: #77bd82;
+  }
+  .content .left {
+    position: absolute;
+    top: 80px;
+    left: 400px;
+  }
+  .content .right {
+    position: absolute;
+    top: 80px;
+    right: 400px;
+  }
+  .content .left-2 {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+  }
+  .content .right-2 {
+    position: absolute;
+    top: 80px;
+    right: 200px;
+  }
+  
