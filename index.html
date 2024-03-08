@@ -164,6 +164,7 @@
       <div class="promotion">
         <!-- 스와이퍼 -->
         <!-- Swiper -->
+
         <div class="swiper promotion-1">
           <div class="swiper-wrapper">
            
@@ -218,18 +219,17 @@
         </div>
       </div>
 
+
       <!-- 희승 영역 -->
       <!-- 맞춤사료 영역-->
       <div class="fit" id="fit">
         <div class="inner">
-          <div class="fit-main-bg">Fit for</div>
-          <div class="fit-main">
-            <p><span></span>내 반려견에게 꼭 맞는 유기농 식사</p>
+          <div class="fit-main" id="fitMain">
+            <div class="fit-main-bg"><span>Fit</span> <span>for</span></div>
+            <p class="fit-main-or"><span></span>내 반려견에게 꼭 맞는 유기농 식사</p>
             <h2>맞춤 사료 찾기</h2>
 
-            <div class="fit-img-container">
-              <!-- <div class="fit-main-img">
-              </div> -->
+            <div class="fit-img-container" id="fitImg">
               <img src="images/hee/fit-main-dog.png" alt="강아지 사진" class="fit-main-img" />
             </div>
             <p class="fit-description">
@@ -237,10 +237,10 @@
               그리고 건강과 행복을 선물해주세요.
             </p>
             <div class="fit-btn-wrap">
-              <button>시작하기</button>
+              <button type="button" id="fitStart">시작하기</button>
             </div>
           </div>
-          <div class="fit-info-wrap">
+          <div class="fit-info-wrap" id="fitInfoWrap">
             <h2 class="info-title">
               <span>어떤 반려견</span>에게<br />
               딱 맞는 맞춤사료가 필요하신가요?
@@ -266,8 +266,8 @@
               </div>
             </form>
             <div class="fit-bt-button">
-              <a href="#"><button class="fit-prev">이전</button></a>
-              <a href="#"><button class="fit-next">다음</button></a>
+              <button class="fit-prev" id="fitPrev">이전</button>
+              <button class="fit-next" id="fitNext">다음</button>
             </div>
           </div>
           <!-- <div class="qes1" id="qes1">
@@ -282,7 +282,7 @@
       </div>
 
       <!-- 뉴스 -->
-      <div class="news" id="news">
+      <div class="news">
         <div class="inner">
           <p class="news-subTitle">새로운 소식</p>
           <h2 class="news-title">NEWS</h2>
@@ -293,9 +293,9 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>동물 보호 단체에 1억원 기부 새로운 보호소 개설!</h3>
-
-                  <p>지난 주, 바우오가닉은 동물 보호 단체에 1천만원을 기부했습니다. 이 기부금은 수많은 유기견을 위한 새로운 보호소를 개설하는 데 사용되었습니다. 새로운 보호소는 무주택 동물들에게 안전하고 편안한 환경을 제공하며, 기부금은 새로운 켄넬과 의료 시설을 갖추는 데 쓰였습니다.</p>
-
+                  <p class="news-box-text">
+                    지난 주, 바우오가닉은 동물 보호 단체에 1천만원을 기부했습니다. 이 기부금은 수많은 유기견을 위한 새로운 보호소를 개설하는 데 사용되었습니다. 새로운 보호소는 무주택 동물들에게 안전하고 편안한 환경을 제공하며, 기부금은 새로운 켄넬과 의료 시설을 갖추는 데 쓰였습니다.
+                  </p>
                   <div class="news-box-bottom">
                     <button class="info-more"><a href="#">더보기</a></button>
                     <p class="news-date">2024.4.1</p>
@@ -307,7 +307,7 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>바우오가닉, 시각장애인 안내견 훈련소에 4천만원 기부</h3>
-                  <p>바우오가닉은 최근 시각장애인 안내견 훈련소에 1억원을 기부했습니다. 이 기부금은 안내견의 훈련, 의료 비용 및 훈련 시설 개선을 위해 사용되어, 높은 수준의 안내견 서비스를 제공하는데 도움이 되었습니다.</p>
+                  <p class="news-box-text">바우오가닉은 최근 시각장애인 안내견 훈련소에 1억원을 기부했습니다. 이 기부금은 안내견의 훈련, 의료 비용 및 훈련 시설 개선을 위해 사용되어, 높은 수준의 안내견 서비스를 제공하는데 도움이 되었습니다.</p>
                   <div class="news-box-bottom">
                     <button class="info-more"><a href="#">더보기</a></button>
                     <p class="news-date">2024.3.29</p>
@@ -319,7 +319,7 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>개농장에서 구조된 유기견들에게 의료 서비스 제공하는 캠페인 성공</h3>
-                  <p>최근 동물 단체가 진행한 개농장에서 구조된 유기견들을 위한 의료 서비스 캠페인이 성공적으로 마무리되었습니다. 기부금으로 동원된 자원을 활용하여, 수많은 유기견들에게 접종, 중성화, 그리고 필요한 의료치료를 제공했습니다.</p>
+                  <p class="news-box-text">최근 동물 단체가 진행한 개농장에서 구조된 유기견들을 위한 의료 서비스 캠페인이 성공적으로 마무리되었습니다. 기부금으로 동원된 자원을 활용하여, 수많은 유기견들에게 접종, 중성화, 그리고 필요한 의료치료를 제공했습니다.</p>
                   <div class="news-box-bottom">
                     <button class="info-more"><a href="#">더보기</a></button>
                     <p class="news-date">2024.3.26</p>
@@ -331,7 +331,9 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>바우오가닉, 새로운 사료 연구 개발에 1천500만원 투자</h3>
-                  <p>바우오가닉은 반려견의 올바른 영양을 위해 최신 기술과 연구에 주목하며, 새로운 사료 개발 프로젝트에 1천500만원을 투자했습니다. 이 프로젝트는 고급 원료 및 건강에 이로운 성분을 사용하여 반려견의 건강과 행복을 위한 최적의 영양을 제공할 목적으로 진행되고 있습니다.</p>
+                  <p class="news-box-text">
+                    바우오가닉은 반려견의 올바른 영양을 위해 최신 기술과 연구에 주목하며, 새로운 사료 개발 프로젝트에 1천500만원을 투자했습니다. 이 프로젝트는 고급 원료 및 건강에 이로운 성분을 사용하여 반려견의 건강과 행복을 위한 최적의 영양을 제공할 목적으로 진행되고 있습니다.
+                  </p>
                   <div class="news-box-bottom">
                     <button class="info-more"><a href="#">더보기</a></button>
                     <p class="news-date">2024.3.22</p>
@@ -343,7 +345,9 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>바우오가닉, 반려견을 위한 새로운 건강 사료 출시</h3>
-                  <p>
+
+                  <p class="news-box-text">
+
                     바우오가닉은 최근 새로운 건강 사료를 개발하여 반려견의 건강을 생각한 소식을 전했습니다. 이 신제품은 고급 원료를 사용하여 제조되었으며, 반려동물에게 영양가를 제공합니다. 안전하고 맛있는 식사를 보장하는 이 제품은 새로운 켄넬과 의료 시설을 갖춘 동물 보호소에서 사용됩니다.
                     바우오가닉은 반려견의 행복한 삶을 위해 앞으로도 다양한 노력을 기울일 계획이라고 밝혔습니다.
                   </p>

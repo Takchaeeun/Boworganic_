@@ -7,12 +7,15 @@
 .fit {
   width: 100%;
   color: #2f2f2f;
+  margin: 30px 0;
   /* background-color: #FAFAFA; */
 }
 
 .fit .inner {
   display: flex;
   position: relative;
+  overflow: hidden;
+
 }
 
 /* 맞춤사료 메인화면 */
@@ -20,53 +23,82 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 46.875vw;
+  max-height: 900px;
 }
 
-.fit-main p:first-child {
+.fit-main p.fit-main-or {
   font-size: 15px;
   font-weight: 100;
   color: #9e9e9e;
   margin-bottom: 10px;
   text-align: end;
+  position: relative;
+}
+
+.fit-main p.fit-main-or::after {
+  content: "";
+  width: 47%;
+  height: 1px;
+  background-color: #9e9e9e;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  vertical-align: middle;
 }
 
 .fit-main h2 {
   font-size: 70px;
   font-weight: 900;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .fit-img-container {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   max-height: 370px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .fit-main img.fit-main-img {
   width: 100%;
   height: 100%;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .fit-main-bg {
   font-family: "Abhaya Libre", serif;
   width: 100%;
   color: #77bd82;
-  opacity: 0.4;
+  opacity: 0.26;
   font-size: 300px;
   font-weight: 700;
   position: absolute;
   z-index: 0;
-  top: 10%;
-  letter-spacing: 100px;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 50px;
+  text-align: center;
   word-wrap: nowrap;
-  margin: 0 auto;
+  font-style: italic;
+  /* margin: 0 auto; */
+}
+
+.fit-main-bg span:nth-child(1) {
+  margin-right: 150px;
+}
+
+.fit-main-bg span:nth-child(2) {
+  margin-left: 30px;
 }
 
 .fit-main p.fit-description {
   font-size: 17px;
-  line-height: 140%;
+  line-height: 160%;
   margin-bottom: 40px;
 }
 
@@ -98,13 +130,15 @@
 .fit-info-wrap {
   display: none;
   width: 100%;
+  height: 46.875vw;
+  max-height: 900px;
 }
 
 .fit h2.info-title {
   font-size: 60px;
   font-weight: 600;
   color: #2f2f2f;
-  line-height: 120%;
+  line-height: 130%;
   margin-bottom: 15px;
 }
 
@@ -117,7 +151,7 @@
   font-size: 20px;
   font-weight: 100;
   color: #d0d0d0;
-  margin-bottom: 125px;
+  margin-bottom: 100px;
 }
 
 .fit-info {
@@ -143,7 +177,12 @@
   font-size: 20px;
   width: 100%;
   max-height: 100px;
-  padding: 10px 0;
+  padding: 15px 10px;
+}
+
+.fit-info input[type="date"] {
+  color: #949494;
+  font-weight: 100;
 }
 
 .name-info,
@@ -180,9 +219,9 @@
   color: #646464;
 }
 
-.fit-bt-button a button {
+.fit-bt-button button {
   width: 100%;
-  /* max-width: 290px; */
+  max-width: 250px;
   border: 1px solid #c0c0c0;
   border-radius: 80px;
   background-color: #fff;
@@ -190,7 +229,7 @@
   cursor: pointer;
 }
 
-.fit-bt-button a button.fit-next {
+.fit-bt-button button.fit-next {
   background-color: #77bd82;
   color: #fff;
   border: 1px solid #77bd82;
@@ -198,7 +237,7 @@
 
 /* 뉴스 영역*/
 .news {
-  position: relative;
+  /* position: relative; */
   top: 0;
   width: 100%;
   height: 48.44vw;
@@ -220,7 +259,8 @@
 }
 
 .news h2.news-title {
-  font-size: 95px;
+  font-family: "Abhaya Libre", serif;
+  font-size: 120px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 65px;
@@ -242,18 +282,19 @@ button.news-more-all {
   transition: all 0.3s;
 }
 
-.swiper-slide {
+.news .swiper-slide {
   overflow: hidden;
 }
 
 .news-box {
   width: 100%;
+  max-height: 323px;
   max-width: 450px;
   background-color: #fff;
   padding: 35px;
 }
 
-.news-box h3 {
+.news-box > h3 {
   font-size: 23px;
   font-weight: 500;
   line-height: 126%;
@@ -273,7 +314,6 @@ button.news-more-all {
   font-weight: 200;
   color: #646464;
   line-height: 150%;
-  /* 3줄말줄임 */
   display: -webkit-box;
   word-wrap: break-word;
   -webkit-line-clamp: 3;
