@@ -1,0 +1,169 @@
+@charset "uft -8";
+@import url("main.css");
+@import url("font.css");
+/* -- 채은 영역 -- */
+/* instagram영역 */
+.instagram-wrap {
+}
+.insta-title {
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.insta-title p {
+  font-size: 23px;
+  color: black;
+  font-weight: 600;
+}
+.insta-title span {
+  font-size: 14px;
+  color: #c0c0c0;
+}
+.insta-viewmore {
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+  text-align: center;
+}
+.insta-viewmore span a {
+  color: #7d7d7d;
+}
+.insta-viewmore span a img {
+  display: inline-block;
+  margin-bottom: 1.7px;
+  width: 12px;
+  height: 12px;
+  align-items: center;
+}
+.insta-img {
+  width: 100%;
+  display: flex;
+  height: 140px;
+  gap: 3%;
+  margin: 0 auto;
+}
+.insta-img a {
+  width: calc(100% / 7);
+  height: 100%;
+  /* display: flex; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 15%;
+}
+.insta-img a img {
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.write-1 {
+  display: none;
+}
+.insta-img a:hover img {
+  width: 200px;
+  scale: 1.2;
+  filter: blur(2px), brightness(0.1);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+}
+
+.insta-img a:hover .write-1 {
+  width: 80%;
+  height: 80%;
+  color: #000000;
+  font-size: 12.5px;
+  line-height: 18px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.insta-ft {
+  position: relative;
+  height: 32px;
+  text-align: center;
+  right: 36px;
+  cursor: pointer;
+}
+.insta-bt {
+  position: absolute;
+  width: 5%;
+  height: 30%;
+  border-radius: solid;
+  font-size: 14px;
+  color: #fff;
+  background-color: #77bd82;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+/* footer */
+.footer-wrap {
+  width: 100%;
+  background-color: #77bd82;
+  color: #fff;
+}
+.footer-inner {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.footer-left {
+  line-height: 30px;
+  padding: 50px;
+}
+.footer-left-top > p {
+  font-size: 30px;
+}
+.footer-left-top > span {
+  font-size: 13px;
+}
+.footer-left-middle {
+  width: 30%;
+  display: flex;
+  position: relative;
+  font-size: 13px;
+  border: solid 1px;
+  border-radius: 20px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.footer-left-middle a img {
+  position: absolute;
+  width: 47%;
+  margin-left: 20px;
+  display: block;
+  padding: 0px 0px 0px 5px;
+}
+.footer-bt {
+  font-size: 11px;
+}
+.footer-right {
+  padding: 50px;
+  line-height: 30px;
+}
+.footer-right-top p {
+  font-size: 18px;
+}
+.footer-right-top > span {
+  font-size: 14px;
+  opacity: 80%;
+}
+.footer-right-bt p {
+  font-size: 16px;
+}
+.load {
+  font-size: 12px;
+  opacity: 80%;
+}
+.footer-img{
+  width: 100%;
+}
+.footer-img img{
+  width: 100%;
+}
