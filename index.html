@@ -57,6 +57,24 @@
   </head>
   <body>
     <!-- 안내창 (모달창) -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <div class="modal-logo"></div>
+        <p class="modal-nonotic">
+        
+        </p>
+        <p class="modal-middle">
+         
+        </p>
+        <p class="modal_bt"> 
+      <div class="modal-close">X</div>
+        <div class="modal-btn">
+         후기작성하기
+          
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
     <div class="wrap">
       <!-- 민주 영역 -->
       <header class="header">
@@ -106,20 +124,20 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/minju/01.jpg" alt="배너1" />
-              <p>Nature's nourishment</p>
-              <h1>반려동물을 위해 자연의 영양을 선사합니다</h1>
+              <p class="sub">Nature's nourishment</p>
+              <h1 class="smain">반려동물을 위해 자연의 영양을 선사합니다</h1>
               <button class="button">제품구매하기</button>
             </div>
             <div class="swiper-slide">
               <img src="images/minju/02.jpg" alt="배너2" />
-              <p>Share warmth through acts of love</p>
-              <h1>온기를 나누다, 사랑의 기부로 따뜻함 전하다</h1>
+              <p class="sub">Share warmth through acts of love</p>
+              <h1 class="smain">온기를 나누다, 사랑의 기부로 따뜻함 전하다</h1>
               <button class="button">제품구매하기</button>
             </div>
             <div class="swiper-slide">
               <img src="images/minju/03.jpg" alt="배너3" />
-              <p>Organic tailored meal for pets</p>
-              <h1>내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
+              <p class="sub">Organic tailored meal for pets</p>
+              <h1 class="smain">내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
               <button class="button">제품구매하기</button>
             </div>
           </div>
@@ -143,23 +161,64 @@
         </div>
       </content>
       <!-- 프로모션 -->
-      <promotion class="promotion">
+      <div class="promotion">
         <!-- 스와이퍼 -->
         <!-- Swiper -->
-        <div class="swiper promotion">
+
+        <div class="swiper promotion-1">
           <div class="swiper-wrapper">
+           
             <div class="swiper-slide">
-              <img src="images/minju/p_2.png" />
+              <img src="images/minju/2.png" alt="관절&눈" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">관절&눈</h1>
+                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="images/minju/p_2.png" />
+              <img src="images/minju/3.png" alt="관절&눈" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">관절&눈</h1>
+                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <img src="images/minju/4.png" alt="관절&눈" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">관절&눈</h1>
+                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/1.png" alt="관절&눈" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">관절&눈</h1>
+                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/2.png" alt="관절&눈" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">관절&눈</h1>
+                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
-      </promotion>
+      </div>
+
 
       <!-- 희승 영역 -->
       <!-- 맞춤사료 영역-->
@@ -286,7 +345,9 @@
               <div class="swiper-slide">
                 <div class="news-box">
                   <h3>바우오가닉, 반려견을 위한 새로운 건강 사료 출시</h3>
+
                   <p class="news-box-text">
+
                     바우오가닉은 최근 새로운 건강 사료를 개발하여 반려견의 건강을 생각한 소식을 전했습니다. 이 신제품은 고급 원료를 사용하여 제조되었으며, 반려동물에게 영양가를 제공합니다. 안전하고 맛있는 식사를 보장하는 이 제품은 새로운 켄넬과 의료 시설을 갖춘 동물 보호소에서 사용됩니다.
                     바우오가닉은 반려견의 행복한 삶을 위해 앞으로도 다양한 노력을 기울일 계획이라고 밝혔습니다.
                   </p>
