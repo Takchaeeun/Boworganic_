@@ -56,6 +56,15 @@
     <script src="js/hee.js"></script>
   </head>
   <body>
+      <!-- top button -->
+    <div class="top-button">
+      </a>
+      <a href="#" class="shop-btn"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#" class="top-btn" id="top-btn">
+        <i class="fa-solid fa-arrow-down" id="top-btn-img"></i>
+      </a>
+    </div>
+
     <!-- 안내창 (모달창) -->
     <div class="modal-wrap">
       <div class="modal-main">
@@ -75,20 +84,18 @@
         <div class="logo">
           <a href="#"><img src="images/minju/logo_1.png" alt="로고1" /></a>
         </div>
-        <div class="logo2">
-          <a href="#" class="hover-img"><img src="images/minju/logo_2.png" alt="로고1" /></a>
-        </div>
+
         <!-- 메뉴 -->
         <div class="menu">
           <ul>
             <li>
-              <a href="#">회사소개</a>
+              <a href="#content">회사소개</a>
             </li>
             <li>
-              <a href="#">제품</a>
+              <a href="#promotion">제품</a>
             </li>
             <li>
-              <a href="#">맞춤식단</a>
+              <a href="#fit">맞춤식단</a>
             </li>
             <li>
               <a href="#">뉴스</a>
@@ -97,17 +104,18 @@
               <a href="#">제품후기</a>
             </li>
           </ul>
-          <!-- 모바일 메뉴 -->
-          <div class="mb-menu">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-          </div>
         </div>
         <!-- 회원가입 -->
         <div class="header-right">
           <ul>
-            <li><a href="#">로그인 |</a></li>
+            <li><a href="#">로그인 </a></li>
             <li><a href="#"> 회원가입</a></li>
           </ul>
+        </div>
+        <!-- 모바일 -->
+        <!-- 모바일 메뉴 -->
+        <div class="mb-menu">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
       </header>
       <!-- 비주얼 -->
@@ -117,76 +125,48 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/minju/01.jpg" alt="배너1" />
-              <p class="sub">Nature's nourishment</p>
-              <h1 class="smain">반려동물을 위해 자연의 영양을 선사합니다</h1>
-              <button class="button">제품구매하기</button>
+              <div class="main-txt">
+                <p class="sub">Nature's nourishment</p>
+                <h1 class="smain">반려동물을 위해 자연의 영양을 선사합니다</h1>
+                <button class="button" id="promo" data-scroll="1700">제품구매하기</button>
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="images/minju/02.jpg" alt="배너2" />
-              <p class="sub">Share warmth through acts of love</p>
-              <h1 class="smain">온기를 나누다, 사랑의 기부로 따뜻함 전하다</h1>
-              <button class="button">제품구매하기</button>
+              <div class="main-txt">
+                <p class="sub">Share warmth through acts of love</p>
+                <h1 class="smain">온기를 나누다, 사랑의 기부로 따뜻함 전하다</h1>
+                <button class="button" id="promo" data-scroll="1700">제품구매하기</button>
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="images/minju/03.jpg" alt="배너3" />
-              <p class="sub">Organic tailored meal for pets</p>
-              <h1 class="smain">내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
-              <button class="button">제품구매하기</button>
+              <div class="main-txt">
+                <p class="sub">Organic tailored meal for pets</p>
+                <h1 class="smain">내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
+                <button class="button" id="promo" data-scroll="1700">제품구매하기</button>
+              </div>
             </div>
           </div>
         </div>
       </main>
       <!-- 컨텐츠 -->
-      <content class="content">
+      <content class="content" id="content">
         <div class="text" data-aos="fade-up" data-aos-duration="3000">
-          <img src="images/minju/left.png" alt="왼쪽" class="left" />
           <h2>
-            <span>유기농 사료</span> 사용으로 <br />
-            불필요한 방부제, 인공색소, 인공향료를 <br />
-            무첨가해 <span>건강을 증진</span>시킵니다
+            <i class="fas fa-quote-left"></i> 불필요한 방부제, 인공색소, 인공향료를 무첨가해 <i class="fas fa-quote-right"></i> <br />
+            <span>건강을 증진</span>시킵니다
           </h2>
-          <img src="images/minju/right.png" alt="오른쪽" class="right" />
         </div>
         <div class="text" data-aos="fade-up" data-aos-duration="3000">
-          <img src="images/minju/left.png" alt="왼쪽" class="left-2" />
-          <h2>반려견들이 <span>오래동안 건강하게</span> 자라도록 좋은 식품을 만듭니다</h2>
-          <img src="images/minju/right.png" alt="오른쪽" class="right-2" />
+          <h2><i class="fas fa-quote-left"></i> 반려견들이 <span>오래동안 건강하게</span> 자라도록 좋은 식품을 만듭니다 <i class="fas fa-quote-right"></i></h2>
         </div>
       </content>
       <!-- 프로모션 -->
-      <div class="promotion">
+      <div class="promotion" id="promotion">
         <!-- 스와이퍼 -->
-        <!-- Swiper -->
-
-        <div class="swiper promotion-1">
+        <div class="swiper organic">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/minju/2.png" alt="관절&눈" class="noon" />
-              <div class="promotion-info">
-                <h1 class="title">관절&눈</h1>
-                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
-                <p class="price">Price | <span>2,7000</span></p>
-                <button class="buy">바로구매</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/minju/3.png" alt="관절&눈" class="noon" />
-              <div class="promotion-info">
-                <h1 class="title">관절&눈</h1>
-                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
-                <p class="price">Price | <span>2,7000</span></p>
-                <button class="buy">바로구매</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/minju/4.png" alt="관절&눈" class="noon" />
-              <div class="promotion-info">
-                <h1 class="title">관절&눈</h1>
-                <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
-                <p class="price">Price | <span>2,7000</span></p>
-                <button class="buy">바로구매</button>
-              </div>
-            </div>
             <div class="swiper-slide">
               <img src="images/minju/1.png" alt="관절&눈" class="noon" />
               <div class="promotion-info">
@@ -197,16 +177,41 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="images/minju/2.png" alt="관절&눈" class="noon" />
+              <img src="images/minju/2.png" alt="장&간" class="noon" />
               <div class="promotion-info">
-                <h1 class="title">관절&눈</h1>
+                <h1 class="title">장&간</h1>
                 <h3 class="sub-title">강아지 관절 & 눈 케어 사료 2KG</h3>
                 <p class="price">Price | <span>2,7000</span></p>
                 <button class="buy">바로구매</button>
               </div>
             </div>
-
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <img src="images/minju/3.png" alt="피부&알러지" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">피부&알러지</h1>
+                <h3 class="sub-title">강아지 피부 & 알러지 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/4.png" alt="다이어트&면역" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">다이어트&면역</h1>
+                <h3 class="sub-title">강아지 다이어트 & 면역 케어 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/5.png" alt="6-ZERO" class="noon" />
+              <div class="promotion-info">
+                <h1 class="title">6-ZERO</h1>
+                <h3 class="sub-title">강아지 유기농 사료 2KG</h3>
+                <p class="price">Price | <span>2,7000</span></p>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
