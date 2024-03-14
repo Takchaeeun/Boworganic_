@@ -1,6 +1,75 @@
 @charset "utf-8";
 @import url(main.css);
 @import url(font.css);
+/* 위로가기 버튼 */
+/* top 버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.top-button .chat-btn span {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 23px;
+  padding: 8px 10px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+  display: none;
+}
+.top-button .chat-btn:hover span {
+  display: block;
+}
+.top-button .chat-btn {
+  animation: updown 1.5s infinite;
+  /* -webkit-animation:updown 1.5s infinite; */
+  /* 다른 브라우저에서도 작동 될 수 있게 하기 위해 -webkit을 사용. */
+}
+.top-button .shop-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  border-radius: 50%;
+  line-height: 55px;
+  background-color: #fff;
+  color: #77bd82;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+.top-button .top-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  background-color: #77bd82;
+  color: #fff;
+  width: 55px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50%;
+  line-height: 55px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.top-button .top-btn img {
+  transform: rotate(180deg);
+}
+.top-button .top-btn img.up {
+  transform: rotate(0deg);
+  /* 이미지의 위아래를 전환시키기 위해 적용 */
+}
 /* -- 민주 영역 -- */
 .header {
   /* position: fixed; */
@@ -10,43 +79,23 @@
   height: 6.427vw;
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: auto;
   /* background-color: antiquewhite; */
   position: absolute;
-  top: 1%;
+  top: 0.7%;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
   z-index: 9999;
+  border: 1px solid #fff;
   /* background-color: #0000003a; */
-}
-/* 호버했을때 */
-.header:hover {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #000;
-}
-.header:hover a {
-  color: #333;
-}
-.header:hover .logo2 {
-  display: block;
-}
-.header:hover .logo {
-  border: 1px solid #000;
-}
-.header:hover .header-right {
-  border: 1px solid #000;
-}
-.header:hover .menu {
-  border: 1px solid #000;
 }
 
 .logo {
-  width: 15%;
+  width: 13%;
   height: 100%;
   padding: 1%;
-  border: 0.1px solid #fff;
+  border-right: 1px solid #fff;
   /* background-color: rgb(158, 118, 43); */
 }
 .logo a {
@@ -61,85 +110,104 @@
 .logo a img {
   position: relative;
   display: block;
-  width: 60%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
-.logo2 {
-  display: none;
-  position: absolute;
-  width: 13%;
-  height: 100%;
-  padding: 1%;
-  /* background-color: rgb(158, 118, 43); */
-}
-.logo2 a {
-  position: relative;
-  text-align: center;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  /* background-color: #77bd82; */
-}
-.logo2 a img {
-  position: relative;
-  display: block;
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
+
 /* 메뉴영역 */
 .menu {
-  width: 80%;
+  width: 65%;
   height: 100%;
   /* background-color: aqua; */
-  padding: 2%;
-  display: flex;
-  align-items: center;
-  border: 1px solid #fff;
+  padding: 1% 10%;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  border-right: 1px solid #fff;
+  margin: auto;
 }
 .menu ul {
   width: 100%;
-  display: flex;
-  font-size: 2rem;
-  justify-content: space-between;
-}
-
-.menu a {
-  color: #fff;
-}
-/* 로그인&회원가입영역 */
-.header-right {
-  width: 18%;
   height: 100%;
-  /* background-color: rgb(65, 119, 119); */
-  padding: 1%;
-  font-size: 2rem;
-  border: 1px solid #fff;
   display: flex;
+  text-align: center;
+  font-size: 1vw;
+
   justify-content: center;
+  align-items: center;
 }
-.header-right ul {
+.menu ul li {
+  width: calc(100% / 5);
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+.menu ul li a {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+.menu li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 1%;
+  opacity: 0;
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+.menu li:hover a::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* 로그인&회원가입영역 */
+.header-right {
+  width: 15%;
+  height: 100%;
+  padding: 1%;
+  font-size: 1vw;
+
+  border-right: 1px solid #fff;
+  display: flex;
+  /* justify-content: center; */
+}
+.header-right ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1%;
+}
+.header-right a::after {
+  content: "|";
+  color: #fff;
+  position: absolute;
+  left: 45%;
+}
+
 .header-right a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   color: #fff;
 }
 /* 모바일메뉴 */
 .mb-menu {
-  display: none;
-  position: absolute;
-  left: 97%;
+  display: block;
+  width: 5%;
   padding: 1%;
+}
+.mb-menu a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
 .fa-solid {
   font-size: large;
@@ -150,42 +218,42 @@
   width: 100%;
   height: 100%;
 }
-
+.main .swiper-slide {
+  position: relative;
+}
 .main .swiper-slide img {
   width: 100%;
 }
-.main .swiper-slide .sub {
+.main-txt {
+  width: 70%;
+
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99999;
+  text-align: center;
+}
+.main .swiper-slide .sub {
   color: #fff;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2vw;
   z-index: 999;
-  padding-bottom: 7%;
+  padding-bottom: 3%;
 }
 .main .swiper-slide .smain {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #fff;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4vw;
   z-index: 999;
 }
 .main .swiper-slide .button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
+  font-size: 1vw;
   z-index: 999;
   border: 1px solid #fff;
   background: #ffffff00;
   color: #fff;
-  margin-top: 5%;
+  margin-top: 10%;
   padding: 1%;
 }
 .main .swiper-slide .button:hover {
@@ -194,46 +262,229 @@
   cursor: pointer;
 }
 /* 컨텐츠 */
-
+.content {
+}
 .content .text {
   position: relative;
-  font-size: 5rem;
+  font-size: 2vw;
   text-align: center;
-  padding: 5%;
-  margin: 3%;
+  padding: 3%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  line-height: 1.5;
 }
+
 .content span {
   color: #77bd82;
 }
-.content .left {
-  position: absolute;
-  top: 80px;
-  left: 400px;
-}
-.content .right {
-  position: absolute;
-  top: 80px;
-  right: 400px;
-}
-.content .left-2 {
-  position: absolute;
-  top: 80px;
-  left: 200px;
-}
-.content .right-2 {
-  position: absolute;
-  top: 80px;
-  right: 200px;
+
+.content i {
+  color: #77bd82;
 }
 /* 프로모션 */
-.promotion-1 {
-  width: 80%;
-  background-color: aqua;
+.organic {
+  margin-bottom: 6%;
+  width: 70%;
+  /* height: 100%; */
   margin: auto;
+  padding: 3%;
 }
-.promotion-1 .swiper-slide {
+.organic .swiper-slide {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
 }
-.promotion-1 .swiper-slide img {
-  width: 100%;
+.organic .swiper-slide img {
+  width: 30%;
+  height: 100%;
+}
+
+.organic .promotion-info {
+  width: 50%;
+  /* height: 30%; */
+}
+.organic .promotion-info .title {
+  font-size: 3vw;
+  line-height: 2;
+}
+.organic .promotion-info .sub-title {
+  font-size: 1.8vw;
+  line-height: 1;
+}
+.organic .promotion-info .price {
+  font-size: 2vw;
+  line-height: 1.5;
+}
+.organic .promotion-info .buy {
+  font-size: 1.8vw;
+  background: #77bd82;
+  border: none;
+  color: #fff;
+  padding: 2%;
+  width: 50%;
+  margin-top: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.organic .promotion-info span {
+  color: #77bd82;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1080px) {
+  .menu ul li a {
+    font-size: 1.5rem;
+  }
+  .header-right a {
+    font-size: 1rem;
+  }
+  .logo a img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu ul li a {
+    font-size: 1.3rem;
+  }
+  .header-right a {
+    font-size: 1rem;
+  }
+  .content .text {
+    font-size: 2rem;
+  }
+  .main .swiper-slide .sub {
+    font-size: 2rem;
+  }
+  .main .swiper-slide .button {
+    font-size: 2rem;
+  }
+  .organic .promotion-info .buy {
+    font-size: 2rem;
+    padding: 4%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .menu ul li a {
+    font-size: 1rem;
+  }
+  .header-right a {
+    font-size: 0.8rem;
+  }
+  .fa-solid {
+    font-size: small;
+  }
+  .content .text {
+    font-size: 1.5rem;
+  }
+  .main .swiper-slide .sub {
+    font-size: 2rem;
+  }
+
+  .main .swiper-slide .button {
+    font-size: 1.3rem;
+  }
+  .organic .promotion-info .buy {
+    font-size: 1.2rem;
+    padding: 4%;
+  }
+}
+@media screen and (max-width: 409px) {
+  .menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header {
+    border: none;
+    top: 0;
+  }
+  .logo {
+    border: none;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide .sub {
+    font-size: 1.5rem;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .main .swiper-slide .button {
+    font-size: 1rem;
+  }
+
+  .content .text {
+    font-size: 1.2rem;
+  }
+  .organic .promotion-info .buy {
+    font-size: 1rem;
+    padding: 4%;
+  }
+  .organic .promotion-info .title {
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .organic .promotion-info .sub-title {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .organic .promotion-info .price {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header {
+    border: none;
+    top: 0;
+  }
+  .logo {
+    border: none;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide .sub {
+    font-size: 1.2rem;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .main .swiper-slide .button {
+    font-size: 1rem;
+  }
+
+  .content .text {
+    font-size: 1rem;
+  }
+  .organic .promotion-info .buy {
+    font-size: 1rem;
+    padding: 4%;
+  }
+  .organic .promotion-info .title {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .organic .promotion-info .sub-title {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .organic .promotion-info .price {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
