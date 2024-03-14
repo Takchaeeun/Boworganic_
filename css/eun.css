@@ -242,8 +242,11 @@ body.active {
   opacity: 80%;
 }
 .footer-img {
+  position: relative;
   width: 100%;
 }
 .footer-img img {
-  width: 100%;
+  width: 60%;
+  margin-left: 500px;
+ 
 }
