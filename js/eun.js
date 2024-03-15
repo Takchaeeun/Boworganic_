@@ -21,4 +21,6 @@ modalClose.addEventListener("click", function () {
   // 모달이 닫힐 때는 스크롤을 다시 활성화
   controlScroll(false);
 });
+
+
 });
