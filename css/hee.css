@@ -790,9 +790,9 @@
 }
 
 button.news-more-all {
-  /* position: absolute;
-  right: 0;
-  top: 15%; */
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 39%; */
   margin-top: 20px; /* 위치 조정 */
   width: 150px; /* 너비 조정 */
   padding: 10px 20px;
@@ -849,7 +849,7 @@ button.news-more-all {
 .news-box-bottom button {
   width: 100%;
   max-width: 100px; /* 너비 조정 */
-  padding: 2.4% 1%;
+  padding: 2% 1%;
   font-size: 1.2rem;
   border: 1px solid #646464;
   border-radius: 40px;
