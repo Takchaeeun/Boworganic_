@@ -50,7 +50,7 @@
     <!-- js -->
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="js/respond.min.js"></script>
+    <script src="js/repond.min.js"></script>
     <script src="js/eun.js"></script>
     <script src="js/minjoo.js"></script>
     <script src="js/hee.js"></script>
@@ -246,36 +246,38 @@
           <div class="fit-info-wrap" id="fitInfoWrap">
             <!-- 진행바 -->
             <progress id="fitProgress" value="0" min="0" max="100"></progress>
-            <div class="info-text-wrap">
-              <h2 class="info-title">
-                <span>어떤 반려견</span>에게<br />
-                딱 맞는 맞춤사료가 필요하신가요?
-              </h2>
-              <p class="sub-title">작성된 정보는 맞춤사료 분석을 위해 사용되며, 이외의 용도로는 활용되지 않습니다.</p>
-            </div>
-            <form class="fit-info" id="fitInfo" name="fitInfo">
-              <div class="name-info" id="nameInfo">
-                <label for="fitName">이름<span>*</span></label>
-                <input type="text" id="fitName" name="fitName" />
-              </div>
-
-              <div class="date-info">
-                <label for="fitBirth">생년월일<span>*</span></label>
-                <input type="date" id="fitBirth" name="fitBirth" />
-              </div>
-
-              <div class="gender-info">
-                <label for="fitgender">성별<span>*</span></label>
-                <div class="gender-info-button">
-                  <!-- <label for="fitgender"><img src="images/hee/fit-female-icon.png" alt=""></label> -->
-                  <input type="button" id="fitgender" class="toggleBtn" name="fitgenderM" value="남자" />
-                  <input type="button" id="fitgenderFe" class="toggleBtn" name="fitgenderFe" value="여자" />
+            <div class="info-location-wrap">
+                <div class="info-text-wrap">
+                    <h2 class="info-title">
+                        <span>어떤 반려견</span>에게<br />
+                        딱 맞는 맞춤사료가 필요하신가요?
+                    </h2>
+                    <p class="sub-title">작성된 정보는 맞춤사료 분석을 위해 사용되며, 이외의 용도로는 활용되지 않습니다.</p>
                 </div>
-              </div>
-            </form>
-            <div class="fit-bt-button">
-              <button class="fit-prev" id="fitPrev">이전</button>
-              <button class="fit-next" id="fitNext">다음</button>
+                <form class="fit-info" id="fitInfo" name="fitInfo">
+                    <div class="name-info" id="nameInfo">
+                        <label for="fitName">이름<span>*</span></label>
+                        <input type="text" id="fitName" name="fitName" />
+                    </div>
+        
+                    <div class="date-info">
+                        <label for="fitBirth">생년월일<span>*</span></label>
+                        <input type="date" id="fitBirth" name="fitBirth" />
+                    </div>
+        
+                    <div class="gender-info">
+                        <label for="fitgender">성별<span>*</span></label>
+                        <div class="gender-info-button">
+                            <!-- <label for="fitgender"><img src="images/hee/fit-female-icon.png" alt=""></label> -->
+                            <input type="button" id="fitgender" class="toggleBtn" name="fitgenderM" value="남자" />
+                            <input type="button" id="fitgenderFe" class="toggleBtn" name="fitgenderFe" value="여자" />
+                        </div>
+                    </div>
+                </form>
+                <div class="fit-bt-button">
+                  <button class="fit-prev" id="fitPrev">이전</button>
+                  <button class="fit-next" id="fitNext">다음</button>
+                </div>
             </div>
           </div>
 
@@ -378,7 +380,7 @@
               </div>
               <div class="fit-bt-button">
                 <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">다음</button>
+                <button class="fit-next" id="fitNext">결과보기</button>
               </div>
             </div>
           </div>
