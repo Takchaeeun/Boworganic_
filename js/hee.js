@@ -101,8 +101,29 @@ window.onload = function () {
   var page3 = document.getElementById("page3");
   var page4 = document.getElementById("page4");
 
-  // [다음 버튼] 이벤트 핸들러 함수 정의
-  function moveToNextPage(currentPage, nextPage) {
+  // 이벤트 핸들러 함수 정의
+  function validateAndMoveToNextPage(currentPage, nextPage) {
+    // 필수 입력 필드 확인
+    var fitNameInput = document.getElementById("fitName");
+    if (fitNameInput.value.trim() === "") {
+      alert("이름을 입력해주세요.");
+      return;
+    }
+
+    var fitBirthInput = document.getElementById("fitBirth");
+    if (fitBirthInput.value.trim() === "") {
+      alert("생년월일을 입력해주세요.");
+      return;
+    }
+
+    // 선택한 버튼 확인
+    var selectedButton = document.querySelector(".checked");
+    if (!selectedButton) {
+      alert("사료를 선택해주세요.");
+      return;
+    }
+
+    // 모든 조건이 충족되면 다음 페이지로 이동
     currentPage.style.display = "none";
     nextPage.style.display = "block";
   }
@@ -110,37 +131,79 @@ window.onload = function () {
   // [다음 버튼] 이벤트 핸들러 설정
   var fitInfoNext = fitInfoWrap.querySelector("#fitNext");
   fitInfoNext.addEventListener("click", function () {
-    moveToNextPage(fitInfoWrap, page1);
+    validateAndMoveToNextPage(fitInfoWrap, page1);
   });
 
   var page1Next = page1.querySelector("#fitNext");
   page1Next.addEventListener("click", function () {
-    moveToNextPage(page1, page2);
+    validateAndMoveToNextPage(page1, page2);
   });
 
   var page2Next = page2.querySelector("#fitNext");
   page2Next.addEventListener("click", function () {
-    moveToNextPage(page2, page3);
+    validateAndMoveToNextPage(page2, page3);
   });
 
   var page3Next = page3.querySelector("#fitNext");
   page3Next.addEventListener("click", function () {
-    moveToNextPage(page3, page4);
+    validateAndMoveToNextPage(page3, page4);
   });
 
   var page4Next = page4.querySelector("#fitNext");
   page4Next.addEventListener("click", function () {
-    moveToNextPage(page4, fitResult);
+    validateAndMoveToNextPage(page4, fitResult);
   });
 
-  // [결과페이지] - 강아지 이름 설정 함수
+  // [다음 버튼] 이벤트 핸들러 설정
+  var fitNextBtn = document.getElementById("fitNext");
+  fitNextBtn.addEventListener("click", function () {
+    // 강아지 이름 설정 함수 호출
+    setDogNameResult();
+
+    // 다음 페이지로 이동
+    validateAndMoveToNextPage(fitInfoWrap, page1);
+  });
+
+  // [다음 버튼 & progress] 이벤트 핸들러 설정
+  var fitNextBtn = document.getElementById("fitNext");
+  fitNextBtn.addEventListener("click", function () {
+    // fitProgress 엘리먼트 선택
+    var fitProgress = document.getElementById("fitProgress");
+
+    // 현재 value 값 가져오기
+    var currentValue = parseInt(fitProgress.value);
+
+    // 최대 값이 100인지 확인
+    if (currentValue < 100) {
+      // value 값에 25 추가
+      fitProgress.value = currentValue + 25;
+    } else {
+      // 이미 최대 값인 경우 아무 작업도 수행하지 않음
+      // 혹은 원하는 동작을 수행할 수 있음
+    }
+
+    // 다음 페이지로 이동
+    validateAndMoveToNextPage(currentPage, nextPage);
+  });
+
+  // [다음 버튼] 이벤트 핸들러 설정
+  var fitNextBtn = document.getElementById("fitNext");
+  fitNextBtn.addEventListener("click", function () {
+    moveToNextPage(fitInfoWrap, page1);
+  });
+
+  // [결과 페이지] - 강아지 이름 설정 함수
   function setDogNameResult() {
     // #fitName 요소를 가져옴
     var fitNameInput = document.getElementById("fitName");
     var fitNameValue = fitNameInput.value;
 
+    // #dogNameResult 엘리먼트 선택 후 내용 설정
     var dogNameResult = document.getElementById("dogNameResult");
-    dogNameResult.innerHTML = `${fitNameValue}의 맞춤사료`;
+    dogNameResult.textContent = `${fitNameValue}의 맞춤사료`;
+    dogNameResult.style.fontSize = "2.5rem";
+    dogNameResult.style.borderBottom = "1px solid #666";
+    dogNameResult.style.padding = "21px 0";
   }
 
   // [결과 페이지] - 처음으로 돌아가기
@@ -244,6 +307,23 @@ window.onload = function () {
       document.getElementById(`reasonDetail${i + 1}`).textContent = reason.detail;
     }
   }
+
+  // [결과 페이지] 결과 페이지로 돌아가기 이벤트 핸들러 설정
+  var linkMainbtn = document.getElementById("linkMainbtn");
+  linkMainbtn.addEventListener("click", function () {
+    // 확인 대화 상자 표시
+    var confirmation = confirm("첫 화면으로 돌아가시겠습니까?");
+
+    // 사용자가 확인을 클릭했을 때
+    if (confirmation) {
+      // 작성한 데이터 초기화 함수 호출
+      resetFormData();
+
+      // 페이지 초기화 코드 추가 (예를 들어, 첫 화면으로 이동)
+      fitResult.style.display = "none"; // 결과 페이지 숨기기
+      fitMain.style.display = "block"; // 메인 페이지 보이기
+    }
+  });
 
   // [검사 페이지]
 
