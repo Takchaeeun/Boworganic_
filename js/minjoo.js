@@ -19,6 +19,10 @@ window.addEventListener("load", function () {
       delay: 3500,
       disableOnInteraction: false,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
   //   top 버튼 스크롤 기능
   const topBtn = document.getElementById("top-btn");
@@ -30,12 +34,22 @@ window.addEventListener("load", function () {
 
     if (window.scrollY == 0) {
       window.scrollTo({
-        top: 2500,
+        top: 1000,
+        behavior: "smooth",
+      });
+    } else if (window.scrollY == 1000) {
+      window.scrollTo({
+        top: 2000,
+        behavior: "smooth",
+      });
+    } else if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 4000,
         behavior: "smooth",
       });
     } else {
       window.scrollTo({
-        top: 4706,
+        top: 5000,
         behavior: "smooth",
       });
     }
