@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import url(main.css);
-@import url(font.css);
 /* 위로가기 버튼 */
 /* top 버튼 */
 .top-button {
@@ -68,7 +66,6 @@
   transform: rotate(0deg);
   /* 이미지의 위아래를 전환시키기 위해 적용 */
 }
-/* -- 민주 영역 -- */
 .header {
   /* position: fixed; */
   width: 95%;
@@ -80,7 +77,7 @@
   margin: auto;
   /* background-color: antiquewhite; */
   position: absolute;
-  top: 0.7%;
+  top: 0.25%;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
@@ -219,12 +216,14 @@
 .main .swiper-slide {
   position: relative;
   width: 100%;
+  height: 500px;
 }
 .main .swiper-slide img {
   width: 100%;
 }
 .main-txt {
   width: 70%;
+
   position: absolute;
   top: 60%;
   left: 50%;
@@ -259,236 +258,98 @@
   color: #000;
   cursor: pointer;
 }
-/* 컨텐츠 */
-.content .text {
-  position: relative;
-  font-size: 2vw;
-  text-align: center;
-  padding: 1%;
-  margin-top: 6%;
-  margin-bottom: 6%;
-  line-height: 1.5;
-}
-.content span {
-  color: #77bd82;
-}
-.content i {
-  color: #77bd82;
-}
-/* 프로모션 */
-.promotion {
-  background-color: #77bd8231;
-}
-.organic {
-  position: relative;
-  margin-bottom: 6%;
-  width: 63%;
-  /* height: 100%; */
-  margin: auto;
-  padding: 3%;
-}
-.organic .swiper-slide {
+.info {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15%;
-}
-.organic .swiper-slide img {
-  width: 30%;
   height: 100%;
+  margin: 0 auto;
 }
-.organic .promotion-info {
-  width: 50%;
-  /* height: 30%; */
+.info img {
+  padding-top: 5%;
+  width: 10%;
+  display: block;
+  margin: 0 auto;
 }
-.organic .promotion-info .title {
-  font-size: 3vw;
-  line-height: 2;
+#form {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 5%;
 }
-.organic .promotion-info .sub-title {
-  font-size: 1.8vw;
+#form h1 {
+  padding-top: 2%;
+  font-size: 2.5vw;
+}
+#form span {
+  color: #77bd82;
+}
+#form p {
+  font-size: 1.5vw;
+  line-height: 1.6;
+  padding-bottom: 2%;
+}
+legend {
+  padding: 1%;
+  font-size: 1.5vw;
+}
+legend ul {
+  text-align: center;
+}
+label {
+  font-size: 1vw;
+}
+select {
+  outline: none;
+  text-align: center;
+  font-size: 1vw;
+}
+.number-input .m,
+.number-input .p {
+  margin-top: 0.5%;
+  padding: 2px;
+  font-size: 1vw;
+}
+.number-input input {
+  text-align: center;
+  outline: none;
+  width: 10%;
+  height: 30px;
+  font-size: 1.6em;
   line-height: 1;
 }
-.organic .promotion-info .price {
-  font-size: 2vw;
-  line-height: 1.5;
+.buy-form {
+  margin-top: 2%;
+  padding-bottom: 5%;
 }
-.organic .promotion-info .buy{
-  font-size: 1.8vw;
-  background: #77bd82;
-  border: none;
+.buy-form .buy {
+  padding: 1%;
+  width: 10%;
+  border: 2px solid #77bd82;
+  background-color: #fff;
+  color: #77bd82;
+  font-size: 1vw;
+}
+.buy-form .sold {
+  padding: 1%;
+  width: 10%;
+  border: 2px solid #77bd82;
+  background-color: #77bd82;
   color: #fff;
-  padding: 2%;
-  width: 50%;
-  margin-top: 20%;
-  cursor: pointer;
+  font-size: 1vw;
+}
+.information ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2vw;
+  line-height: 2;
+  position: relative;
 }
-.organic .promotion-info .buy a{
-  color: #fff;
+.information li:hover a {
+  border-bottom: 1px solid #000;
 }
-.organic .promotion-info span {
-  color: #77bd82;
-}
-.organic .swiper-button-next{
-  position: absolute;
-  color: #77bd82;
 
-}
-.organic .swiper-button-prev{
-  position: absolute;
-  color: #77bd82;
-}
-@media screen and (max-width: 1080px) {
-  .menu ul li a {
-    font-size: 1.5rem;
-  }
-  .header-right a {
-    font-size: 1rem;
-  }
-  .logo a img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu ul li a {
-    font-size: 1.3rem;
-  }
-  .header-right a {
-    font-size: 1rem;
-  }
-  .content .text {
-    font-size: 2rem;
-  }
-  .main .swiper-slide .sub {
-    font-size: 2rem;
-  }
-  .main .swiper-slide .button {
-    font-size: 2rem;
-  }
-  .organic .promotion-info .buy {
-    font-size: 2rem;
-    padding: 4%;
-  }
-}
-@media screen and (max-width: 540px) {
-  .menu ul li a {
-    font-size: 1rem;
-  }
-  .header-right a {
-    font-size: 0.8rem;
-  }
-  .fa-solid {
-    font-size: small;
-  }
-  .content .text {
-    font-size: 1.5rem;
-  }
-  .main .swiper-slide .sub {
-    font-size: 2rem;
-  }
-  .main .swiper-slide .button {
-    font-size: 1.3rem;
-  }
-  .organic .promotion-info .buy {
-    font-size: 1.2rem;
-    padding: 4%;
-  }
-}
-@media screen and (max-width: 409px) {
-  .menu {
-    display: none;
-  }
-  .header-right {
-    display: none;
-  }
-  .header {
-    border: none;
-    top: 0;
-  }
-  .logo {
-    border: none;
-  }
-  .logo a img {
-    width: 100%;
-  }
-  .main .swiper-slide .sub {
-    font-size: 1.5rem;
-  }
-  .main .swiper-slide .smain {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  .main .swiper-slide .button {
-    font-size: 1rem;
-  }
-  .content .text {
-    font-size: 1.2rem;
-  }
-  .organic .promotion-info .buy {
-    font-size: 1rem;
-    padding: 4%;
-  }
-  .organic .promotion-info .title {
-    font-size: 2rem;
-    line-height: 2;
-  }
-  .organic .promotion-info .sub-title {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
-  .organic .promotion-info .price {
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
-}
-@media screen and (max-width: 320px) {
-  .menu {
-    display: none;
-  }
-  .header-right {
-    display: none;
-  }
-  .header {
-    border: none;
-    top: 0;
-  }
-  .logo {
-    border: none;
-  }
-  .logo a img {
-    width: 100%;
-  }
-  .main .swiper-slide .sub {
-    font-size: 1.2rem;
-  }
-  .main .swiper-slide .smain {
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  .main .swiper-slide .button {
-    font-size: 1rem;
-  }
-  .content .text {
-    font-size: 1rem;
-  }
-  .organic .promotion-info .buy {
-    font-size: 1rem;
-    padding: 4%;
-  }
-  .organic .promotion-info .title {
-    font-size: 1.5rem;
-    line-height: 2;
-  }
-  .organic .promotion-info .sub-title {
-    font-size: 1rem;
-    line-height: 1;
-  }
-  .organic .promotion-info .price {
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
+.infoimg img {
+  padding-top: 5%;
+  width: 60%;
 }
