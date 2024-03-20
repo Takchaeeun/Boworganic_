@@ -223,7 +223,6 @@
 }
 .main-txt {
   width: 70%;
-
   position: absolute;
   top: 60%;
   left: 50%;
@@ -252,6 +251,7 @@
   color: #fff;
   margin-top: 10%;
   padding: 1%;
+  border-radius: 40px;
 }
 .main .swiper-slide .button:hover {
   background: #fff;
@@ -279,11 +279,14 @@
 #form h1 {
   padding-top: 2%;
   font-size: 2.5vw;
+  padding-bottom: 1%;
 }
 #form span {
   color: #77bd82;
 }
 #form p {
+  padding-top: 1%;
+  background-color: #d4d4d4;
   font-size: 1.5vw;
   line-height: 1.6;
   padding-bottom: 2%;
@@ -328,6 +331,7 @@ select {
   background-color: #fff;
   color: #77bd82;
   font-size: 1vw;
+  border-radius: 40px;
 }
 .buy-form .sold {
   padding: 1%;
@@ -336,6 +340,7 @@ select {
   background-color: #77bd82;
   color: #fff;
   font-size: 1vw;
+  border-radius: 40px;
 }
 .information ul {
   display: flex;
@@ -352,4 +357,479 @@ select {
 .infoimg img {
   padding-top: 5%;
   width: 60%;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1080px) {
+  .menu ul li a {
+    font-size: 2rem;
+  }
+  .header-right a {
+    font-size: 1.6rem;
+  }
+  .fa-solid {
+    font-size: small;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide img {
+    width: 100%;
+    height: 450px;
+  }
+  .main-txt {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+  }
+  .main .swiper-slide .sub {
+    font-size: 2rem;
+    padding-top: 30%;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 3rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+  .main .swiper-slide .button {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding: 4%;
+    border-radius: 40px;
+  }
+  .info img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  #form h1 {
+    padding-top: 2%;
+    font-size: 2.5rem;
+  }
+  #form span {
+    color: #77bd82;
+  }
+  #form p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding-bottom: 2%;
+  }
+  legend {
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+  legend ul {
+    text-align: center;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  select {
+    outline: none;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .number-input .m,
+  .number-input .p {
+    margin-top: 2%;
+    padding: 3px;
+    font-size: 1.5rem;
+  }
+  .number-input input {
+    text-align: center;
+    outline: none;
+    width: 10%;
+    height: 1;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .buy-form .buy {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 2rem;
+  }
+  .buy-form .sold {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .information ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2;
+    position: relative;
+  }
+  .infoimg img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu ul li a {
+    font-size: 1.5rem;
+  }
+  .header-right a {
+    font-size: 1rem;
+  }
+  .fa-solid {
+    font-size: small;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide img {
+    width: 100%;
+    height: 450px;
+  }
+  .main-txt {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+  }
+  .main .swiper-slide .sub {
+    font-size: 2rem;
+    padding-top: 40%;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 3rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+  .main .swiper-slide .button {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding: 4%;
+    border-radius: 40px;
+  }
+  .info img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  #form h1 {
+    padding-top: 2%;
+    font-size: 2.5rem;
+  }
+  #form span {
+    color: #77bd82;
+  }
+  #form p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding-bottom: 2%;
+  }
+  legend {
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+  legend ul {
+    text-align: center;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  select {
+    outline: none;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .number-input .m,
+  .number-input .p {
+    margin-top: 2%;
+    padding: 3px;
+    font-size: 1.5rem;
+  }
+  .number-input input {
+    text-align: center;
+    outline: none;
+    width: 10%;
+    height: 1;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .buy-form .buy {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 2rem;
+  }
+  .buy-form .sold {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .information ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2;
+    position: relative;
+  }
+  .infoimg img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .menu ul li a {
+    font-size: 1.3rem;
+  }
+  .header-right a {
+    font-size: 0.8rem;
+  }
+  .fa-solid {
+    font-size: small;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide img {
+    width: 100%;
+    height: 450px;
+  }
+  .main-txt {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+  }
+  .main .swiper-slide .sub {
+    font-size: 2rem;
+    padding-top: 50%;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 3rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+  .main .swiper-slide .button {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding: 4%;
+    border-radius: 40px;
+  }
+  .info img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  #form h1 {
+    padding-top: 2%;
+    font-size: 2.5rem;
+  }
+  #form span {
+    color: #77bd82;
+  }
+  #form p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding-bottom: 2%;
+  }
+  legend {
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+  legend ul {
+    text-align: center;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  select {
+    outline: none;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .number-input .m,
+  .number-input .p {
+    margin-top: 2%;
+    padding: 3px;
+    font-size: 1.5rem;
+  }
+  .number-input input {
+    text-align: center;
+    outline: none;
+    width: 10%;
+    height: 1;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .buy-form .buy {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 2rem;
+  }
+  .buy-form .sold {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .information ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2;
+    position: relative;
+  }
+  .infoimg img {
+    padding-top: 5%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 409px) {
+  .menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header {
+    border: none;
+    top: 0;
+  }
+  .logo {
+    border: none;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .main .swiper-slide img {
+    width: 100%;
+    height: 400px;
+  }
+  .main-txt {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+  }
+  .main .swiper-slide .sub {
+    padding-top: 100px;
+    font-size: 1.2rem;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 2.3rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+  .main .swiper-slide .button {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding: 4%;
+    border-radius: 40px;
+  }
+  .main {
+    padding-top: ;
+  }
+  .info img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #form h1 {
+    padding-top: 2%;
+    font-size: 2.5rem;
+  }
+  #form span {
+    color: #77bd82;
+  }
+  #form p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding-bottom: 2%;
+  }
+  legend {
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+  legend ul {
+    text-align: center;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  select {
+    outline: none;
+    text-align: center;
+    font-size: 1.5\rem;
+  }
+  .number-input .m,
+  .number-input .p {
+    margin-top: 2%;
+    padding: 3px;
+    font-size: 1.5rem;
+  }
+  .number-input input {
+    text-align: center;
+    outline: none;
+    width: 10%;
+    height: 1;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .buy-form .buy {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 2rem;
+  }
+  .buy-form .sold {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #77bd82;
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .information ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2;
+    position: relative;
+  }
+  .infoimg img {
+    padding-top: 5%;
+    width: 70%;
+  }
 }

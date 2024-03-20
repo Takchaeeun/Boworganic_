@@ -37,16 +37,16 @@ window.addEventListener("load", function () {
         top: 1000,
         behavior: "smooth",
       });
-    } else if (window.scrollY == 1000) {
-      window.scrollTo({
-        top: 2000,
-        behavior: "smooth",
-      });
-    } else if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 4000,
-        behavior: "smooth",
-      });
+    // } else if (window.scrollY == 1000) {
+    //   window.scrollTo({
+    //     top: 2000,
+    //     behavior: "smooth",
+    //   });
+    // } else if (window.scrollY == 0) {
+    //   window.scrollTo({
+    //     top: 4000,
+    //     behavior: "smooth",
+    //   });
     } else {
       window.scrollTo({
         top: 5000,

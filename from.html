@@ -66,7 +66,7 @@
       <header class="header">
         <!-- 로고 -->
         <div class="logo">
-          <a href="#"><img src="images/minju/logo_1.png" alt="로고1" /></a>
+          <a href="index.html"><img src="images/minju/logo_1.png" alt="로고1" /></a>
         </div>
 
         <!-- 메뉴 -->
@@ -82,10 +82,10 @@
               <a href="#fit"><span>맞춤식단</span></a>
             </li>
             <li>
-              <a href="#"><span>뉴스</span></a>
+              <a href="#news"><span>뉴스</span></a>
             </li>
             <li>
-              <a href="#"><span>제품후기</span></a>
+              <a href="#instar"><span>제품후기</span></a>
             </li>
           </ul>
         </div>
@@ -135,10 +135,9 @@
         </div>
       </main>
       <div class="info">
-        <img src="images/minju/1.png" alt="사료" />
+        <img src="images/minju/1.png" alt="사료" id="imageeye" />
         <div id="form">
           <h1>강아지 사료 구매하기</h1>
-          <hr />
           <p>
             <strong>Price | <span>27,000</span></strong>
           </p>
@@ -147,13 +146,13 @@
             <fieldset>
               <legend>주문 정보</legend>
               <label for="class" class="reg">사료선택 </label>
-              <select name="major" id="major">
+              <select name="major" id="major" onchange="fites(this.value)">
                 <option>---- 사료 선택 ----</option>
-                <option value="archi">강아지 관절 & 눈 사료 2KG</option>
-                <option value="mechanic">강아지 장&간 사료 2KG</option>
-                <option value="indust">강아지 피부 & 알러지 사료 2KG</option>
-                <option value="elec">강아지 다이어트 & 면역 사료 2KG</option>
-                <option value="computer">6-ZERO 강아지 유기농 사료 2KG</option>
+                <option value="eye">강아지 관절 & 눈 사료 2KG</option>
+                <option value="gan">강아지 장&간 사료 2KG</option>
+                <option value="boo">강아지 피부 & 알러지 사료 2KG</option>
+                <option value="di">강아지 다이어트 & 면역 사료 2KG</option>
+                <option value="zero">6-ZERO 강아지 유기농 사료 2KG</option>
               </select>
               <div class="passenger">
                 <div class="number-input">
@@ -184,6 +183,15 @@
       </div>
     </div>
     <script>
+      function fites(xx) {
+        alert("사료가 선택되었습니다");
+        if (xx == "eye") {
+          document.getElementById("imageeye").src = "images/minju/1.png";
+        } else if (xx == "gan") document.getElementById("imageeye").src = "images/minju/2.png";
+        else if (xx == "boo") document.getElementById("imageeye").src = "images/minju/3.png";
+        else if (xx == "di") document.getElementById("imageeye").src = "images/minju/4.png";
+        else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
+      }
       // JavaScript로 숫자를 증가하거나 감소시키는 함수
       function adjustNumber(delta, event) {
         event.preventDefault(); // 버튼의 기본 동작 중지

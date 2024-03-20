@@ -208,6 +208,11 @@
   justify-content: center;
   color: #fff;
 }
+/* 모바일 쿠폰 */
+.mb-copun {
+  display: none;
+}
+
 .fa-solid {
   font-size: large;
 }
@@ -218,7 +223,7 @@
 }
 .main .swiper-slide {
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .main .swiper-slide img {
   width: 100%;
@@ -253,6 +258,7 @@
   color: #fff;
   margin-top: 10%;
   padding: 1%;
+  border-radius: 40px;
 }
 .main .swiper-slide .button:hover {
   background: #fff;
@@ -326,6 +332,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 40px;
 }
 .organic .promotion-info .buy a {
   color: #fff;
@@ -367,10 +374,30 @@
   }
   .main .swiper-slide .button {
     font-size: 2rem;
+    padding: 2%;
   }
   .organic .promotion-info .buy {
     font-size: 2rem;
     padding: 4%;
+  }
+  .organic .swiper-button-prev {
+    left: -2px;
+  }
+  .organic .promotion-info .buy {
+    font-size: 1.5rem;
+  }
+  .organic .promotion-info .title {
+    font-size: 2.5rem;
+    line-height: 2;
+    display: block;
+  }
+  .organic .promotion-info .sub-title {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .organic .promotion-info .price {
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
 }
 @media screen and (max-width: 540px) {
@@ -384,17 +411,38 @@
     font-size: small;
   }
   .content .text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    word-break: keep-all;
   }
   .main .swiper-slide .sub {
     font-size: 2rem;
   }
   .main .swiper-slide .button {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding: 2%;
   }
   .organic .promotion-info .buy {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 4%;
+  }
+  .organic .promotion-info .title {
+    font-size: 2.5rem;
+    line-height: 2;
+    display: block;
+  }
+  .organic .promotion-info .sub-title {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .organic .promotion-info .price {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .organic .swiper-button-next {
+    right: -2px;
+  }
+  .organic .swiper-button-prev {
+    left: -2px;
   }
 }
 @media screen and (max-width: 409px) {
@@ -414,34 +462,70 @@
   .logo a img {
     width: 100%;
   }
+  .main .swiper-slide img {
+    width: 100vw;
+    height: 350px;
+  }
   .main .swiper-slide .sub {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .main .swiper-slide .smain {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
+    word-break: keep-all;
+    line-height: 1.3;
   }
   .main .swiper-slide .button {
-    font-size: 1rem;
-  }
-  .content .text {
-    font-size: 1.2rem;
-  }
-  .organic .promotion-info .buy {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
     padding: 4%;
   }
-  .organic .promotion-info .title {
+  .content .text {
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  .organic .swiper-slide img {
+    width: 50%;
+    display: block;
+  }
+  .organic .promotion-info .buy {
     font-size: 2rem;
+    padding: 4%;
+    width: 100%;
+  }
+  .organic .promotion-info .title {
+    font-size: 2.5rem;
     line-height: 2;
+    display: block;
   }
   .organic .promotion-info .sub-title {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1;
   }
   .organic .promotion-info .price {
     font-size: 1.5rem;
     line-height: 1.5;
+  }
+  .organic .swiper-slide {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .organic .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .organic .promotion-info {
+    width: 100%;
+    /* height: 30%; */
+  }
+  .promotion {
+    padding: 20px;
+  }
+  .organic .swiper-button-next {
+    display: none;
+  }
+  .organic .swiper-button-prev {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {
@@ -462,7 +546,7 @@
     width: 100%;
   }
   .main .swiper-slide img {
-    width: 100%;
+    width: 100vw;
     height: 350px;
   }
   .main .swiper-slide .sub {
@@ -470,37 +554,85 @@
   }
   .main .swiper-slide .smain {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.3rem;
     word-break: keep-all;
+    line-height: 1.3;
   }
   .main .swiper-slide .button {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 3%;
-    padding: 3%;
+    padding: 4%;
   }
   .content .text {
-    font-size: 2rem;
-    word-break: keep-all;
+    display: none;
   }
-  .organic .swiper-slide img{
+  .organic .swiper-slide img {
     width: 50%;
     display: block;
   }
   .organic .promotion-info .buy {
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 4%;
+    width: 100%;
   }
   .organic .promotion-info .title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 2;
     display: block;
   }
   .organic .promotion-info .sub-title {
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1;
   }
   .organic .promotion-info .price {
     font-size: 1.5rem;
     line-height: 1.5;
+  }
+  .organic .swiper-slide {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .organic .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .organic .promotion-info {
+    width: 100%;
+    /* height: 30%; */
+  }
+  .promotion {
+    padding: 20px;
+  }
+  .organic .swiper-button-next {
+    display: none;
+  }
+  .organic .swiper-button-prev {
+    display: none;
+  }
+  /* 모바일 쿠폰 */
+  .mb-copun {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .mb-copun img {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .copun {
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    outline: none;
+    border: 2px solid #77bd82;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .copun span {
+    color: #77bd82;
   }
 }
