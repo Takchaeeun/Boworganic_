@@ -102,26 +102,27 @@ window.onload = function () {
   var page4 = document.getElementById("page4");
 
   // 이벤트 핸들러 함수 정의
+  // 선택지 선택 확인 : 메세지 창 띄움-> 선택 완료되면 다음 페이지로
   function validateAndMoveToNextPage(currentPage, nextPage) {
-    // 필수 입력 필드 확인
-    var fitNameInput = document.getElementById("fitName");
-    if (fitNameInput.value.trim() === "") {
-      alert("이름을 입력해주세요.");
-      return;
-    }
+    // // 필수 입력 필드 확인
+    // var fitNameInput = document.getElementById("fitName");
+    // if (fitNameInput.value.trim() === "") {
+    //   alert("이름을 입력해주세요.");
+    //   return;
+    // }
 
-    var fitBirthInput = document.getElementById("fitBirth");
-    if (fitBirthInput.value.trim() === "") {
-      alert("생년월일을 입력해주세요.");
-      return;
-    }
+    // var fitBirthInput = document.getElementById("fitBirth");
+    // if (fitBirthInput.value.trim() === "") {
+    //   alert("생년월일을 입력해주세요.");
+    //   return;
+    // }
 
-    // 선택한 버튼 확인
-    var selectedButton = document.querySelector(".checked");
-    if (!selectedButton) {
-      alert("사료를 선택해주세요.");
-      return;
-    }
+    // // 선택한 버튼 확인
+    // var selectedButton = document.querySelector(".checked");
+    // if (!selectedButton) {
+    //   alert("성별을 선택해주세요.");
+    //   return;
+    // }
 
     // 모든 조건이 충족되면 다음 페이지로 이동
     currentPage.style.display = "none";
@@ -347,3 +348,39 @@ window.onload = function () {
     fitMain.style.display = "block"; // 메인 페이지 보이기
   });
 };
+
+// =============== 제이쿼리 ================
+$(document).ready(function () {
+  // 페이지 로드 후 실행될 코드
+
+  // #page4의 스크롤 기능
+  $("#page4 .question-btn").on("wheel", function (e) {
+    var delta = e.originalEvent.deltaY;
+    this.scrollLeft += (delta > 0 ? 1 : -1) * 40;
+    e.preventDefault();
+  });
+});
+
+$(document).ready(function () {
+  // 페이지가 로드되면 실행될 코드
+
+  // 이전 버튼 클릭 이벤트 핸들러
+  $(".fit-prev").click(function () {
+    var currentPage = $(this).closest(".question-page");
+    var prevPage = currentPage.prev(".question-page");
+
+    currentPage.fadeOut(400, function () {
+      prevPage.fadeIn(400);
+    });
+  });
+
+  // 다음 버튼 클릭 이벤트 핸들러
+  $(".fit-next").click(function () {
+    var currentPage = $(this).closest(".question-page");
+    var nextPage = currentPage.next(".question-page");
+
+    currentPage.fadeOut(400, function () {
+      nextPage.fadeIn(400);
+    });
+  });
+});
