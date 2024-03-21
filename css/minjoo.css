@@ -225,8 +225,12 @@
   position: relative;
   width: 100vw;
 }
-.main .swiper-slide img {
+.main .swiper-slide .banner {
   width: 100%;
+}
+.main .swiper-slide .mb-banner{
+  width: 100%;
+  display: none;
 }
 .main-txt {
   width: 70%;
@@ -358,6 +362,10 @@
   .logo a img {
     width: 80%;
   }
+  .main .swiper-slide .button {
+    font-size: 1.8rem;
+    padding: 2%;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu ul li a {
@@ -445,6 +453,120 @@
     left: -2px;
   }
 }
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header {
+    border: none;
+    top: 0;
+  }
+  .logo {
+    width: 20%;
+    border: none;
+  }
+  .logo a img {
+    width: 100%;
+  }
+    .main .swiper-slide .banner {
+      width: 100%;
+      display: none;
+    }
+    .main .swiper-slide .mb-banner{
+      width: 100%;
+      display: block;
+  }
+  .main .swiper-slide .sub {
+    font-size: 1.5rem;
+  }
+  .main .swiper-slide .smain {
+    font-weight: bold;
+    font-size: 2.5rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+  .main .swiper-slide .button {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding: 4%;
+  }
+  .content .text {
+    display: none;
+  }
+  .organic .swiper-slide img {
+    width: 50%;
+    display: block;
+  }
+  .organic .promotion-info .buy {
+    font-size: 2rem;
+    padding: 4%;
+    width: 100%;
+  }
+  .organic .promotion-info .title {
+    font-size: 3rem;
+    line-height: 2;
+    display: block;
+  }
+  .organic .promotion-info .sub-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .organic .promotion-info .price {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .organic .swiper-slide {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .organic .swiper-slide{
+    width: 100%;
+    height: 100%;
+  }
+  .organic .promotion-info {
+    width: 100%;
+    /* height: 30%; */
+  }
+  .promotion {
+    padding: 20px;
+  }
+  .organic .swiper-button-next {
+    display: none;
+  }
+  .organic .swiper-button-prev {
+    display: none;
+  }
+  /* 모바일 쿠폰 */
+  .mb-copun {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .mb-copun img {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .copun {
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    outline: none;
+    border: 2px solid #77bd82;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .copun span {
+    color: #77bd82;
+  }
+  /* 모바일메뉴 */
+}
 @media screen and (max-width: 409px) {
   .menu {
     display: none;
@@ -462,9 +584,13 @@
   .logo a img {
     width: 100%;
   }
-  .main .swiper-slide img {
-    width: 100vw;
-    height: 350px;
+    .main .swiper-slide .banner {
+      width: 100%;
+      display: none;
+    }
+    .main .swiper-slide .mb-banner{
+      width: 100%;
+      display: block;
   }
   .main .swiper-slide .sub {
     font-size: 1.2rem;
@@ -481,8 +607,7 @@
     padding: 4%;
   }
   .content .text {
-    font-size: 16px;
-    word-break: keep-all;
+    display: none;
   }
   .organic .swiper-slide img {
     width: 50%;
@@ -510,7 +635,7 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .organic .swiper-slide img {
+  .organic .swiper-slide{
     width: 100%;
     height: 100%;
   }
@@ -526,6 +651,32 @@
   }
   .organic .swiper-button-prev {
     display: none;
+  }
+  /* 모바일 쿠폰 */
+  .mb-copun {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .mb-copun img {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .copun {
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    outline: none;
+    border: 2px solid #77bd82;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .copun span {
+    color: #77bd82;
   }
 }
 @media screen and (max-width: 320px) {
@@ -545,10 +696,17 @@
   .logo a img {
     width: 100%;
   }
-  .main .swiper-slide img {
+  .main .swiper-slide{
     width: 100vw;
-    height: 350px;
   }
+  .main .swiper-slide .banner {
+    width: 100%;
+    display: none;
+  }
+  .main .swiper-slide .mb-banner{
+    width: 100%;
+    display: block;
+}
   .main .swiper-slide .sub {
     font-size: 1.2rem;
   }
@@ -608,7 +766,7 @@
   }
   .organic .swiper-button-prev {
     display: none;
-  }
+  }  
   /* 모바일 쿠폰 */
   .mb-copun {
     padding: 20px;
