@@ -57,7 +57,9 @@
     <link rel="stylesheet" href="css/eun.css" />
     <link rel="stylesheet" href="css/minjoo.css" />
     <link rel="stylesheet" href="css/hee.css" />
-
+    
+    <!-- 제이쿼리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
@@ -358,7 +360,7 @@
           <!-- 메인 페이지 -->
           <div class="fit-main" id="fitMain">
             <div class="fit-main-title">
-              <p class="fit-main-or"><span></span>내 반려견에게 꼭 맞는 유기농 식사</p>
+              <p class="fit-main-or">내 반려견에게 꼭 맞는 유기농 식사</p>
               <h2>맞춤 사료 찾기</h2>
             </div>
 
@@ -366,13 +368,16 @@
               <div class="fit-img-container" id="fitImg">
                 <img src="images/hee/fit_maindog.png" alt="강아지 사진" class="fit-main-img" />
               </div>
-              <div class="fit-main-bg"><img src="images/hee/fit-main-bg.png" alt="fitfor 글자" /></div>
+              <div class="fit-main-bg">
+                <img src="images/hee/fit-main-bg.png" alt="fitfor 글자" />
+              </div>
               <!-- <div class="fit-main-bg"><span>Fit</span> <span>for</span></div> -->
             </div>
-            <p class="fit-description">
-              간편한 퀴즈로 나의 반려견을 위한 최적의 사료를 찾아보세요.<br />
-              그리고 건강과 행복을 선물해주세요.
-            </p>
+            <div class="fit-description">
+              <p class="fit-description">
+                간편한 퀴즈로 나의 반려견을 위한 최적의 사료를 찾아보세요.
+              </p>
+            </div>
             <div class="fit-btn-wrap">
               <button type="button" id="fitStart">시작하기</button>
             </div>
@@ -411,13 +416,13 @@
                 </div>
               </form>
               <div class="fit-bt-button">
-                <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">다음</button>
+                <button class="fit-prev fit_info_prev" id="fitPrev">이전</button>
+                <button class="fit-next fit_info_next" id="fitNext">다음</button>
               </div>
             </div>
           </div>
 
-          <!-- 1번 페이지 - 중성화 수술 여부 -->
+          <!-- 1번 페이지 - 중성화 수술-->
           <div class="question-page" id="page1">
             <div class="question-page-container">
               <!-- 진행바 -->
@@ -426,8 +431,8 @@
 
               <div class="question-btn-wrap">
                 <div class="question-btn">
-                  <button class="toggleBtn">예</button>
-                  <button class="toggleBtn">아니오</button>
+                  <button class="toggleBtn">네</button>
+                  <button class="toggleBtn">아니요</button>
                 </div>
                 <div class="question-unknown">
                   <input type="checkbox" id="qBtn" />
@@ -436,8 +441,8 @@
               </div>
 
               <div class="fit-bt-button">
-                <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">다음</button>
+                <button class="fit-prev fit_page1_prev" id="fitPrev">이전</button>
+                <button class="fit-next fit_page1_next" id="fitNext">다음</button>
               </div>
             </div>
           </div>
@@ -469,8 +474,8 @@
                 </div>
               </div>
               <div class="fit-bt-button">
-                <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">다음</button>
+                <button class="fit-prev fit_page2_prev" id="fitPrev">이전</button>
+                <button class="fit-next fit_page2_next" id="fitNext">다음</button>
               </div>
             </div>
           </div>
@@ -490,8 +495,8 @@
                 </div>
               </div>
               <div class="fit-bt-button">
-                <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">다음</button>
+                <button class="fit-prev fit_page3_prev" id="fitPrev">이전</button>
+                <button class="fit-next fit_page3_next id="fitNext">다음</button>
               </div>
             </div>
             <!-- 이 부분의 마지막 괄호를 추가 -->
@@ -515,8 +520,8 @@
                 </div>
               </div>
               <div class="fit-bt-button">
-                <button class="fit-prev" id="fitPrev">이전</button>
-                <button class="fit-next" id="fitNext">결과보기</button>
+                <button class="fit-prev fit_page4_prev" id="fitPrev">이전</button>
+                <button class="fit-next fit_page4_next" id="fitNext">결과보기</button>
               </div>
             </div>
           </div>
@@ -568,8 +573,12 @@
       <div class="news" id="news">
         <div class="inner">
           <p class="news-subTitle">새로운 소식</p>
-          <h2 class="news-title">NEWS</h2>
-          <button class="news-more-all">전체보기</button>
+          <div class="news-title-bt">
+            <h2 class="news-title">NEWS</h2>
+            <button class="news-more-all">전체보기</button>
+          </div>
+         
+         
           <div class="swiper swNews">
             <div class="swiper-wrapper">
               <!-- 슬라이드 1-->
