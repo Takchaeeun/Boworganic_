@@ -42,7 +42,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <meta property="og:image" content="https://boworganic.vercel.app/images/minju/logo_1.png" />
+    <meta property="og:image" content="https://boworganic.vercel.app/images/minju/4.png" />
     <title>유기농반려견 사료사이트 Boworganic</title>
     <!-- font aswesom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,6 +58,8 @@
     <link rel="stylesheet" href="css/minjoo.css" />
     <link rel="stylesheet" href="css/hee.css" />
 
+    <!-- 제이쿼리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
@@ -101,7 +103,7 @@
         <p class="modal-middle"></p>
         <p class="modal_bt"></p>
         <div class="modal-close">X</div>
-        <a href="#"><div class="modal-btn">후기작성하기</div></a>
+        <a href="part.html" id="review"><div class="modal-btn">후기작성하기</div></a>
       </div>
     </div>
 
@@ -259,46 +261,13 @@
           <span>@Boworganic</span>
         </div>
         <div class="insta-viewmore inner">
-          <span
-            ><a href="#">더보기<img src="images/favicon/icons_arrow-up.png" alt="moreview" /></a
-          ></span>
+          <span id="load-more">더보기<img src="images/favicon/icons_arrow-up.png" alt="moreview" /></span>
         </div>
-        <div class="insta-img" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1800">
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta1.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta2.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta8.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta3.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta4.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta5.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta6.jpg" alt="강아지"
-          /></a>
-          <a href="#">
-            <span class="write-1"> </span>
-            <img src="images/favicon/insta7.jpg" alt="강아지"
-          /></a>
+        <div class="insta-img">
+
         </div>
         <div class="insta-ft">
-          <button type="button" class="insta-bt">후기작성</button>
+          <button type="button" class="insta-bt"><a href="part.html" id="review">후기작성</a></button>
         </div>
       </div>
       <!-- 희승 영역 -->
