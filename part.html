@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>후기작성</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- seo -->
+    <meta name="description" content="당신의 강아지를 위한 최고 품질의 유기농 사료를 찾으세요? 우리 사이트에서 건강하고 자연스러운 강아지 사료를 만나보세요." />
+    <meta name="keywords" content="강아지, 유기농 사료, 건강한 강아지, 자연적인 사료, 영양가 높은 사료" />
+    <meta name="author" content="여기에 회사명을 입력하세요" />
+    <!-- 추가적인 SEO 태그 -->
+    <meta name="robots" content="index, follow" />
+    <!-- 검색 엔진 로봇이 사이트를 크롤링하고 색인화할 수 있도록 허용 -->
+    <meta name="googlebot" content="index, follow" />
+    <!-- Google 로봇이 사이트를 크롤링하고 색인화할 수 있도록 허용 -->
+    <meta property="og:title" content="강아지 유기농 사료 - 최고 품질, 건강한 강아지 사료" />
+    <!-- Open Graph 프로토콜을 이용하여 사이트의 제목을 지정 -->
+    <meta property="og:description" content="당신의 강아지를 위한 최고 품질의 유기농 사료를 찾으세요? 우리 사이트에서 건강하고 자연스러운 강아지 사료를 만나보세요." />
+    <!-- Open Graph 프로토콜을 이용하여 사이트의 설명을 지정 -->
+    <meta property="og:image" content="여기에 사이트의 대표 이미지 URL을 입력하세요" />
+    <!-- Open Graph 프로토콜을 이용하여 사이트의 대표 이미지를 지정 -->
+    <meta property="og:url" content="여기에 사이트의 URL을 입력하세요" />
+    <!-- Open Graph 프로토콜을 이용하여 사이트의 URL을 지정 -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/favicon-32x32.png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/favicon-16x16.png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>유기농반려견 사료사이트 Boworganic</title>
+    <!-- font aswesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/eun.css" />
+    <link rel="stylesheet" href="css/hee.css" />
+    <link rel="stylesheet" href="css/from.css" />
+    <link rel="stylesheet" href="css/part.css" />
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/repond.min.js"></script>
+    <script src="js/from.js"></script>
+  </head>
+  <body>
+    <!-- top button -->
+    <div class="top-button">
+      <a href="#" class="shop-btn"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#" class="top-btn" id="top-btn">
+        <i class="fa-solid fa-arrow-down" id="top-btn-img"></i>
+      </a>
+    </div>
+    <div class="wrap">
+      <!-- 민주 영역 -->
+      <header class="header">
+        <!-- 로고 -->
+        <div class="logo">
+          <a href="index.html"><img src="images/minju/logo_1.png" alt="로고1" /></a>
+        </div>
+
+        <!-- 메뉴 -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#content"><span>회사소개</span></a>
+            </li>
+            <li>
+              <a href="#promotion"><span>제품</span></a>
+            </li>
+            <li>
+              <a href="#fit"><span>맞춤식단</span></a>
+            </li>
+            <li>
+              <a href="#news"><span>뉴스</span></a>
+            </li>
+            <li>
+              <a href="#instar"><span>제품후기</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- 회원가입 -->
+        <div class="header-right">
+          <ul>
+            <li><a href="#">로그인 </a></li>
+            <li><a href="#"> 회원가입</a></li>
+          </ul>
+        </div>
+        <!-- 모바일 -->
+        <!-- 모바일 메뉴 -->
+        <div class="mb-menu">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </header>
+      <!-- 비주얼 -->
+      <!-- 스와이퍼 -->
+      <main class="main">
+        <div class="swiper bow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/minju/01.jpg" alt="배너1" />
+              <div class="main-txt">
+                <p class="sub">Nature's nourishment</p>
+                <h1 class="smain">반려동물을 위해 자연의 영양을 선사합니다</h1>
+                <!-- <button class="button" id="promo" data-scroll="1700">제품구매하기</button> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/02.jpg" alt="배너2" />
+              <div class="main-txt">
+                <p class="sub">Share warmth through acts of love</p>
+                <h1 class="smain">온기를 나누다, 사랑의 기부로 따뜻함 전하다</h1>
+                <!-- <button class="button" id="promo" data-scroll="1700">제품구매하기</button> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/minju/03.jpg" alt="배너3" />
+              <div class="main-txt">
+                <p class="sub">Organic tailored meal for pets</p>
+                <h1 class="smain">내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
+                <!-- <button class="button" id="promo" data-scroll="1700">제품구매하기</button> -->
+              </div></main>
+              <!-- 후기작성 -->
+              <div class="review-wrap">
+                <div class="review-top">
+                  <h1>REVIEW</h1>
+                 
+                  <span>후기작성</span> 
+                  <hr>
+                </div>
+                <div class="review-top-img">
+                  <div class="rv-top1">
+                  <img src="images/favicon/car.png" alt="배송조회">
+                  <p>배송조회</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/call.png" alt="장바구니">
+                  <p>고객센터</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/cash.png" alt="마일리지">
+                  <p>마일리지</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/shopping.png" alt="장바구니">
+                  <p>장바구니</p>
+                </div>
+                </div>
+                <div class="rv-wrap">
+                <div class="review-bt-img">
+                  <img src="images/minju/1.png" alt="사료" id="imageeye" />
+                <form name="order" class="order">
+                  <fieldset>
+                    <legend>주문 정보</legend>
+                    <label for="class" class="reg">사료선택 </label>
+                    <select name="major" id="major" onchange="fites(this.value)">
+                      <option>---- 사료 선택 ----</option>
+                      <option value="eye">강아지 관절 & 눈 사료 2KG</option>
+                      <option value="gan">강아지 장&간 사료 2KG</option>
+                      <option value="boo">강아지 피부 & 알러지 사료 2KG</option>
+                      <option value="di">강아지 다이어트 & 면역 사료 2KG</option>
+                      <option value="zero">6-ZERO 강아지 유기농 사료 2KG</option>
+                    </select>
+              </div>
+              <div class="review-right">
+                <p>후기작성</p>
+                <form action="/submit_review" method="post">
+                  <div>
+                      <label for="title">제목:</label><br>
+                      <input type="text" id="title" name="title" required><br>
+                  </div>
+              
+                  <div>
+                      <label for="rating">별점:</label><br>
+                      <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                  </div>
+              
+                  <div>
+                      <label for="content">내용:</label><br>
+                      <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+                  </div>
+              
+                  <div>
+                      <label for="name">아이디:</label><br>
+                      <input type="text" id="name" name="name" required><br>
+                  </div>
+              
+                 
+              
+                  <div>
+                      <label for="date">날짜:</label><br>
+                      <input type="date" id="date" name="date" required><br>
+                  </div>
+              
+                  <div>
+                      <input type="submit" value="제출">
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <script>
+      function fites(xx) {
+        alert("사료가 선택되었습니다");
+        if (xx == "eye") {
+          document.getElementById("imageeye").src = "images/minju/1.png";
+        } else if (xx == "gan") document.getElementById("imageeye").src = "images/minju/2.png";
+        else if (xx == "boo") document.getElementById("imageeye").src = "images/minju/3.png";
+        else if (xx == "di") document.getElementById("imageeye").src = "images/minju/4.png";
+        else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
+      }
+      // JavaScript로 숫자를 증가하거나 감소시키는 함수
+      function adjustNumber(delta, event) {
+        event.preventDefault(); // 버튼의 기본 동작 중지
+
+        var inputField = document.getElementById("numberInput");
+        var currentValue = parseInt(inputField.value);
+
+        // 값이 0 이하로 가지 않도록 조정
+        var newValue = currentValue + delta;
+        if (newValue < 0) {
+          newValue = 0;
+        }
+
+        inputField.value = newValue;
+      }
+    </script>
+  </body>
 </html>
