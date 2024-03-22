@@ -106,6 +106,7 @@ body.active {
 }
 .insta-viewmore #load-more {
   color: #7d7d7d;
+  cursor: pointer;
 }
 .insta-viewmore #load-more img {
   display: inline-block;
@@ -136,9 +137,7 @@ body.active {
   overflow: hidden;
   border-radius: 15%;
 }
-.write-1{
-  display: none;
-}
+
 .insta-img> a >.write-1{
   width: 100%;
   height: 100%;
@@ -150,49 +149,26 @@ body.active {
 
   object-fit: cover;
 }
-<<<<<<< HEAD
-.insta-img> a .write-2 {
-
-  /* display: none; */
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px;
-
-}
-.insta-img> a .write-2 
-=======
-.write-1 {
+ .write-2 {
+  /* padding: 50px;
+  background-color: red; */
   display: none;
+ /* width: 100%;
+  height: 100%;
+  padding: 50px;  */
 }
-.insta-img a:hover img {
-  scale: 1.2;
-  filter: blur(2px), brightness(0.1);
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  -moz-opacity: 0.4;
-  -khtml-opacity: 0.4;
+.write-1 >img:hover .write-2{
+  width: 80%;
+  padding: 50px;
 }
 
-.insta-img a:hover .write-1 {
-  width: 70%;
-  height:45%;
-  font-size: 14.5px;
-  line-height: 18px;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
->>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 .insta-ft {
   position: relative;
   width: 100%;
   height: 100%;
 
   cursor: pointer;
+  margin-bottom: 6%;
 }
 .insta-bt {
   display: block;
@@ -300,7 +276,7 @@ body.active {
     bottom: 65px;
     left: 50%;
     transform: translateX(-50%);
-    width: 25%;
+    width: 30%;
     color: #fff;
     cursor: pointer;
     border: solid 1px #ffffff;
@@ -311,8 +287,8 @@ body.active {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 55%;
+    width: 23%;
+    height: 40%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
@@ -320,6 +296,30 @@ body.active {
     position: relative;
     border-radius: 50px;
     padding: 0px;
+  }
+  .modal-logo {
+    width: 100%;
+    height: 100%;
+    background: url("../images/favicon/modal.png") no-repeat center;
+    background-size: cover;
+    border-radius: 50px;
+  }
+  .modal-btn {
+    position: absolute;
+
+    text-align: center;
+    margin-top: 0px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    bottom: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #ffffff;
   }
 }
 
@@ -336,31 +336,15 @@ body.active {
     width: 60%;
     margin-left: 200px;
   }
-  .modal-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 55%;
-    text-align: center;
-    line-height: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 50px;
-    padding: 0px;
-  }
+ 
 }
-@media all and (max-width: 768px) {
-  .footer-inner {
-    justify-content: center;
-  }
+@media all and (max-width: 915px){
   .modal-main {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 55%;
+    width: 23%;
+    height: 30%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
@@ -369,21 +353,12 @@ body.active {
     border-radius: 50px;
     padding: 0px;
   }
-}
-@media all and (max-width: 748px) {
-  .modal-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    height: 50%;
-    text-align: center;
-    line-height: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  .modal-logo {
+    width: 100%;
+    height: 100%;
+    background: url("../images/favicon/modal.png") no-repeat center;
+    background-size: cover;
     border-radius: 50px;
-    padding: 0px;
   }
   .modal-btn {
     position: absolute;
@@ -394,22 +369,28 @@ body.active {
     line-height: 40px;
     border-radius: 30px;
     font-size: 14px;
-    bottom: 65px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 25%;
+    width: 45%;
     color: #fff;
     cursor: pointer;
     border: solid 1px #ffffff;
   }
 }
-@media all and (max-width: 666px) {
+@media all and (max-width: 768px) {
+  .footer-inner {
+    justify-content: center;
+  }
+  
+}
+@media all and (max-width: 748px) {
   .modal-main {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 55%;
+    width: 23%;
+    height: 30%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
@@ -418,6 +399,33 @@ body.active {
     border-radius: 50px;
     padding: 0px;
   }
+  .modal-logo {
+    width: 100%;
+    height: 100%;
+    background: url("../images/favicon/modal.png") no-repeat center;
+    background-size: cover;
+    border-radius: 50px;
+  }
+  .modal-btn {
+    position: absolute;
+
+    text-align: center;
+    margin-top: 0px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 12px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #ffffff;
+  }
+}
+@media all and (max-width: 666px) {
+ 
   .footer-inner {
     flex-direction: column;
   }
@@ -451,44 +459,35 @@ body.active {
     padding-left: 3%;
     cursor: pointer;
   }
-  .modal-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 47%;
-    text-align: center;
-    line-height: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 50px;
-    padding: 0px;
-  }
-<<<<<<< HEAD
+ 
   .insta-img > a {
    
     width: calc(100% /2 - 10px);
     height: 35vw;
     background-color: chartreuse;
   }
-=======
->>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 500px) {
   .modal-main {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 45%;
+    width: 30%;
+    height: 28%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
     align-items: center;
     position: relative;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 0px;
+  }
+  .modal-logo {
+    width: 100%;
+    height: 100%;
+    background: url("../images/favicon/modal.png") no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
   }
   .modal-btn {
     position: absolute;
@@ -497,16 +496,24 @@ body.active {
     margin-top: 0px;
     height: 40px;
     line-height: 40px;
-    border-radius: 30px;
-    font-size: 14px;
-    bottom: 55px;
+    border-radius: 40px;
+    font-size: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 30%;
+    width: 40%;
     color: #fff;
     cursor: pointer;
     border: solid 1px #ffffff;
   }
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 10px;
+    color: #aaa8a8;
+    cursor: pointer;
+}
   .footer-left-middle {
     width: 18%;
     display: flex;
@@ -553,15 +560,12 @@ body.active {
     opacity: 80%;
     cursor: pointer;
   }
-<<<<<<< HEAD
   .insta-img > a {
    
     width: calc(100% /1 );
     height: 60vw;
     background-color: chartreuse;
   }
-=======
->>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 393px) {
   .footer-wrap {
@@ -640,8 +644,8 @@ body.active {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 35%;
+    width: 70%;
+    height: 30%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
@@ -650,30 +654,29 @@ body.active {
     border-radius: 50px;
     padding: 0px;
   }
+  .modal-logo {
+    width: 100%;
+    height: 100%;
+    background: url("../images/favicon/modal.png") no-repeat center;
+    background-size: cover;
+    border-radius: 50px;
+  }
   .modal-btn {
     position: absolute;
 
     text-align: center;
     margin-top: 0px;
-    height: 50px;
+    height: 40px;
     line-height: 40px;
-    border-radius: 30px;
-    font-size: 19px;
-    bottom: 65px;
+    border-radius: 40px;
+    font-size: 12px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 25%;
+    width: 40%;
     color: #fff;
     cursor: pointer;
     border: solid 1px #ffffff;
-  }
-  .modal-close {
-    position: absolute;
-    top: 44px;
-    right: 20px;
-    font-size: 40px;
-    color: #aaa8a8;
-    cursor: pointer;
   }
   .footer-left {
     line-height: 38px;

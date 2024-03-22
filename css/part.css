@@ -2,7 +2,6 @@
 @import url(main.css);
 @import url(font.css);
 .header {
-<<<<<<< HEAD
     /* position: fixed; */
     width: 95%;
     min-height: 50px;
@@ -130,7 +129,6 @@
     justify-content: center;
     color: #fff;
   }
-=======
   /* position: fixed; */
   width: 95%;
   min-height: 50px;
@@ -296,7 +294,10 @@
 .rv-top1 p {
   font-size: 15px;
 }
-
+fieldset{
+  background-color: #fff;
+  text-align: left;
+}
 #imageeye {
   width: 60%;
   margin: ;
@@ -304,5 +305,38 @@
 .rv-wrap {
   display: flex;
   margin: auto;
+  justify-content: center;
+  gap:7%;
+  margin-top: 8%;
 }
->>>>>>> 56be046f30be49c242d44d611581261dca99ea70
+.review-right{
+  line-height: 2;
+}
+.review-right p{
+  font-size: 1.8vw;
+  
+}
+#title{
+  height: 20px;
+}
+#rating{
+  height: 20px;
+
+}
+#content{
+  width: 400px;
+  height: 300px;
+}
+#name{
+  height: 20px;
+}
+#date{
+  height: 20px;
+  font-size: 18px;
+}
+#send{
+  margin-top: 20px;
+  font-size: 18px;
+  width: 100px;
+  
+}
