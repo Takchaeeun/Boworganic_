@@ -81,6 +81,8 @@ body.active {
 }
 /* instagram영역 */
 .instagram-wrap {
+  width: 100%;
+  height: auto;
 }
 .insta-title {
   text-align: center;
@@ -102,10 +104,10 @@ body.active {
   font-size: 1.8rem;
   text-align: center;
 }
-.insta-viewmore span a {
+.insta-viewmore #load-more {
   color: #7d7d7d;
 }
-.insta-viewmore span a img {
+.insta-viewmore #load-more img {
   display: inline-block;
   margin-bottom: 1.7px;
   width: 1.2%;
@@ -113,6 +115,7 @@ body.active {
   align-items: center;
 }
 .insta-img {
+ position: relative;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -122,21 +125,43 @@ body.active {
   gap: 10px;
   margin: 0 auto;
 }
-.insta-img a {
+.insta-img > a {
+  display: block;
   width: calc(100% / 4 - 10px);
-  height: 200px;
+  height: 25vw;
+  max-height: 280px;
+ /* height: 100%; */
   /* display: flex; */
   position: relative;
   overflow: hidden;
   border-radius: 15%;
 }
-.insta-img a img {
+.write-1{
+  display: none;
+}
+.insta-img> a >.write-1{
+  width: 100%;
+  height: 100%;
+}
+.insta-img> a >.write-1 >img {
   /* transform: translate(-50%, -50%); */
   width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
+<<<<<<< HEAD
+.insta-img> a .write-2 {
+
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+
+}
+.insta-img> a .write-2 
+=======
 .write-1 {
   display: none;
 }
@@ -161,6 +186,7 @@ body.active {
   transform: translate(-50%, -50%);
   z-index: 999;
 }
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 .insta-ft {
   position: relative;
   width: 100%;
@@ -439,6 +465,15 @@ body.active {
     border-radius: 50px;
     padding: 0px;
   }
+<<<<<<< HEAD
+  .insta-img > a {
+   
+    width: calc(100% /2 - 10px);
+    height: 35vw;
+    background-color: chartreuse;
+  }
+=======
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 500px) {
   .modal-main {
@@ -512,11 +547,21 @@ body.active {
   .footer-bt p {
     font-size: 12px;
   }
+
   .load {
     font-size: 16px;
     opacity: 80%;
     cursor: pointer;
   }
+<<<<<<< HEAD
+  .insta-img > a {
+   
+    width: calc(100% /1 );
+    height: 60vw;
+    background-color: chartreuse;
+  }
+=======
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 393px) {
   .footer-wrap {
