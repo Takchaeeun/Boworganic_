@@ -228,7 +228,7 @@
 .main .swiper-slide .banner {
   width: 100%;
 }
-.main .swiper-slide .mb-banner{
+.main .swiper-slide .mb-banner {
   width: 100%;
   display: none;
 }
@@ -325,18 +325,21 @@
   line-height: 1.5;
 }
 .organic .promotion-info .buy {
-  font-size: 1.8vw;
-  background: #77bd82;
-  border: none;
-  color: #fff;
-  padding: 2%;
-  width: 50%;
+ width: 50%;
+  display: block;
+  line-height:1.5;
   margin-top: 20%;
+  font-size: 2.5rem;
+  /* font-size: 25px; */
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  /* padding: 23px 80px; */
+  padding:3%;
+  border-radius: 50px;
+  border: 1px solid #77bd82;
+  background-color: #77bd82;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
 }
 .organic .promotion-info .buy a {
   color: #fff;
@@ -471,13 +474,13 @@
   .logo a img {
     width: 100%;
   }
-    .main .swiper-slide .banner {
-      width: 100%;
-      display: none;
-    }
-    .main .swiper-slide .mb-banner{
-      width: 100%;
-      display: block;
+  .main .swiper-slide .banner {
+    width: 100%;
+    display: none;
+  }
+  .main .swiper-slide .mb-banner {
+    width: 100%;
+    display: block;
   }
   .main .swiper-slide .sub {
     font-size: 1.5rem;
@@ -522,7 +525,7 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .organic .swiper-slide{
+  .organic .swiper-slide {
     width: 100%;
     height: 100%;
   }
@@ -566,6 +569,38 @@
     color: #77bd82;
   }
   /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
+  }
 }
 @media screen and (max-width: 409px) {
   .menu {
@@ -584,13 +619,13 @@
   .logo a img {
     width: 100%;
   }
-    .main .swiper-slide .banner {
-      width: 100%;
-      display: none;
-    }
-    .main .swiper-slide .mb-banner{
-      width: 100%;
-      display: block;
+  .main .swiper-slide .banner {
+    width: 100%;
+    display: none;
+  }
+  .main .swiper-slide .mb-banner {
+    width: 100%;
+    display: block;
   }
   .main .swiper-slide .sub {
     font-size: 1.2rem;
@@ -635,7 +670,7 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .organic .swiper-slide{
+  .organic .swiper-slide {
     width: 100%;
     height: 100%;
   }
@@ -677,6 +712,39 @@
   }
   .copun span {
     color: #77bd82;
+  }
+  /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
   }
 }
 @media screen and (max-width: 320px) {
@@ -696,17 +764,17 @@
   .logo a img {
     width: 100%;
   }
-  .main .swiper-slide{
+  .main .swiper-slide {
     width: 100vw;
   }
   .main .swiper-slide .banner {
     width: 100%;
     display: none;
   }
-  .main .swiper-slide .mb-banner{
+  .main .swiper-slide .mb-banner {
     width: 100%;
     display: block;
-}
+  }
   .main .swiper-slide .sub {
     font-size: 1.2rem;
   }
@@ -766,7 +834,7 @@
   }
   .organic .swiper-button-prev {
     display: none;
-  }  
+  }
   /* 모바일 쿠폰 */
   .mb-copun {
     padding: 20px;
@@ -792,5 +860,38 @@
   }
   .copun span {
     color: #77bd82;
+  }
+  /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 70vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
   }
 }
