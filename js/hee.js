@@ -492,4 +492,21 @@ $(document).ready(function () {
       nextPage.fadeIn(400);
     });
   });
+
+  // 미디어쿼리 적용
+  $(window).resize(function () {
+    if ($(window).width() <= 720) {
+      // 창의 너비가 720px 이하일 때 <br> 태그 추가
+      $("<br>").insertBefore("#page4 .question-page-container h2 span");
+    } else {
+      // 창의 너비가 720px 초과일 때 <br> 태그 제거
+      $("#page4 .question-page-container h2 br").remove();
+    }
+  });
+
+  // 페이지 로드 시 초기 작업
+  if ($(window).width() <= 720) {
+    // 창의 너비가 720px 이하일 때 <br> 태그 추가
+    $("<br>").insertBefore("#page4 .question-page-container h2 span");
+  }
 });
