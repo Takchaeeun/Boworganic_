@@ -21,13 +21,13 @@ window.onload = function () {
     breakpoints: {
       0: {
         spaceBetween: 20,
-        slidesPerView: 2.2,
+        slidesPerView: 1.5,
       },
-      380: {
-        spaceBetween: 32,
+      480: {
+        spaceBetween: 25,
         slidesPerView: 2.6,
       },
-      760: {
+      761: {
         spaceBetween: 32,
         slidesPerView: 3.6,
       },
