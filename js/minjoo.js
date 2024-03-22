@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   AOS.init();
   //상단스와이퍼
   var bow = new Swiper(".bow", {
-    spaceBetween: 30,
+    // spaceBetween: 30,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -26,6 +26,21 @@ window.addEventListener("load", function () {
   });
   //   top 버튼 스크롤 기능
   const topBtn = document.getElementById("top-btn");
+  const shopBtn = document.getElementById("shop-btn");
+  shopBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (window.scrollY == 5000) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
 
   topBtn.addEventListener("click", function (event) {
     event.preventDefault();
@@ -34,19 +49,9 @@ window.addEventListener("load", function () {
 
     if (window.scrollY == 0) {
       window.scrollTo({
-        top: 1000,
+        top: 5000,
         behavior: "smooth",
       });
-    // } else if (window.scrollY == 1000) {
-    //   window.scrollTo({
-    //     top: 2000,
-    //     behavior: "smooth",
-    //   });
-    // } else if (window.scrollY == 0) {
-    //   window.scrollTo({
-    //     top: 4000,
-    //     behavior: "smooth",
-    //   });
     } else {
       window.scrollTo({
         top: 5000,
@@ -66,12 +71,24 @@ window.addEventListener("load", function () {
       });
     });
   });
-//   document.addEventListener('DOMContentLoaded', function () {
-//     const hamburgerMenu = document.querySelector('.hamburger-menu');
-//     const menuLines = document.querySelectorAll('.line');
-    
-//     hamburgerMenu.addEventListener('click', function () {
-//         hamburgerMenu.classList.toggle('active');
-//     });
-// });
+  //   document.addEventListener('DOMContentLoaded', function () {
+  //     const hamburgerMenu = document.querySelector('.hamburger-menu');
+  //     const menuLines = document.querySelectorAll('.line');
+
+  //     hamburgerMenu.addEventListener('click', function () {
+  //         hamburgerMenu.classList.toggle('active');
+  //     });
+  // });
+});
+$(document).ready(function () {
+  $(document).ready(function () {
+    $(".mb-close").click(() => {
+      $(".menu").fadeOut(500);
+      $(".mb-menu").show();
+    });
+    $(".mb-menu").click(() => {
+      $(".menu").fadeIn(500);
+      $(".mb-menu").hide();
+    });
+  });
 });

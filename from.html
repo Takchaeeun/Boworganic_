@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="css/hee.css" />
     <link rel="stylesheet" href="css/from.css" />
 
+    <!-- 제이쿼리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
@@ -56,7 +58,7 @@
   <body>
     <!-- top button -->
     <div class="top-button">
-      <a href="#" class="shop-btn"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#" class="shop-btn" id="shop-btn"><i class="fa-solid fa-arrow-up"></i></a>
       <a href="#" class="top-btn" id="top-btn">
         <i class="fa-solid fa-arrow-down" id="top-btn-img"></i>
       </a>
@@ -88,6 +90,7 @@
               <a href="#instar"><span>제품후기</span></a>
             </li>
           </ul>
+          <div class="mb-close">X</div>
         </div>
         <!-- 회원가입 -->
         <div class="header-right">
@@ -108,7 +111,7 @@
         <div class="swiper bow">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="images/minju/01.jpg" alt="배너1" class="banner">
+              <img src="images/minju/01.jpg" alt="배너1" class="banner" />
               <img src="images/minju/000.png" alt="모바일배너1" class="mb-banner" />
               <div class="main-txt">
                 <p class="sub">Nature's nourishment</p>
@@ -143,9 +146,7 @@
         </div>
         <div class="detail-form-left">
           <h1>강아지 사료 구매하기</h1>
-          <p>
-            <strong>Price | <span>27,000</span></strong>
-          </p>
+          <h6><strong>Price | <span>27,000</span></strong></h6>
           <p>배송비 2,500원 ( 30,000 원 이상 무료배송 )<br />자체 배송 | 배송 평균 6일 이내 배송</p>
           <form name="order" class="order">
             <fieldset>
@@ -169,15 +170,13 @@
                     <button class="buy">장바구니</button>
                     <button class="sold">구매하기</button>
                   </div>
-                 
                 </div>
               </div>
             </fieldset>
           </form>
         </div>
-       
       </div>
-<hr>
+      <hr />
       <div class="information">
         <ul>
           <li><a href="#">상세정보</a></li>

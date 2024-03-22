@@ -263,11 +263,11 @@
   cursor: pointer;
 }
 .detail-form {
-  width: 80%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 5%;
   margin: 100px auto;
 }
 .detail-form-left {
@@ -288,9 +288,26 @@
   font-size: 2.5vw;
   line-height: 2;
 }
+.detail-form-left h6 {
+  font-weight: bold;
+  font-size: 1.8vw;
+  padding: 1%;
+}
 
 .detail-form-left span {
   color: #77bd82;
+}
+.detail-form-left span::after {
+  position: relative;
+  content: "10%할인";
+  color: #fff;
+  background-color: firebrick;
+  border-radius: 50px;
+  padding: 1%;
+  margin-left: 1%;
+  font-size: 2rem;
+  top: -5px;
+  left: 0;
 }
 .detail-form-left p {
   font-size: 1.5vw;
@@ -308,12 +325,12 @@ legend ul {
   text-align: center;
 }
 label {
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 select {
   outline: none;
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 .number-input .m,
 .number-input .p {
@@ -334,23 +351,21 @@ select {
   padding-bottom: 5%;
 }
 .buy-form .buy {
-  padding: 1%;
-  width: 10%;
+  padding: 2%;
   border: 2px solid #77bd82;
   background-color: #fff;
   color: #77bd82;
-  font-size: 1vw;
-  border-radius: 40px;
+  font-size: 1.5vw;
+  border-radius: 50px;
   cursor: pointer;
 }
 .buy-form .sold {
-  padding: 1%;
-  width: 10%;
+  padding: 2%;
   border: 2px solid #77bd82;
   background-color: #77bd82;
   color: #fff;
-  font-size: 1vw;
-  border-radius: 40px;
+  font-size: 1.5vw;
+  border-radius: 50px;
   cursor: pointer;
 }
 .information ul {
@@ -405,7 +420,7 @@ select {
     padding-top: 30%;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
+ 
     font-size: 3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -424,7 +439,24 @@ select {
     margin: 30px auto;
   }
   .detail-form-left h1 {
+    font-size: 4vw;
+  }
+  .detail-form-left h6 {
+    font-weight: bold;
     font-size: 3vw;
+    padding: 2%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 2rem;
+    top: -3px;
+    left: 0;
   }
   .detail-form-left span {
     color: #77bd82;
@@ -434,32 +466,32 @@ select {
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
-    font-size: 1.5rem;
+    padding: 5%;
+    font-size: 3rem;
   }
   legend ul {
     text-align: center;
   }
   label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   select {
     outline: none;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .number-input .m,
   .number-input .p {
     margin-top: 2%;
     padding: 3px;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .number-input input {
     text-align: center;
     outline: none;
     width: 10%;
     height: 1;
-    font-size: 1.3rem;
+    font-size: 2rem;
     line-height: 1;
   }
   .buy-form .buy {
@@ -521,7 +553,6 @@ select {
     padding-top: 40%;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
     font-size: 3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -542,15 +573,29 @@ select {
   .detail-form-left h1 {
     font-size: 5vw;
   }
-  .detail-form-left span {
-    color: #77bd82;
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 2rem;
+    top: -3px;
+    left: 0;
   }
   .detail-form-left p {
     font-size: 3vw;
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
+    padding: 5%;
     font-size: 1.5rem;
   }
   legend ul {
@@ -637,7 +682,6 @@ select {
     padding-top: 50%;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
     font-size: 3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -658,6 +702,23 @@ select {
   .detail-form-left h1 {
     font-size: 5vw;
   }
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 1.5rem;
+    top: -3px;
+    left: 0;
+  }
   .detail-form-left span {
     color: #77bd82;
   }
@@ -666,7 +727,7 @@ select {
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
+    padding: 5%;
     font-size: 1.5rem;
   }
   legend ul {
@@ -763,7 +824,6 @@ select {
     font-size: 2rem;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
     font-size: 3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -786,6 +846,23 @@ select {
   .detail-form-left h1 {
     font-size: 7vw;
   }
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 1.5rem;
+    top: -3px;
+    left: 0;
+  }
   .detail-form-left span {
     color: #77bd82;
   }
@@ -795,8 +872,8 @@ select {
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
-    font-size:1.5rem;
+    padding: 5%;
+    font-size: 1.8rem;
   }
   legend ul {
     text-align: center;
@@ -807,7 +884,7 @@ select {
   select {
     outline: none;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .number-input .m,
   .number-input .p {
@@ -820,7 +897,7 @@ select {
     outline: none;
     width: 10%;
     height: 1;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1;
   }
   .buy-form .buy {
@@ -853,6 +930,39 @@ select {
   .infoimg img {
     padding-top: 5%;
     width: 70%;
+  }
+  /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
   }
 }
 @media screen and (max-width: 409px) {
@@ -894,7 +1004,6 @@ select {
     font-size: 1.2rem;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
     font-size: 2.3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -917,8 +1026,22 @@ select {
   .detail-form-left h1 {
     font-size: 7vw;
   }
-  .detail-form-left span {
-    color: #77bd82;
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 1.3rem;
+    top: -3px;
+    left: 0;
   }
   .detail-form-left p {
     word-break: keep-all;
@@ -926,8 +1049,8 @@ select {
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
-    font-size:1.5rem;
+    padding: 5%;
+    font-size: 1.5rem;
   }
   legend ul {
     text-align: center;
@@ -938,7 +1061,7 @@ select {
   select {
     outline: none;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .number-input .m,
   .number-input .p {
@@ -951,7 +1074,7 @@ select {
     outline: none;
     width: 10%;
     height: 1;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1;
   }
   .buy-form .buy {
@@ -984,6 +1107,39 @@ select {
   .infoimg img {
     padding-top: 5%;
     width: 70%;
+  }
+  /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1025,7 +1181,6 @@ select {
     font-size: 1.2rem;
   }
   .main .swiper-slide .smain {
-    font-weight: bold;
     font-size: 2.3rem;
     word-break: keep-all;
     line-height: 1.3;
@@ -1046,30 +1201,46 @@ select {
     justify-content: center;
   }
   .detail-form-left h1 {
-    font-size: 7vw;
+    font-size: 8vw;
+  }
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 6vw;
+    padding: 3%;
+  }
+  .detail-form-left span::after {
+    position: relative;
+    content: "10%할인";
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 50px;
+    padding: 1%;
+    margin-left: 1%;
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
   }
   .detail-form-left span {
     color: #77bd82;
   }
   .detail-form-left p {
-    word-break: keep-all;
-    font-size: 3.5vw;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1;
   }
   legend {
-    padding: 1%;
-    font-size:1.5rem;
+    padding: 5%;
+    font-size: 1.5rem;
   }
   legend ul {
     text-align: center;
   }
   label {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   select {
     outline: none;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .number-input .m,
   .number-input .p {
@@ -1115,5 +1286,38 @@ select {
   .infoimg img {
     padding-top: 5%;
     width: 70%;
+  }
+  /* 모바일메뉴 */
+  .header {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 70vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+  }
+  .menu > ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+  }
+  .menu > ul > li > a {
+    font-size: 5vw;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .mb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: large;
   }
 }
