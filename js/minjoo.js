@@ -66,4 +66,12 @@ window.addEventListener("load", function () {
       });
     });
   });
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const hamburgerMenu = document.querySelector('.hamburger-menu');
+//     const menuLines = document.querySelectorAll('.line');
+    
+//     hamburgerMenu.addEventListener('click', function () {
+//         hamburgerMenu.classList.toggle('active');
+//     });
+// });
 });
