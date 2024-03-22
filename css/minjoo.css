@@ -208,6 +208,9 @@
   justify-content: center;
   color: #fff;
 }
+.mb-close{
+  display: none;
+}
 /* 모바일 쿠폰 */
 .mb-copun {
   display: none;
@@ -287,6 +290,7 @@
 }
 /* 프로모션 */
 .promotion {
+  padding: 3%;
   background-color: #77bd8231;
 }
 .organic {
@@ -325,9 +329,7 @@
   line-height: 1.5;
 }
 .organic .promotion-info .buy {
- width: 50%;
-  display: block;
-  line-height:1.5;
+  width: 45%;
   margin-top: 20%;
   font-size: 2.5rem;
   /* font-size: 25px; */
@@ -335,7 +337,7 @@
   font-weight: 600;
   color: #fff;
   /* padding: 23px 80px; */
-  padding:3%;
+  padding: 3%;
   border-radius: 50px;
   border: 1px solid #77bd82;
   background-color: #77bd82;
@@ -505,8 +507,9 @@
   }
   .organic .promotion-info .buy {
     font-size: 2rem;
-    padding: 4%;
-    width: 100%;
+    padding: 3%;
+    width: 60%;
+    margin: 15% 50px;
   }
   .organic .promotion-info .title {
     font-size: 3rem;
@@ -534,7 +537,7 @@
     /* height: 30%; */
   }
   .promotion {
-    padding: 20px;
+    padding: 50px;
   }
   .organic .swiper-button-next {
     display: none;
@@ -544,7 +547,7 @@
   }
   /* 모바일 쿠폰 */
   .mb-copun {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -558,7 +561,7 @@
     border-radius: 40px;
     background-color: #fff;
     color: #000;
-    width: 80%;
+    width: 60%;
     outline: none;
     border: 2px solid #77bd82;
     height: 40px;
@@ -570,7 +573,7 @@
   }
   /* 모바일메뉴 */
   .header {
-    width: 100%;
+    width: 90%;
   }
   .menu {
     position: relative;
@@ -580,13 +583,18 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
   }
   .menu > ul {
+    position: absolute;
+    top: 50px;
     display: flex;
-    height: 50%;
+    height: 30%;
     flex-direction: column;
+  }
+  .menu > ul > li {
+    height: 50%;
   }
   .menu > ul > li > a {
     font-size: 5vw;
@@ -600,6 +608,12 @@
     right: 20px;
     color: #fff;
     font-size: large;
+  }
+  .mb-close{
+    display: none;
+  }
+  .mb-close{
+    display: block;
   }
 }
 @media screen and (max-width: 409px) {
@@ -645,13 +659,14 @@
     display: none;
   }
   .organic .swiper-slide img {
-    width: 50%;
+    width: 60%;
     display: block;
   }
   .organic .promotion-info .buy {
     font-size: 2rem;
-    padding: 4%;
-    width: 100%;
+    padding: 3%;
+    width: 60%;
+    margin: 15% 50px;
   }
   .organic .promotion-info .title {
     font-size: 2.5rem;
@@ -689,7 +704,7 @@
   }
   /* 모바일 쿠폰 */
   .mb-copun {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -715,23 +730,28 @@
   }
   /* 모바일메뉴 */
   .header {
-    width: 100%;
+    width: 90%;
   }
   .menu {
     position: relative;
     width: 100%;
     display: block;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
   }
   .menu > ul {
+    position: absolute;
+    top: 50px;
     display: flex;
-    height: 50%;
+    height: 30%;
     flex-direction: column;
+  }
+  .menu > ul > li {
+    height: 50%;
   }
   .menu > ul > li > a {
     font-size: 5vw;
@@ -745,6 +765,12 @@
     right: 20px;
     color: #fff;
     font-size: large;
+  }
+  .mb-close{
+    display: none;
+  }
+  .mb-close{
+    display: block;
   }
 }
 @media screen and (max-width: 320px) {
@@ -798,8 +824,9 @@
   }
   .organic .promotion-info .buy {
     font-size: 2rem;
-    padding: 4%;
-    width: 100%;
+    padding: 3%;
+    width: 80%;
+    margin: 15% 20px;
   }
   .organic .promotion-info .title {
     font-size: 2.5rem;
@@ -827,7 +854,7 @@
     /* height: 30%; */
   }
   .promotion {
-    padding: 20px;
+    padding: 30px;
   }
   .organic .swiper-button-next {
     display: none;
@@ -837,7 +864,7 @@
   }
   /* 모바일 쿠폰 */
   .mb-copun {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -863,23 +890,28 @@
   }
   /* 모바일메뉴 */
   .header {
-    width: 100%;
+    width: 90%;
   }
   .menu {
     position: relative;
     width: 100%;
     display: block;
-    height: 70vh;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
   }
   .menu > ul {
+    position: absolute;
+    top: 50px;
     display: flex;
-    height: 50%;
+    height: 20%;
     flex-direction: column;
+  }
+  .menu > ul > li {
+    height: 50%;
   }
   .menu > ul > li > a {
     font-size: 5vw;
@@ -893,5 +925,8 @@
     right: 20px;
     color: #fff;
     font-size: large;
+  }
+  .mb-close{
+    display: block;
   }
 }
