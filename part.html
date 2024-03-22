@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="css/eun.css" />
     <link rel="stylesheet" href="css/hee.css" />
     <link rel="stylesheet" href="css/from.css" />
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="css/part.css" />
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -129,6 +133,7 @@
                 <p class="sub">Organic tailored meal for pets</p>
                 <h1 class="smain">내 반려견에게 맞는 맞춤식단을 찾아보세요</h1>
                 <!-- <button class="button" id="promo" data-scroll="1700">제품구매하기</button> -->
+<<<<<<< HEAD
               </div>
               <form action="">
                 
@@ -139,5 +144,116 @@
       </main>
     </div>
    
+=======
+              </div></main>
+              <!-- 후기작성 -->
+              <div class="review-wrap">
+                <div class="review-top">
+                  <h1>REVIEW</h1>
+                 
+                  <span>후기작성</span> 
+                  <hr>
+                </div>
+                <div class="review-top-img">
+                  <div class="rv-top1">
+                  <img src="images/favicon/car.png" alt="배송조회">
+                  <p>배송조회</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/call.png" alt="장바구니">
+                  <p>고객센터</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/cash.png" alt="마일리지">
+                  <p>마일리지</p>
+                </div>
+                <div class="rv-top1">
+                  <img src="images/favicon/shopping.png" alt="장바구니">
+                  <p>장바구니</p>
+                </div>
+                </div>
+                <div class="rv-wrap">
+                <div class="review-bt-img">
+                  <img src="images/minju/1.png" alt="사료" id="imageeye" />
+                <form name="order" class="order">
+                  <fieldset>
+                    <legend>주문 정보</legend>
+                    <label for="class" class="reg">사료선택 </label>
+                    <select name="major" id="major" onchange="fites(this.value)">
+                      <option>---- 사료 선택 ----</option>
+                      <option value="eye">강아지 관절 & 눈 사료 2KG</option>
+                      <option value="gan">강아지 장&간 사료 2KG</option>
+                      <option value="boo">강아지 피부 & 알러지 사료 2KG</option>
+                      <option value="di">강아지 다이어트 & 면역 사료 2KG</option>
+                      <option value="zero">6-ZERO 강아지 유기농 사료 2KG</option>
+                    </select>
+              </div>
+              <div class="review-right">
+                <p>후기작성</p>
+                <form action="/submit_review" method="post">
+                  <div>
+                      <label for="title">제목:</label><br>
+                      <input type="text" id="title" name="title" required><br>
+                  </div>
+              
+                  <div>
+                      <label for="rating">별점:</label><br>
+                      <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                  </div>
+              
+                  <div>
+                      <label for="content">내용:</label><br>
+                      <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+                  </div>
+              
+                  <div>
+                      <label for="name">아이디:</label><br>
+                      <input type="text" id="name" name="name" required><br>
+                  </div>
+              
+                 
+              
+                  <div>
+                      <label for="date">날짜:</label><br>
+                      <input type="date" id="date" name="date" required><br>
+                  </div>
+              
+                  <div>
+                      <input type="submit" value="제출">
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <script>
+      function fites(xx) {
+        alert("사료가 선택되었습니다");
+        if (xx == "eye") {
+          document.getElementById("imageeye").src = "images/minju/1.png";
+        } else if (xx == "gan") document.getElementById("imageeye").src = "images/minju/2.png";
+        else if (xx == "boo") document.getElementById("imageeye").src = "images/minju/3.png";
+        else if (xx == "di") document.getElementById("imageeye").src = "images/minju/4.png";
+        else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
+      }
+      // JavaScript로 숫자를 증가하거나 감소시키는 함수
+      function adjustNumber(delta, event) {
+        event.preventDefault(); // 버튼의 기본 동작 중지
+
+        var inputField = document.getElementById("numberInput");
+        var currentValue = parseInt(inputField.value);
+
+        // 값이 0 이하로 가지 않도록 조정
+        var newValue = currentValue + delta;
+        if (newValue < 0) {
+          newValue = 0;
+        }
+
+        inputField.value = newValue;
+      }
+    </script>
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
   </body>
 </html>

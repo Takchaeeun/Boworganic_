@@ -150,6 +150,7 @@ body.active {
 
   object-fit: cover;
 }
+<<<<<<< HEAD
 .insta-img> a .write-2 {
 
   /* display: none; */
@@ -160,6 +161,32 @@ body.active {
 
 }
 .insta-img> a .write-2 
+=======
+.write-1 {
+  display: none;
+}
+.insta-img a:hover img {
+  scale: 1.2;
+  filter: blur(2px), brightness(0.1);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+}
+
+.insta-img a:hover .write-1 {
+  width: 70%;
+  height:45%;
+  font-size: 14.5px;
+  line-height: 18px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 .insta-ft {
   position: relative;
   width: 100%;
@@ -438,12 +465,15 @@ body.active {
     border-radius: 50px;
     padding: 0px;
   }
+<<<<<<< HEAD
   .insta-img > a {
    
     width: calc(100% /2 - 10px);
     height: 35vw;
     background-color: chartreuse;
   }
+=======
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 500px) {
   .modal-main {
@@ -523,12 +553,15 @@ body.active {
     opacity: 80%;
     cursor: pointer;
   }
+<<<<<<< HEAD
   .insta-img > a {
    
     width: calc(100% /1 );
     height: 60vw;
     background-color: chartreuse;
   }
+=======
+>>>>>>> 56be046f30be49c242d44d611581261dca99ea70
 }
 @media all and (max-width: 393px) {
   .footer-wrap {
