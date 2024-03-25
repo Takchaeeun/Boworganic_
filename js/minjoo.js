@@ -80,15 +80,20 @@ window.addEventListener("load", function () {
   //     });
   // });
 });
-$(document).ready(function () {
-  $(document).ready(function () {
-    $(".mb-close").click(() => {
-      $(".menu").fadeOut(500);
-      $(".mb-menu").show();
-    });
-    $(".mb-menu").click(() => {
-      $(".menu").fadeIn(500);
-      $(".mb-menu").hide();
-    });
-  });
+$(document).ready(function(){
+  // 화면 크기 변경 시 이벤트를 처리하는 함수
+
+     
+       
+          $(".mb-close").click(() => {
+             
+              $(".mb-menu").show();
+          });
+          $(".mb-menu").click(() => {
+              $(".menu").slideToggle(500);
+          });
+     
+    
+
+
 });

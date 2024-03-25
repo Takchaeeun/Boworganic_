@@ -47,14 +47,13 @@ window.addEventListener("load", function () {
   });
 });
 $(document).ready(function () {
-  $(document).ready(function () {
-    $(".mb-close").click(() => {
-      $(".menu").fadeOut(500);
-      $(".mb-menu").show();
-    });
-    $(".mb-menu").click(() => {
-      $(".menu").fadeIn(500);
-      $(".mb-menu").hide();
-    });
+  $(".menu").hide();
+  $(".mb-close").click(() => {
+    $(".menu").fadeOut(500);
+    $(".mb-menu").show();
+  });
+  $(".mb-menu").click(() => {
+    $(".menu").slideToggle(500);
   });
 });
+
