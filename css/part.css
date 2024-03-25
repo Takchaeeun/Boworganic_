@@ -331,12 +331,17 @@ fieldset{
   height: 20px;
 }
 #date{
-  height: 20px;
+  height: 25px;
   font-size: 18px;
 }
 #send{
+  height: 25px;
   margin-top: 20px;
   font-size: 18px;
   width: 100px;
-  
+  background-color: #77bd82;
+  border: #77bd82;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 }

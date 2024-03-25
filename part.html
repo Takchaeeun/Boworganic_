@@ -176,33 +176,27 @@
               </div>
               <div class="review-right">
                 <p>후기작성</p>
-                <form action="/submit_review" method="post">
+                <form action="/submit_review" method="post"> 
+                   <div>
+                      <label for="date">날짜:</label><br>
+                      <input type="date" id="date" name="date" required><br>
+                  </div>
                   <div>
                       <label for="title">제목:</label><br>
                       <input type="text" id="title" name="title" required><br>
                   </div>
               
-                  <div>
-                      <label for="rating">별점:</label><br>
-                      <input type="number" id="rating" name="rating" min="1" max="5" required><br>
-                  </div>
-              
+                 
                   <div>
                       <label for="content">내용:</label><br>
                       <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
                   </div>
               
-                  <div>
-                      <label for="name">아이디:</label><br>
-                      <input type="text" id="name" name="name" required><br>
-                  </div>
+                
               
                  
               
-                  <div>
-                      <label for="date">날짜:</label><br>
-                      <input type="date" id="date" name="date" required><br>
-                  </div>
+                
               
                   <div>
                       <input type="submit" value="제출" id="send">

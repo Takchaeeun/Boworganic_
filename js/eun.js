@@ -33,7 +33,7 @@ $(document).ready(function () {
     { image: "images/favicon/insta5.jpg", title: "급하게 주문해도 급하게 배송되니 정말 감사합니다 ~ 강아지가 잘먹어요~ 늘 구매하는 제품입니다", ID: "lovel***", tag: "#빠른배송 #매번구매중" },
     { image: "images/favicon/insta6.jpg", title: "좋아요 14살 밥투정 이 사료로 드디어 마무리. 유독 이 사료만 밥투정 없이 아주 맛있게 먹네요~ 굿", ID: " dogr***", tag: "#재구매" },
     { image: "images/favicon/insta7.jpg", title: "이제는 먼저 사료달라고 밥그릇들고 기다리네요 유기농이라 믿고먹이기도 너무좋아요", ID: "odjl***", tag: "#바우오가닉최공" },
-    { image: "images/favicon/insta8.jpg", title: "지난번에 큰개 먹이려고 구입했는데 대형견이랑 강아지 둘다 잘먹어서 또 구매했어요. 배송도 빨라요.", ID: "988r***", description: "#대형견 #사료" },
+    { image: "images/favicon/insta8.jpg", title: "지난번에 큰개 먹이려고 구입했는데 대형견이랑 강아지 둘다 잘먹어서 또 구매했어요. 배송도 빨라요.", ID: "988r***", tag: "#대형견 #사료" },
   ];
 
   // write-1 이미지에 호버했을 때
@@ -63,7 +63,7 @@ $(document).ready(function () {
       $(".insta-img").append(productHtml);
     });
   });
-
   // 페이지 로드 시 초기 상품 표시
   $("#load-more").trigger("click");
+  
 });
