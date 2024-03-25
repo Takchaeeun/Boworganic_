@@ -345,7 +345,7 @@
 .gender-info-button input {
   background: #fff;
   cursor: pointer;
-  border: 2px solid #c8c8c8;
+  border: 1px solid #a1a1a1;
 }
 
 .gender-info-button input:hover {
@@ -469,7 +469,7 @@
   align-items: center;
   width: 30%;
   /* max-width: 390px; */
-  border: 1.5px solid #c0c0c0;
+  border: 1.5px solid #a1a1a1;
   background-color: #fff;
   /* padding: 15px 10px; */
   padding: 1.5% 0;
@@ -508,7 +508,7 @@
 .toggleBtn {
   font-size: 2rem;
   /* font-size: 20px; */
-  border: 1.5px solid #c0c0c0;
+  border: 1px solid #a1a1a1;
   text-align: center;
   display: flex;
   /* flex-direction: row; */
@@ -587,7 +587,7 @@
   width: 100%;
   height: 100%;
   padding: 5% 0;
-  border: 2px solid #a1a1a1;
+  border: 1px solid #a1a1a1;
   background-color: #fff;
   cursor: pointer;
 }
@@ -660,13 +660,20 @@
 #page4 .question-btn-wrap {
   display: flex;
   align-items: center;
-
+  /* overflow: hidden; */
   position: relative;
+  margin: 0;
+  padding-top: 14.5%;
+  padding-bottom: 1%;
+}
+
+#page4 .page4_mobile_txt {
+  display: none;
 }
 
 #page4 .question-btn {
   max-height: 480px;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 50%;
   display: flex;
   align-items: center;
@@ -682,7 +689,7 @@
   max-width: 580px;
   /* border: 1.5px solid #c0c0c0; */
   background-color: #fff;
-  padding: 2.5% 2.3%;
+  padding: 4.2% 2.3%;
   margin-bottom: 1.5%;
   cursor: pointer;
   justify-content: left;
@@ -721,7 +728,7 @@
 }
 
 .fit-result h2#recommendTitle {
-  font-size: 70px;
+  font-size: 7.5737vw;
   font-weight: 800;
   text-align: center;
   margin: 5.5% 0;
@@ -729,6 +736,10 @@
 
 .fit-result h2 > span {
   color: #77bd82;
+}
+
+.fit-result h3.reasonTitle {
+  font-size: 2.8684vw;
 }
 
 .result-detail {
@@ -1215,10 +1226,14 @@ button.news-more-all {
 
   /* 맞춤사료 선택지 */
   .question-page-container h2 {
-    font-size: 6.0632vw;
+    font-size: 6.7917vw;
   }
 
   /* #page1 */
+  .question-btn {
+    padding-top: 12%;
+  }
+
   #page1 .question-btn > button {
     font-size: 1.8421vw;
   }
@@ -1235,6 +1250,14 @@ button.news-more-all {
     width: 78%;
   }
 
+  #page2 .question-btn span {
+    font-size: 3.0421vw;
+  }
+
+  #page2 .question-btn span.kg {
+    font-size: 2.0676vw;
+  }
+
   #page3 .question-btn {
     width: 57%;
   }
@@ -1245,6 +1268,9 @@ button.news-more-all {
 
   #page4 .question-btn {
     width: 57%;
+    position: absolute;
+    top: 10px;
+    height: 80%;
   }
 
   #page4 .question-btn .toggleBtn {
@@ -1252,6 +1278,10 @@ button.news-more-all {
   }
 
   /* 맞춤사료 결과페이지 */
+
+  .result-detail {
+    margin-top: 3%;
+  }
   .fit-result h1#dogNameResult {
     font-size: 2.6316vw;
   }
@@ -1263,11 +1293,37 @@ button.news-more-all {
 
   .fit-result h3.reasonTitle {
     font-size: 2.3684vw;
+    padding: 2.8% 4.5%;
+    width: 76%;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 2%;
   }
 
   .fit-result p.reasonSubTitle {
     font-size: 1.5789vw;
+    width: 76%;
+    margin: 0 auto;
   }
+
+  .result-btn-wrap {
+    margin: 3% 4% 3%;
+    gap: 33%;
+  }
+
+  .result-btn-wrap button {
+    font-size: 1.9737vw;
+    width: 14%;
+    padding: 1.2% 3%;
+  }
+
+  /* .result-btn-wrap button:first-child {
+    width: 15%;
+  }
+
+  .result-btn-wrap .buyNowbtn {
+    width: 15%;
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -1337,12 +1393,12 @@ button.news-more-all {
   }
 
   .fit-info label {
-    font-size: 2.9167vw;
+    font-size: 3.4167vw;
     margin: 3.5% 0 2%;
   }
 
   .fit-info input {
-    font-size: 2.9167vw;
+    font-size: 3.4167vw;
   }
 
   .fit-bt-button {
@@ -1357,43 +1413,76 @@ button.news-more-all {
 
   /* 맞춤사료 선택지 */
   .question-page-container h2 {
-    font-size: 6.7917vw;
+    /* font-size: 6.7917vw; */
+    font-size: 7.2917vw;
   }
 
   /* #page1 */
   #page1 .question-btn > button {
-    font-size: 2.9167vw;
+    font-size: 3.0167vw;
   }
 
   #page1 .question-unknown {
-    margin-left: 1%;
+    margin-left: 2%;
   }
 
   #page1 .question-unknown label {
-    font-size: 1.8421vw;
+    font-size: 2.5421vw;
+  }
+
+  input#qBtn {
+    width: 9%;
   }
 
   /* page2 */
   .question-btn-wrap {
-    width: 78%;
+    width: 100%;
   }
 
-  /* 맞춤사료 결과페이지 */
+  #page1 .question-btn {
+    margin-top: 15%;
+  }
+
+  #page2 .question-btn span {
+    font-size: 4.0421vw;
+  }
+
+  #page2 .question-btn span.kg {
+    font-size: 2.8676vw;
+    width: 70%;
+  }
+
+  #page3 .question-btn .toggleBtn {
+    font-size: 3.0167vw;
+  }
+
+  #page4 .question-btn .toggleBtn {
+    font-size: 3.0167vw;
+  }
+  .fit-result img {
+    width: 24%;
+  }
+
   .fit-result h1#dogNameResult {
     font-size: 2.6316vw;
   }
 
   .fit-result h2#recommendTitle {
-    font-size: 6.9737vw;
+    font-size: 7.5737vw;
     margin: 5.5% 0;
   }
 
   .fit-result h3.reasonTitle {
-    font-size: 2.3684vw;
+    width: 75%;
+    font-size: 3.0684vw;
   }
 
   .fit-result p.reasonSubTitle {
-    font-size: 1.5789vw;
+    font-size: 2.2789vw;
+    width: 75%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
   }
 
   /* 뉴스 영역 */
@@ -1460,7 +1549,44 @@ button.news-more-all {
     padding-left: 3%;
   }
 
-  /* 뉴스 영역 */
-  .news h2.news-title {
+  #page1 .question-btn > button {
+    font-size: 3.6889vw;
+    width: 40%;
   }
+
+  #page1 .question-unknown {
+    margin-left: -7%;
+  }
+
+  #page2 .question-btn span {
+    font-size: 4.1667vw;
+  }
+
+  #page2 .question-btn {
+    padding: 0;
+  }
+
+  #page2 .question-btn button {
+    border: 1px solid #a1a1a1;
+  }
+
+  #page3 .question-btn .toggleBtn {
+    font-size: 3.5167vw;
+    width: 120%;
+  }
+
+  /* #page4 .question-btn {
+    width: ;
+  } */
+  #page4 .question-btn .toggleBtn {
+    font-size: 3.5167vw;
+    width: 100%;
+  }
+
+  /* 뉴스 영역 */
+  /* .news h2.news-title {
+  } */
+}
+
+@media screen and (max-width: 360px) {
 }
