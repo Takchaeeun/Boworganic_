@@ -284,7 +284,9 @@
           <span>@Boworganic</span>
         </div>
         <div class="insta-viewmore inner">
-          <span id="load-more">더보기<img src="images/favicon/icons_arrow-up.png" alt="moreview" /></span>
+
+          <span id="load-more">더보기<img src="images/favicon/icons_arrow-up.png" alt="moreview" id="load"/></span>
+
         </div>
         <div class="insta-img"></div>
         <div class="insta-ft">
@@ -443,8 +445,22 @@
             <div class="question-page-container">
               <!-- 진행바 -->
               <progress id="fitProgress" value="0" min="0" max="100"></progress>
-              <h2>반려견에게 필요한&nbsp;<span>건강 관리</span>는 무엇인가요?</h2>
-              <div class="question-btn-wrap">
+              <h2 class="page4_pc_txt">필요한&nbsp;<span>건강 관리</span>는 무엇인가요?</h2>
+
+              <div class="swiper fitBtnSwiper question-btn-wrap">
+                <div class="swiper-wrapper question-btn">
+                  <div class="swiper-slide"><button class="toggleBtn">해당없음</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">다이어트</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">식이 알러지</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">관절</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">눈 건강</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">면역력</button></div>
+                  <div class="swiper-slide"><button class="toggleBtn">장 또는 위 건강</button></div>
+                </div>
+              </div>
+              .
+
+              <!-- <div class="question-btn-wrap">
                 <div class="question-btn">
                   <button class="toggleBtn">해당없음</button>
                   <button class="toggleBtn">다이어트</button>
@@ -454,7 +470,7 @@
                   <button class="toggleBtn">면역력</button>
                   <button class="toggleBtn">장 또는 위 건강</button>
                 </div>
-              </div>
+              </div> -->
               <div class="fit-bt-button">
                 <button class="fit-prev fit_page4_prev" id="fitPrev">이전</button>
                 <button class="fit-next fit_page4_next" id="fitNext">결과보기</button>
