@@ -23,7 +23,7 @@ window.onload = function () {
         spaceBetween: 20,
         slidesPerView: 1.5,
       },
-      480: {
+      481: {
         spaceBetween: 25,
         slidesPerView: 2.6,
       },
@@ -31,6 +31,16 @@ window.onload = function () {
         spaceBetween: 32,
         slidesPerView: 3.6,
       },
+    },
+  });
+
+  var fitBtnswiper = new Swiper(".fitBtnSwiper", {
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
@@ -56,190 +66,6 @@ window.onload = function () {
       button.classList.toggle("checked");
     });
   });
-
-  // // 맞춤사료 페이지 이동 효과
-  // const pages = document.querySelectorAll(".fit-page");
-
-  // function moveToPage(currentPage, nextPage) {
-  //   currentPage.classList.remove("page-visible");
-  //   currentPage.classList.add("page-hidden");
-  //   nextPage.classList.remove("page-hidden");
-  //   nextPage.classList.add("page-visible");
-  // }
-
-  // // 이전, 다음 버튼 이동
-  // // [시작 버튼]
-  // const fitMain = document.getElementById("fitMain");
-  // const fitInfoWrap = document.getElementById("fitInfoWrap");
-  // const fitResult = document.getElementById("fitResult");
-  // const fitStart = document.getElementById("fitStart");
-  // fitStart.addEventListener("click", function () {
-  //   fitMain.style.display = "none";
-  //   fitInfoWrap.style.display = "block";
-  // });
-
-  // // [이전버튼 ]
-  // // [이전버튼] 메인화면으로 돌아가기
-  // var fitInfoPrev = fitInfoWrap.querySelector("#fitPrev");
-  // fitInfoPrev.addEventListener("click", function () {
-  //   fitInfoWrap.style.display = "none";
-  //   fitMain.style.display = "block";
-  // });
-
-  // // [이전버튼] 정보입력으로 돌아가기
-  // var page1 = document.getElementById("page1");
-  // var page1Prev = page1.querySelector("#fitPrev");
-  // page1Prev.addEventListener("click", function () {
-  //   page1.style.display = "none";
-  //   fitInfoWrap.style.display = "block";
-  // });
-
-  // // [이전버튼] 페이지1로 돌아가기
-  // var page2 = document.getElementById("page2");
-  // var page2Prev = page2.querySelector("#fitPrev");
-  // page2Prev.addEventListener("click", function () {
-  //   page2.style.display = "none";
-  //   page1.style.display = "block";
-  // });
-
-  // // [이전버튼] 페이지2로 돌아가기
-  // var page3 = document.getElementById("page3");
-  // var page3Prev = page3.querySelector("#fitPrev");
-  // page3Prev.addEventListener("click", function () {
-  //   page3.style.display = "none";
-  //   page2.style.display = "block";
-  // });
-
-  // // [이전버튼] 페이지3로 돌아가기
-  // var page4 = document.getElementById("page4");
-  // var page4Prev = page4.querySelector("#fitPrev");
-  // page4Prev.addEventListener("click", function () {
-  //   page4.style.display = "none";
-  //   page3.style.display = "block";
-  // });
-
-  // // [다음 버튼]
-  // // 페이지 변수 선언
-  // var page1 = document.getElementById("page1");
-  // var page2 = document.getElementById("page2");
-  // var page3 = document.getElementById("page3");
-  // var page4 = document.getElementById("page4");
-
-  // // 이벤트 핸들러 함수 정의
-  // // 선택지 선택 확인 : 메세지 창 띄움-> 선택 완료되면 다음 페이지로
-  // function validateAndMoveToNextPage(currentPage, nextPage) {
-  //   // // 필수 입력 필드 확인
-  //   // var fitNameInput = document.getElementById("fitName");
-  //   // if (fitNameInput.value.trim() === "") {
-  //   //   alert("이름을 입력해주세요.");
-  //   //   return;
-  //   // }
-
-  //   // var fitBirthInput = document.getElementById("fitBirth");
-  //   // if (fitBirthInput.value.trim() === "") {
-  //   //   alert("생년월일을 입력해주세요.");
-  //   //   return;
-  //   // }
-
-  //   // // 선택한 버튼 확인
-  //   // var selectedButton = document.querySelector(".checked");
-  //   // if (!selectedButton) {
-  //   //   alert("성별을 선택해주세요.");
-  //   //   return;
-  //   // }
-
-  //   // 모든 조건이 충족되면 다음 페이지로 이동
-  //   currentPage.style.display = "none";
-  //   nextPage.style.display = "block";
-  // }
-
-  // // [다음 버튼] 이벤트 핸들러 설정
-  // var fitInfoNext = fitInfoWrap.querySelector("#fitNext");
-  // fitInfoNext.addEventListener("click", function () {
-  //   validateAndMoveToNextPage(fitInfoWrap, page1);
-  // });
-
-  // var page1Next = page1.querySelector("#fitNext");
-  // page1Next.addEventListener("click", function () {
-  //   validateAndMoveToNextPage(page1, page2);
-  // });
-
-  // var page2Next = page2.querySelector("#fitNext");
-  // page2Next.addEventListener("click", function () {
-  //   validateAndMoveToNextPage(page2, page3);
-  // });
-
-  // var page3Next = page3.querySelector("#fitNext");
-  // page3Next.addEventListener("click", function () {
-  //   validateAndMoveToNextPage(page3, page4);
-  // });
-
-  // var page4Next = page4.querySelector("#fitNext");
-  // page4Next.addEventListener("click", function () {
-  //   validateAndMoveToNextPage(page4, fitResult);
-  // });
-
-  // // [다음 버튼] 이벤트 핸들러 설정
-  // var fitNextBtn = document.getElementById("fitNext");
-  // fitNextBtn.addEventListener("click", function () {
-  //   // 강아지 이름 설정 함수 호출
-  //   setDogNameResult();
-
-  //   // 다음 페이지로 이동
-  //   validateAndMoveToNextPage(fitInfoWrap, page1);
-  // });
-
-  // // [다음 버튼 & progress] 이벤트 핸들러 설정
-  // var fitNextBtn = document.getElementById("fitNext");
-  // fitNextBtn.addEventListener("click", function () {
-  //   // fitProgress 엘리먼트 선택
-  //   var fitProgress = document.getElementById("fitProgress");
-
-  //   // 현재 value 값 가져오기
-  //   var currentValue = parseInt(fitProgress.value);
-
-  //   // 최대 값이 100인지 확인
-  //   if (currentValue < 100) {
-  //     // value 값에 25 추가
-  //     fitProgress.value = currentValue + 25;
-  //   } else {
-  //     // 이미 최대 값인 경우 아무 작업도 수행하지 않음
-  //     // 혹은 원하는 동작을 수행할 수 있음
-  //   }
-
-  //   // 다음 페이지로 이동
-  //   validateAndMoveToNextPage(currentPage, nextPage);
-  // });
-
-  // // [다음 버튼] 이벤트 핸들러 설정
-  // var fitNextBtn = document.getElementById("fitNext");
-  // fitNextBtn.addEventListener("click", function () {
-  //   moveToNextPage(fitInfoWrap, page1);
-  // });
-
-  // // [결과 페이지] - 강아지 이름 설정 함수
-  // function setDogNameResult() {
-  //   // #fitName 요소를 가져옴
-  //   var fitNameInput = document.getElementById("fitName");
-  //   var fitNameValue = fitNameInput.value;
-
-  //   // #dogNameResult 엘리먼트 선택 후 내용 설정
-  //   var dogNameResult = document.getElementById("dogNameResult");
-  //   dogNameResult.textContent = `${fitNameValue}의 맞춤사료`;
-  //   dogNameResult.style.fontSize = "2.5rem";
-  //   dogNameResult.style.borderBottom = "1px solid #666";
-  //   dogNameResult.style.padding = "21px 0";
-  // }
-
-  // // [결과 페이지] - 처음으로 돌아가기
-  // var linkMainbtn = document.getElementById("linkMainbtn");
-  // linkMainbtn.addEventListener("click", function () {
-  //   // fitMain으로 이동
-  //   fitResult.style.display = "none"; // 결과 페이지 감추기
-  //   fitMain.style.display = "block"; // fitMain 보이기
-
-  //   setDogNameResult();
-  // });
 
   // [결과 페이지] - 추천 이유
   // 결과 배열
@@ -438,20 +264,6 @@ $(document).ready(function () {
     $("#page4").hide();
     $("#page3").show();
   });
-
-  // 결과페이지 때 메인페이지 숨기기
-  // $("#fitResult").on("show", function () {
-  //   $("#fitMain").hide();
-  // });
-
-  // 페이지 로드 후 실행될 코드
-
-  // #page4의 스크롤 기능
-  $("#page4 .question-btn").on("wheel", function (e) {
-    var delta = e.originalEvent.deltaY;
-    this.scrollLeft += (delta > 0 ? 1 : -1) * 40;
-    e.preventDefault();
-  });
 });
 
 // #page4 안에 있는 .toggleBtn 동시선택
@@ -492,21 +304,4 @@ $(document).ready(function () {
       nextPage.fadeIn(400);
     });
   });
-
-  // 미디어쿼리 적용
-  $(window).resize(function () {
-    if ($(window).width() <= 720) {
-      // 창의 너비가 720px 이하일 때 <br> 태그 추가
-      $("<br>").insertBefore("#page4 .question-page-container h2 span");
-    } else {
-      // 창의 너비가 720px 초과일 때 <br> 태그 제거
-      $("#page4 .question-page-container h2 br").remove();
-    }
-  });
-
-  // 페이지 로드 시 초기 작업
-  if ($(window).width() <= 720) {
-    // 창의 너비가 720px 이하일 때 <br> 태그 추가
-    $("<br>").insertBefore("#page4 .question-page-container h2 span");
-  }
 });
