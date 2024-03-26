@@ -90,7 +90,7 @@ $(document).ready(function(){
               $(".mb-menu").show();
           });
           $(".mb-menu").click(() => {
-              $(".menu").slideToggle(500);
+              $(".mbmenu").slideToggle(500);
           });
      
     

@@ -78,7 +78,7 @@
 
   /* background-color: antiquewhite; */
   position: absolute;
-  top: 0.3%;
+  top: 0.4%;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
@@ -120,9 +120,11 @@
   height: 100%;
   /* background-color: aqua; */
   padding: 1% 10%;
+  display: block;
   /* display: flex; */
   /* justify-content: space-between; */
   border-right: 1px solid #fff;
+  z-index: 99999;
 }
 .menu ul {
   width: 100%;
@@ -130,9 +132,8 @@
   display: flex;
   text-align: center;
   font-size: 1vw;
-
+  align-self: center;
   justify-content: center;
-  align-items: center;
 }
 .menu ul li {
   width: calc(100% / 5);
@@ -170,7 +171,7 @@
   height: 100%;
   padding: 1%;
   font-size: 1vw;
-  border-right: 1px solid #fff;
+  /* border-right: 1px solid #fff; */
   display: flex;
   justify-content: center;
 }
@@ -195,6 +196,9 @@
   color: #fff;
 }
 /* 모바일메뉴 */
+.mbmenu {
+  display: none;
+}
 .mb-menu {
   display: none;
 }
@@ -1112,39 +1116,38 @@ select {
   }
   /* 모바일메뉴 */
   .header {
-    width: 90%;
+    width: 95%;
   }
-  .menu {
+  .mbmenu {
     position: relative;
-    width: 100%;
     display: block;
-    height: 100vh;
-    position: fixed;
-    top: 0;
+    width: 80%;
+    height: 450px;
+    position: absolute;
+    top: 57px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 0;
+    border: none;
   }
-  .menu > ul {
+  .mbmenu ul {
+    padding: 40px;
     display: flex;
-    height: 50%;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    font-size: 2rem;
   }
-  .menu > ul > li > a {
-    font-size: 5vw;
+  .mbmenu ul li a {
+    color: #fff;
+    text-align: center;
   }
   .mb-menu {
-    display: none;
-  }
-  .mb-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #fff;
-    font-size: large;
-  }
-  .mb-close {
     display: block;
+  }
+  .mb-menu i {
+    font-size: 20px;
+    color: #fff;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1297,34 +1300,35 @@ select {
   .header {
     width: 95%;
   }
-  .menu {
+  .mbmenu {
     position: relative;
-    width: 80%;
     display: block;
-    height: 300px;
-    position: fixed;
-    top: 10px;
+    width: 80%;
+    height: 450px;
+    position: absolute;
+    top: 57px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 0;
     border: none;
   }
-  .menu > ul {
-    position: absolute;
-    top: 40px;
+  .mbmenu ul {
+    padding: 40px;
     display: flex;
-    height: 80%;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    font-size: 2rem;
   }
-  .menu > ul > li {
-    height: 50%;
-    width: 100%;
-  }
-  .menu > ul > li > a {
-    font-size: 5vw;
-    width: 100%;
+  .mbmenu ul li a {
+    color: #fff;
+    text-align: center;
   }
   .mb-menu {
     display: block;
+  }
+  .mb-menu i {
+    font-size: 20px;
+    color: #fff;
   }
 }
