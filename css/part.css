@@ -260,6 +260,7 @@
 /* 후기작성 */
 .review-wrap {
   /* background-color: aqua; */
+
 }
 .review-top {
   line-height: 1.5;
@@ -294,13 +295,16 @@
 .rv-top1 p {
   font-size: 15px;
 }
+.review-bt-img{
+}
 fieldset{
   background-color: #fff;
   text-align: left;
+  padding: 40px;
 }
 #imageeye {
   width: 60%;
-  margin: ;
+  padding: 30px;
 }
 .rv-wrap {
   display: flex;
@@ -308,6 +312,11 @@ fieldset{
   justify-content: center;
   gap:7%;
   margin-top: 8%;
+  padding: auto;
+  margin-bottom: 30%;
+  color: gray;
+
+
 }
 .review-right{
   line-height: 2;
@@ -316,29 +325,41 @@ fieldset{
   font-size: 1.8vw;
   
 }
+legend {
+  padding: 0;
+  font-size: 1.5vw;
+}
 #title{
-  height: 20px;
+  height: 20px; border: 2px solid #ccc; /* 기본 선 굵기 */
+  border-radius: 5px;
 }
 #rating{
   height: 20px;
-
+  border: 2px solid #ccc; /* 기본 선 굵기 */
+  border-radius: 5px;
 }
 #content{
   width: 400px;
   height: 300px;
+  border: 2px solid #ccc; /* 기본 선 굵기 */
+  border-radius: 5px;
 }
 #name{
   height: 20px;
+  border: 2px solid #ccc; /* 기본 선 굵기 */
+  border-radius: 5px;
 }
 #date{
   height: 25px;
   font-size: 18px;
+  border: 2px solid #ccc; /* 기본 선 굵기 */
+  border-radius: 5px;
 }
 #send{
-  height: 25px;
+  height: 40px;
   margin-top: 20px;
-  font-size: 18px;
-  width: 100px;
+  font-size: 20px;
+  width: 120px;
   background-color: #77bd82;
   border: #77bd82;
   border-radius: 20px;
