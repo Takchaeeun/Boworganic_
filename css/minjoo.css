@@ -607,29 +607,43 @@
   }
   /* 모바일메뉴 */
   .mb-menu {
-    z-index: 999;
     display: block;
+    z-index: 999;
   }
   /* 모바일메뉴 */
   .header {
     width: 95%;
   }
-
   .mbmenu {
     position: relative;
-    display: block;
+    display: none;
     width: 80%;
-    height: 300px;
+    height: 450px;
     position: absolute;
     top: 57px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 0;
     border: none;
-    z-index: 99999;
+  }
+  .mbmenu ul {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    font-size: 2rem;
+  }
+  .mbmenu ul li a {
+    color: #fff;
+    text-align: center;
   }
   .mb-menu {
     display: block;
+  }
+  .mb-menu i {
+    font-size: 20px;
+    color: #fff;
   }
 }
 
@@ -728,33 +742,44 @@
     display: none;
   }
   /* 모바일 쿠폰 */
-  .mb-copun {
-    padding: 30px;
-    text-align: center;
+  .header {
+    width: 95%;
+  }
+  .mbmenu {
     position: relative;
-    display: inline-block;
-    width: 100%;
-  }
-  .mb-copun img {
+    display: none;
     width: 80%;
-    padding-bottom: 20px;
+    height: 450px;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
   }
-  .copun {
-    border-radius: 40px;
-    background-color: #fff;
-    color: #000;
-    width: 80%;
-    outline: none;
-    border: 2px solid #77bd82;
-    height: 40px;
-    font-size: 1.6rem;
-    font-weight: bold;
+  .mbmenu ul {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    font-size: 2rem;
   }
-  .copun span {
-    color: #77bd82;
+  .mbmenu ul li a {
+    color: #fff;
+    text-align: center;
   }
-
   .mb-menu {
     display: block;
+  }
+  .mb-menu i {
+    font-size: 20px;
+    color: #fff;
+  }
+  .copun {
+    font-size: 12px;
+  }
+  .copun span {
+    font-size: 12px;
   }
 }
