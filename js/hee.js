@@ -28,7 +28,7 @@ window.onload = function () {
         slidesPerView: 2.6,
       },
       761: {
-        spaceBetween: 32,
+        spaceBetween: 10,
         slidesPerView: 3.6,
       },
     },
@@ -36,11 +36,24 @@ window.onload = function () {
 
   var fitBtnswiper = new Swiper(".fitBtnSwiper", {
     slidesPerView: 3.5,
-    spaceBetween: 30,
+    spaceBetween: 60,
     direction: "vertical",
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    0: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    481: {
+      spaceBetween: 25,
+      slidesPerView: 4,
+    },
+    761: {
+      spaceBetween: 32,
+      slidesPerView: 5,
     },
   });
 
