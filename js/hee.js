@@ -14,10 +14,10 @@ window.onload = function () {
       delay: 2500,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swNews .swiper-pagination",
-      clickable: true,
-    },
+    // pagination: {
+    //   el: ".swNews .swiper-pagination",
+    //   clickable: true,
+    // },
     breakpoints: {
       0: {
         spaceBetween: 20,
@@ -25,7 +25,7 @@ window.onload = function () {
       },
       481: {
         spaceBetween: 25,
-        slidesPerView: 2.6,
+        slidesPerView: 2.3,
       },
       761: {
         spaceBetween: 10,
@@ -34,28 +34,6 @@ window.onload = function () {
     },
   });
 
-  var fitBtnswiper = new Swiper(".fitBtnSwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 60,
-    direction: "vertical",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    0: {
-      spaceBetween: 20,
-      slidesPerView: 3,
-    },
-    481: {
-      spaceBetween: 25,
-      slidesPerView: 4,
-    },
-    761: {
-      spaceBetween: 32,
-      slidesPerView: 5,
-    },
-  });
 
   //==== 맞춤사료 ====
   const toggleBtns = document.querySelectorAll(".toggleBtn");
@@ -172,24 +150,46 @@ window.onload = function () {
     }
   }
 
-  // [결과 페이지] 결과 페이지로 돌아가기 이벤트 핸들러 설정
-  var linkMainbtn = document.getElementById("linkMainbtn");
-  linkMainbtn.addEventListener("click", function () {
-    // 확인 대화 상자 표시
-    var confirmation = confirm("첫 화면으로 돌아가시겠습니까?");
+  // var linkMainbtn = document.getElementById("linkMainbtn");
+  // linkMainbtn.addEventListener("click", function () {
+  //   // 확인 대화 상자 표시
+  //   var confirmation = confirm("첫 화면으로 돌아가시겠습니까?");
 
-    // 사용자가 확인을 클릭했을 때
-    if (confirmation) {
-      // 작성한 데이터 초기화 함수 호출
-      resetFormData();
+  //   // 사용자가 확인을 클릭했을 때
+  //   if (confirmation) {
+  //     // 작성한 데이터 초기화 함수 호출
+  //     resetFormData();
 
-      // 페이지 초기화 코드 추가 (예를 들어, 첫 화면으로 이동)
-      fitResult.style.display = "none"; // 결과 페이지 숨기기
-      fitMain.style.display = "block"; // 메인 페이지 보이기
-    }
-  });
+  //     // 페이지 초기화 코드 추가 (예를 들어, 첫 화면으로 이동)
+  //     fitResult.style.display = "none"; // 결과 페이지 숨기기
+  //     fitMain.style.display = "block"; // 메인 페이지 보이기
+  //   } else {
+  //     // 사용자가 취소를 클릭했을 때
+  //     fitResult.style.display = "block"; // 결과 페이지 보이기
+  //   }
+  // });
 
   // [검사 페이지]
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var fitNameInput = document.getElementById("fitName");
+  //   var fitNextButton = document.getElementById("fitNext");
+  //   var dogNameResultSpan = document.querySelector("#dogNameResult > span");
+
+  //   fitNextButton.addEventListener("click", function () {
+  //     var fitNameValue = fitNameInput.value;
+  //     var fitInfoWrap = document.querySelector(".fit-info-wrap");
+  //     var otherValues = "";
+  //     var otherElements = fitInfoWrap.querySelectorAll("input, select");
+
+  //     otherElements.forEach(function (element) {
+  //       otherValues += element.value + " ";
+  //     });
+
+  //     var finalValue = fitNameValue + " " + otherValues;
+  //     dogNameResultSpan.textContent = finalValue;
+  //   });
+  // });
 
   // [데이터 초기화] 처음으로 돌아가면 작성데이터 없어짐
   // 초기화 함수 정의
@@ -294,27 +294,30 @@ $("#page4 .toggleBtn").click(function () {
     $(this).css("border", "1.5px solid #c0c0c0");
   }
 });
+// 페이지가 로드되면 실행될 코드
 
-$(document).ready(function () {
-  // 페이지가 로드되면 실행될 코드
+// 이전 버튼 클릭 이벤트 핸들러
+$(".fit-prev").click(function () {
+  var currentPage = $(this).closest(".question-page");
+  var prevPage = currentPage.prev(".question-page");
 
-  // 이전 버튼 클릭 이벤트 핸들러
-  $(".fit-prev").click(function () {
-    var currentPage = $(this).closest(".question-page");
-    var prevPage = currentPage.prev(".question-page");
+  currentPage.fadeOut(400, function () {
+    prevPage.fadeIn(400);
+  });
+});
 
-    currentPage.fadeOut(400, function () {
-      prevPage.fadeIn(400);
-    });
+// 다음 버튼 클릭 이벤트 핸들러
+$(".fit-next").click(function () {
+  var currentPage = $(this).closest(".question-page");
+  var nextPage = currentPage.next(".question-page");
+
+  currentPage.fadeOut(400, function () {
+    nextPage.fadeIn(400);
   });
 
-  // 다음 버튼 클릭 이벤트 핸들러
-  $(".fit-next").click(function () {
-    var currentPage = $(this).closest(".question-page");
-    var nextPage = currentPage.next(".question-page");
-
-    currentPage.fadeOut(400, function () {
-      nextPage.fadeIn(400);
-    });
-  });
+  // $(".fit-scroll a").click(function (event) {
+  //   event.preventDefault(); // 클릭 이벤트의 기본 동작인 링크 이동을 방지합니다.
+  //   var targetOffset = $(".question-btn-wrap .question-btn").offset().top + $(".question-btn-wrap .question-btn").outerHeight() - $(window).height();
+  //   $("question-btn-wrap .question-btn").animate({ scrollTo: targetOffset }, 1000);
+  // });
 });
