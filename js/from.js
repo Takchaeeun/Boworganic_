@@ -49,12 +49,12 @@ window.addEventListener("load", function () {
 
     if (window.scrollY == 0) {
       window.scrollTo({
-        top: 5000,
+        top: 20000,
         behavior: "smooth",
       });
     } else {
       window.scrollTo({
-        top: 5000,
+        top: 20000,
         behavior: "smooth",
       });
     }
