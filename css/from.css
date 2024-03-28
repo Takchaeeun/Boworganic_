@@ -333,12 +333,45 @@ select {
   outline: none;
   text-align: center;
   font-size: 1.3vw;
+  margin: 1%;
+  border-radius: 5px;
+  border: 1px solid #77bd82;
+  color: #666;
+}
+
+option {
+  outline: none;
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 1%;
+  border-radius: 5px;
+  border: 1px solid #77bd82;
+  color: #666;
+}
+option:hover {
 }
 .number-input .m,
 .number-input .p {
   margin-top: 0.5%;
-  padding: 2px;
+  padding: 4px 6px;
   font-size: 1vw;
+  background: #77bd82;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  border: #fff;
+  cursor: pointer;
+  /* box-shadow: 0px 5px 0px 0px #48744f; */
+}
+.number-input .m:hover {
+  background: #48744f;
+
+  /* box-shadow: 0px 0px 0px 0px #48744f; */
+}
+.number-input .p:hover {
+  background: #48744f;
+
+  /* box-shadow: 0px 0px 0px 0px #48744f; */
 }
 .number-input input {
   text-align: center;
@@ -347,28 +380,35 @@ select {
   height: 30px;
   font-size: 1.6em;
   line-height: 1;
+  margin: 1%;
+  border-radius: 5px;
+  border: 1px solid #77bd82;
+  color: #666;
 }
 .buy-form {
   margin-top: 2%;
   padding-bottom: 5%;
 }
 .buy-form .buy {
-  padding: 2%;
+  margin: 10px;
+  padding: 1%;
   border: 2px solid #77bd82;
   background-color: #fff;
   color: #77bd82;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   border-radius: 50px;
   cursor: pointer;
+  width: 20%;
 }
 .buy-form .sold {
-  padding: 2%;
+  padding: 1%;
   border: 2px solid #77bd82;
   background-color: #77bd82;
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   border-radius: 50px;
   cursor: pointer;
+  width: 20%;
 }
 .information ul {
   display: flex;

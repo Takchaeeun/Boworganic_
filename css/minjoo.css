@@ -225,7 +225,7 @@
   width: 100%;
 }
 .main .swiper-slide .mb-banner {
-  object-fit: contain;
+  object-fit: cover;
   display: none;
 }
 .main-txt {
@@ -408,6 +408,21 @@
   .organic .promotion-info .price {
     font-size: 1.8rem;
     line-height: 1.5;
+  }
+  .promotion {
+    position: relative;
+  }
+  .promotion .swiper-button-prev i {
+    position: absolute;
+    font-size: 50px;
+    left: 80px;
+    color: #77bd82;
+  }
+  .promotion .swiper-button-next i {
+    position: absolute;
+    font-size: 50px;
+    right: 80px;
+    color: #77bd82;
   }
 }
 @media screen and (max-width: 580px) {
@@ -741,7 +756,7 @@
   .promotion .swiper-button-next i {
     display: none;
   }
-  /* 모바일 쿠폰 */
+  /* 모바일 메뉴 */
   .header {
     width: 95%;
   }
@@ -781,5 +796,36 @@
   }
   .copun span {
     font-size: 12px;
+  }
+  /*gotop*/
+  .top-button .shop-btn {
+    position: relative;
+    display: inline-block; /* display 속성을 inline-block으로 변경 */
+    width: 30px; /* 너비를 20px로 변경 */
+    height: 30px; /* 높이를 20px로 추가 */
+    border-radius: 50%;
+    line-height: 35px; /* line-height를 20px로 변경 */
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 10px; /* font-size를 10px로 변경 */
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
+    letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
+  }
+  .top-button .top-btn {
+    position: relative;
+    display: inline-block; /* display 속성을 inline-block으로 변경 */
+    width: 30px; /* 너비를 20px로 변경 */
+    height: 30px; /* 높이를 20px로 추가 */
+    border-radius: 50%;
+    line-height: 35px; /* line-height를 20px로 변경 */
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 10px; /* font-size를 10px로 변경 */
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
+    letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
   }
 }

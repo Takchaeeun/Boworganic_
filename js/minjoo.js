@@ -60,15 +60,15 @@ window.addEventListener("load", function () {
     }
   });
   // 제품 구매하기 버튼 스크롤 기능
-  const Promo = document.querySelectorAll("#promo");
-  Promo.forEach((button) => {
-    button.addEventListener("click", function (event) {
-      event.preventDefault();
-      const scrollTarget = this.getAttribute("data-scroll");
-      window.scrollTo({
-        top: scrollTarget,
-        behavior: "smooth",
-      });
+  const promoButton = document.getElementById("promo");
+  const promotionSection = document.getElementById("promoT");
+
+  promoButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    // #promotion 요소의 위치로 스크롤
+    promotionSection.scrollIntoView({
+      behavior: "smooth"
     });
   });
   //   document.addEventListener('DOMContentLoaded', function () {
@@ -80,20 +80,13 @@ window.addEventListener("load", function () {
   //     });
   // });
 });
-$(document).ready(function(){
+$(document).ready(function () {
   // 화면 크기 변경 시 이벤트를 처리하는 함수
 
-     
-       
-          $(".mb-close").click(() => {
-             
-              $(".mb-menu").show();
-          });
-          $(".mb-menu").click(() => {
-              $(".mbmenu").slideToggle(500);
-          });
-     
-    
-
-
+  $(".mb-close").click(() => {
+    $(".mb-menu").show();
+  });
+  $(".mb-menu").click(() => {
+    $(".mbmenu").slideToggle(500);
+  });
 });
