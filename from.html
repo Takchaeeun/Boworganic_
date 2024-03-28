@@ -221,20 +221,20 @@
         else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
       }
       // JavaScript로 숫자를 증가하거나 감소시키는 함수
-      function adjustNumber(delta, event) {
-        event.preventDefault(); // 버튼의 기본 동작 중지
+function adjustNumber(delta, event) {
+    event.preventDefault(); // 버튼의 기본 동작 중지
 
-        var inputField = document.getElementById("numberInput");
-        var currentValue = parseInt(inputField.value);
+    var inputField = document.getElementById("numberInput");
+    var currentValue = parseInt(inputField.value);
 
-        // 값이 0 이하로 가지 않도록 조정
-        var newValue = currentValue + delta;
-        if (newValue < 0) {
-          newValue = 0;
-        }
+    // 값이 1 미만으로 가지 않도록 조정
+    var newValue = currentValue + delta;
+    if (newValue < 1) {
+        newValue = 1;
+    }
 
-        inputField.value = newValue;
-      }
+    inputField.value = newValue;
+}
     </script>
   </body>
 </html>
