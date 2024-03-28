@@ -1,262 +1,8 @@
 @charset "utf-8";
 @import url(main.css);
 @import url(font.css);
-.header {
-  /* position: fixed; */
-  width: 95%;
-  min-height: 50px;
-  max-height: 85px;
-  height: 6.427vw;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  /* background-color: antiquewhite; */
-  position: absolute;
-  top: 0.7%;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  z-index: 9999;
-  border: 1px solid #fff;
-  /* background-color: #0000003a; */
-}
-
-.logo {
-  width: 13%;
-  height: 100%;
-  padding: 1%;
-  border-right: 1px solid #fff;
-  /* background-color: rgb(158, 118, 43); */
-}
-.logo a {
-  position: relative;
-  text-align: center;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  /* background-color: #77bd82; */
-}
-.logo a img {
-  position: relative;
-  display: block;
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
-/* 메뉴영역 */
-.menu {
-  width: 65%;
-  height: 100%;
-  /* background-color: aqua; */
-  padding: 1% 10%;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  border-right: 1px solid #fff;
-  margin: auto;
-}
-.menu ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  font-size: 1vw;
-
-  justify-content: center;
-  align-items: center;
-}
-.menu ul li {
-  width: calc(100% / 5);
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.menu ul li a {
-  width: 100%;
-  display: block;
-  color: #fff;
-}
-.menu ul li a span {
-  position: relative;
-}
-.menu li > a > span::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 1%;
-  height: 1%;
-  opacity: 0;
-  background-color: #ffffff;
-  transition: all 0.5s;
-}
-.menu li:hover span::after {
-  width: 100%;
-  text-align: right;
-  opacity: 1;
-}
-/* 로그인&회원가입영역 */
-.header-right {
-  width: 15%;
-  height: 100%;
-  padding: 1%;
-  font-size: 1vw;
-  border-right: 1px solid #fff;
-  display: flex;
-  /* justify-content: center; */
-}
-.header-right ul {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1%;
-}
-.header-right a::after {
-  content: "|";
-  color: #fff;
-  position: absolute;
-  left: 45%;
-}
-.header-right a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-}
-.header {
-  /* position: fixed; */
-  width: 95%;
-  min-height: 50px;
-  max-height: 85px;
-  height: 6.427vw;
-  display: flex;
-  justify-content: space-between;
-
-  /* background-color: antiquewhite; */
-  position: absolute;
-  top: 0.4%;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  z-index: 9999;
-  border: 1px solid #fff;
-  /* background-color: #0000003a; */
-}
-
-.logo {
-  width: 13%;
-  height: 100%;
-  padding: 1%;
-  border-right: 1px solid #fff;
-  /* background-color: rgb(158, 118, 43); */
-}
-.logo a {
-  position: relative;
-  text-align: center;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  /* background-color: #77bd82; */
-}
-.logo a img {
-  position: relative;
-  display: block;
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
-/* 메뉴영역 */
-.menu {
-  width: 65%;
-  height: 100%;
-  /* background-color: aqua; */
-  padding: 1% 10%;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  border-right: 1px solid #fff;
-  margin: auto;
-}
-.menu ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  font-size: 1vw;
-
-  justify-content: center;
-  align-items: center;
-}
-.menu ul li {
-  width: calc(100% / 5);
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.menu ul li a {
-  width: 100%;
-  display: block;
-  color: #fff;
-}
-.menu ul li a span {
-  position: relative;
-}
-.menu li > a > span::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 1%;
-  height: 1%;
-  opacity: 0;
-  background-color: #ffffff;
-  transition: all 0.5s;
-}
-.menu li:hover span::after {
-  width: 100%;
-  text-align: right;
-  opacity: 1;
-}
-/* 로그인&회원가입영역 */
-.header-right {
-  width: 15%;
-  height: 100%;
-  padding: 1%;
-  font-size: 1vw;
-  border-right: 1px solid #fff;
-  display: flex;
-  /* justify-content: center; */
-}
-.header-right ul {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1%;
-}
-.header-right a::after {
-  content: "|";
-  color: #fff;
-  position: absolute;
-  left: 45%;
-}
-.header-right a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-}
+@import url(from.css);
+@import url(eun.css);
 
 /* 후기작성 */
 .review-wrap {
@@ -314,8 +60,8 @@ fieldset {
   gap: 7%;
   margin-top: 8%;
   padding: auto;
-  margin-bottom: 30%;
   color: gray;
+  margin-bottom: 7%;
 }
 .review-right {
   line-height: 2;
@@ -325,7 +71,7 @@ fieldset {
 }
 legend {
   padding: 0;
-  font-size: 2.0vw;
+  font-size: 2vw;
   text-align: center;
 }
 #title {
@@ -390,7 +136,7 @@ legend {
     padding: 30px;
   }
 }
-@media all and (max-width: 690px){
+@media all and (max-width: 690px) {
   .rv-wrap {
     /* background-color: aqua; */
     flex-direction: column;
@@ -435,9 +181,8 @@ legend {
   #imageeye {
     width: 50%;
     text-align: center;
-
   }
- 
+
   .rv-wrap {
     display: flex;
     margin: auto;
@@ -447,16 +192,13 @@ legend {
     padding: auto;
     margin-bottom: 30%;
     color: gray;
-    
   }
-  .review-left{
+  .review-left {
     margin: 0 auto;
-
   }
   .review-right {
     line-height: 2;
     margin: 0 auto;
-
   }
   .review-right p {
     font-size: 1.8vw;
@@ -466,10 +208,9 @@ legend {
     font-size: 3.5vw;
     text-align: center;
   }
-  #major{
+  #major {
     width: 200px;
     margin-left: 20%;
-    
   }
   #title {
     width: 200px;
@@ -500,7 +241,7 @@ legend {
     border: 2px solid #ccc; /* 기본 선 굵기 */
     border-radius: 5px;
   }
-  .reg{
+  .reg {
     display: none;
   }
   #send {
@@ -560,9 +301,8 @@ legend {
   #imageeye {
     width: 60%;
     text-align: center;
-
   }
- 
+
   .rv-wrap {
     display: flex;
     margin: auto;
@@ -572,16 +312,13 @@ legend {
     padding: auto;
     margin-bottom: 30%;
     color: gray;
-    
   }
-  .review-left{
+  .review-left {
     margin: 0 auto;
-
   }
   .review-right {
     line-height: 2;
     margin: 0 auto;
-
   }
   .review-right p {
     font-size: 1.8vw;
@@ -591,7 +328,7 @@ legend {
     font-size: 4.5vw;
     text-align: center;
   }
-  #major{
+  #major {
     margin-left: 12%;
   }
   #title {
