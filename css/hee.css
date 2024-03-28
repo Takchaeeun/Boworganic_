@@ -318,6 +318,7 @@
   width: 100%;
   max-height: 100px;
   padding: 2% 3%;
+  cursor: pointer;
   /* padding: 15px 10px; */
 }
 
@@ -517,7 +518,6 @@
   gap: 2.5%;
   width: 100%;
   padding: 0.8% 0;
-  
 }
 
 .toggleBtn.checked {
@@ -772,10 +772,10 @@
 }
 
 .fit-result h2#recommendTitle {
-    font-size: 5.0737vw;
-    font-weight: 800;
-    text-align: center;
-    margin: 2.5% 0 3.5%;
+  font-size: 5.0737vw;
+  font-weight: 800;
+  text-align: center;
+  margin: 2.5% 0 3.5%;
 }
 
 .fit-result h2 > span {
@@ -1089,7 +1089,6 @@ button.news-more-all {
 
   .question-btn {
     font-size: 1.2676vw;
-}
   }
 
   /* #page1 .question-btn > button {
@@ -1330,12 +1329,12 @@ button.news-more-all {
   }
 
   #page4 .fit-scroll a {
-    width: 4%
+    width: 4%;
   }
 
   #page4 .fit-scroll img {
     width: 100%;
-}
+  }
 
   @keyframes moveUpDown {
     0% {
@@ -1345,7 +1344,6 @@ button.news-more-all {
       transform: translateY(-5px); /* 끝 지점 */
     }
   }
-  
 
   /* 맞춤사료 결과페이지 */
 
@@ -1620,16 +1618,16 @@ button.news-more-all {
   #page4 .fit-scroll a {
     display: block;
     width: 6%;
-}
+  }
 
   @keyframes moveUpDown {
-  0% {
-    transform: translateY(0); /* 시작 지점 */
+    0% {
+      transform: translateY(0); /* 시작 지점 */
+    }
+    100% {
+      transform: translateY(-10px); /* 끝 지점 */
+    }
   }
-  100% {
-    transform: translateY(-10px); /* 끝 지점 */
-  }
-}
 
   .fit-result {
     padding: 5% 0;
@@ -1637,6 +1635,7 @@ button.news-more-all {
 
   .fit-result img {
     width: 24%;
+    margin-top: 3%;
   }
 
   .fit-result h1#dogNameResult {
@@ -1649,8 +1648,8 @@ button.news-more-all {
     margin: 5.5% 0;
   }
 
-  .fit-recommend{
-  margin: 0;
+  .fit-recommend {
+    margin: 0;
   }
 
   .result-detail {
@@ -1694,8 +1693,8 @@ button.news-more-all {
 
   .result-btn-wrap button {
     font-size: 2.8737vw;
-    width: 18%;
-    padding: 1.6% 3%;
+    width: 19%;
+    padding: 2.2% 3%;
   }
 
   /* 뉴스 영역 */
@@ -1829,7 +1828,7 @@ button.news-more-all {
   #page4 .fit-scroll a {
     display: block;
     width: 8%;
-}
+  }
 
   .fit-result h1#dogNameResult {
     margin: 2% 7%;
@@ -1859,19 +1858,18 @@ button.news-more-all {
 
   .fit-result .fit-reason {
     margin-bottom: 6%;
-    
   }
 
-  .fit-recommend{
-  margin-left: 8%;
-}
+  .fit-recommend {
+    margin-left: 8%;
+  }
 
   .result-btn-wrap {
-      margin: 12% 0 3%;
-      justify-content: center;
-      padding: 0 5%;
-      /* width: 105%; */
-      gap: 3%;
+    margin: 12% 0 3%;
+    justify-content: center;
+    padding: 0 5%;
+    /* width: 105%; */
+    gap: 3%;
   }
 
   /* .result-btn-wrap {
