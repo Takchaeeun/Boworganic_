@@ -70,8 +70,8 @@
         <div class="logo">
           <a href="index.html"><img src="images/minju/logo_1.png" alt="로고1" /></a>
         </div>
-         <!-- 메뉴 -->
-         <div class="menu">
+        <!-- 메뉴 -->
+        <div class="menu">
           <ul>
             <li>
               <a href="#content"><span>회사소개</span></a>
@@ -190,14 +190,14 @@
                   <button class="m" onclick="adjustNumber(-1,event)">-</button>
                   <input type="text" id="numberInput" value="0" readonly />
                   <button class="p" onclick="adjustNumber(1,event)">+</button>
-                  <div class="buy-form">
-                    <button class="buy">장바구니</button>
-                    <button class="sold">구매하기</button>
-                  </div>
                 </div>
               </div>
             </fieldset>
           </form>
+          <div class="buy-form">
+            <button class="buy">장바구니</button>
+            <button class="sold" onclick="login()">구매하기</button>
+          </div>
         </div>
       </div>
       <hr />
@@ -222,6 +222,11 @@
         else if (xx == "di") document.getElementById("imageeye").src = "images/minju/4.png";
         else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
       }
+      function login() {
+        confirm("로그인 페이지로 이동합니다");
+        document.location.href = "login.html";
+    }
+
       // JavaScript로 숫자를 증가하거나 감소시키는 함수
       function adjustNumber(delta, event) {
         event.preventDefault(); // 버튼의 기본 동작 중지
