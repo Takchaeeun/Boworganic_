@@ -134,10 +134,13 @@ html {
 
 .login_btn-wrap .loginBtn {
   background-color: #77bd82;
+}
+
+.login_btn-wrap .loginBtn > a {
   color: #fff;
 }
 
-.login_btn-wrap .signUpBtn {
+.login_btn-wrap .loginBtn .login_btn-wrap .signUpBtn {
   background-color: #fff;
   color: #77bd82;
   border: 1px solid #77bd82;
@@ -364,7 +367,8 @@ html {
     margin-top: 65px;
   }
 
-  .login_btn-wrap > button {
+  .login_btn-wrap > a > button {
+    display: block;
     width: 98%;
     height: 60px;
     text-align: center;
