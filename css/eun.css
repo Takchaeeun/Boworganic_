@@ -17,9 +17,13 @@ body.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .modal-main {
-  position: relative;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -32,7 +36,7 @@ body.active {
   line-height: 20px;
   justify-content: center;
   align-items: center;
-  position: relative;
+
   border-radius: 50px;
   padding: 0px;
 }
@@ -87,6 +91,34 @@ body.active {
   background-color: #fff;
   color: black;
 }
+.colseWrap > label {
+  position: absolute;
+  bottom: 4.4%;
+  right: 55%;
+  align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+  
+}
+.notice-wrap {
+  position: relative;
+  display: flex;
+
+}
+#expiresChk{
+  position: absolute;
+  bottom: 5%;
+  right: 87%;
+  align-items: center;
+}
+.closeBtn{
+  position: absolute;
+  bottom: 4.4%;
+  right: 47%;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
 /* instagram영역 */
 .instagram-wrap {
   width: 100%;
@@ -721,10 +753,10 @@ body.active {
   .footer-left-middle {
     position: relative;
     width: 26%;
-   height: 36px;
-  padding-right: 1px;
+    height: 36px;
+    padding-right: 1px;
   }
-  .footer-left-middle p{
+  .footer-left-middle p {
     font-size: 12px;
     line-height: 36px;
   }
@@ -837,10 +869,10 @@ body.active {
   .footer-left-middle {
     position: relative;
     width: 24%;
-   height: 36px;
-  padding-right: 1px;
+    height: 36px;
+    padding-right: 1px;
   }
-  .footer-left-middle p{
+  .footer-left-middle p {
     font-size: 12px;
     line-height: 36px;
   }
@@ -878,7 +910,7 @@ body.active {
     font-size: 12px;
     border: solid 1px;
     border-radius: 20px;
-    padding-left:3%;
+    padding-left: 3%;
     cursor: pointer;
     margin-bottom: 10px;
   }
@@ -1074,10 +1106,10 @@ body.active {
   .footer-left-middle {
     position: relative;
     width: 28%;
-   height: 36px;
-  padding-right: 1px;
+    height: 36px;
+    padding-right: 1px;
   }
-  .footer-left-middle p{
+  .footer-left-middle p {
     font-size: 12px;
     line-height: 36px;
   }
@@ -1128,4 +1160,3 @@ body.active {
     display: none;
   }
 }
-

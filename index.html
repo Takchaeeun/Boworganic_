@@ -72,6 +72,8 @@
     <script src="js/minjoo.js"></script>
     <script src="js/hee.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS5G3J3TTY"></script>
     <script>
@@ -95,6 +97,7 @@
         <i class="fa-solid fa-arrow-down" id="top-btn-img"></i>
       </a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- 안내창 (모달창) -->
     <div class="modal-wrap">
@@ -106,9 +109,37 @@
         <div class="modal-close">X</div>
 
         <a href="part.html" id="review"><div class="modal-btn">후기작성하기</div></a>
+
+        <!-- <div class="check-wrap"><div class="today">오늘 하루 보지않기</div>
+          <input type="checkbox" class="check"></div> -->
+
+        <p class="colseWrap">
+          <input type="checkbox" name="expiresChk" id="expiresChk" />
+          <label for="expiresChk">3일 동안 이 창 열지않기</label>
+          <button class="closeBtn">닫기</button>
+        </p>
       </div>
     </div>
-
+    <script>
+      $(document).ready(function () {
+        $(".modal-wrap").show();
+        var $expChk = $("#expiresChk");
+        $(".closeBtn").on("click", function () {
+          //3일 동안 이 창 열지않기
+          if ($expChk.is(":checked")) {
+            // popup이라는 이름의 쿠키를 설정
+            $.cookie("popup", "none", { expires: 3, path: "/" });
+          }
+          $(".modal-wrap").hide();
+        });
+        if ($.cookie("popup") == "none") {
+          $(".modal-wrap").hide();
+        }
+        $(".modal-close").click(function(){
+          $(".modal-wrap").hide();
+        })
+      });
+    </script>
     <div class="wrap">
       <!-- 민주 영역 -->
       <header class="header" id="header">
