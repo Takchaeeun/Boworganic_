@@ -1045,7 +1045,36 @@ transform: translate(-50% , -50%);
     border-radius: 50px;
     padding: 0px;
   }
-
+  .colseWrap > label {
+    position: absolute;
+    bottom: 0.2%;
+    right: 55%;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    
+  }
+  .notice-wrap {
+    position: relative;
+    display: flex;
+  
+  }
+  #expiresChk{
+    position: absolute;
+    bottom: 1.2%;
+    right: 92%;
+    align-items: center;
+  }
+  .closeBtn{
+    position: absolute;
+    bottom: 0.4%;
+    right: 44%;
+    width: 10%;
+    height: 5%;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
   .modal-logo {
     width: 100%;
     height: 100%;
