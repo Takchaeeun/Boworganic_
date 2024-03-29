@@ -59,18 +59,18 @@ window.addEventListener("load", function () {
       });
     }
   });
-  // 제품 구매하기 버튼 스크롤 기능
-  const promoButton = document.getElementById("promo");
-  const promotionSection = document.getElementById("promoT");
+  // // 제품 구매하기 버튼 스크롤 기능
+  // const promoButton = document.getElementById("promo");
+  // const promotionSection = document.getElementById("promoT");
 
-  promoButton.addEventListener("click", function(event) {
-    event.preventDefault();
+  // promoButton.addEventListener("click", function(event) {
+  //   event.preventDefault();
 
-    // #promotion 요소의 위치로 스크롤
-    promotionSection.scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+  //   // #promotion 요소의 위치로 스크롤
+  //   promotionSection.scrollIntoView({
+  //     behavior: "smooth"
+  //   });
+  // });
   //   document.addEventListener('DOMContentLoaded', function () {
   //     const hamburgerMenu = document.querySelector('.hamburger-menu');
   //     const menuLines = document.querySelectorAll('.line');
