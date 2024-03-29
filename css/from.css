@@ -285,7 +285,10 @@
 .detail-form-left {
   text-align: center;
 }
-
+.detail-form .price30 {
+  text-decoration: line-through;
+  color: #999;
+}
 .detail-form-left h1 {
   font-size: 2.5vw;
   line-height: 2;
@@ -295,11 +298,18 @@
   font-size: 1.8vw;
   padding: 1%;
 }
+.detail-form p {
+  padding: 3%;
+  color: #666;
+}
+.detail-form-left b {
+  color: #000;
+}
 
-.detail-form-left span {
+.detail-form-left .price27 {
   color: #77bd82;
 }
-.detail-form-left span::after {
+.detail-form-left .price27::after {
   position: relative;
   content: "10%할인";
   color: #fff;
@@ -312,7 +322,7 @@
   left: 0;
 }
 .detail-form-left p {
-  font-size: 1.5vw;
+  font-size: 2vw;
   line-height: 1.2;
 }
 fieldset {
@@ -332,23 +342,11 @@ label {
 select {
   outline: none;
   text-align: center;
-  font-size: 1.3vw;
-  margin: 1%;
+  font-size: 1.5vw;
   border-radius: 5px;
   border: 1px solid #77bd82;
-  color: #666;
-}
-
-option {
-  outline: none;
-  text-align: center;
-  font-size: 1.3vw;
-  margin: 1%;
-  border-radius: 5px;
-  border: 1px solid #77bd82;
-  color: #666;
-}
-option:hover {
+  color: #333;
+  margin-bottom: 3%;
 }
 .number-input .m,
 .number-input .p {
@@ -380,10 +378,11 @@ option:hover {
   height: 30px;
   font-size: 1.6em;
   line-height: 1;
-  margin: 1%;
   border-radius: 5px;
   border: 1px solid #77bd82;
-  color: #666;
+  color: #333;
+  padding: 2.5%;
+  width: 10;
 }
 .buy-form {
   margin-top: 2%;
@@ -431,142 +430,6 @@ option:hover {
 }
 
 /* 반응형 */
-@media screen and (max-width: 1080px) {
-  .header {
-    position: absolute;
-    top: 0.4%;
-  }
-  .menu ul li a {
-    font-size: 2rem;
-  }
-  .header-right a {
-    font-size: 1.6rem;
-  }
-  .fa-solid {
-    font-size: small;
-  }
-  .logo a img {
-    width: 100%;
-  }
-  .main .swiper-slide img {
-    width: 100%;
-    height: 450px;
-  }
-  .main-txt {
-    width: 70%;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99999;
-    text-align: center;
-  }
-  .main .swiper-slide .sub {
-    font-size: 2rem;
-    padding-top: 30%;
-  }
-  .main .swiper-slide .smain {
-    font-size: 3rem;
-    word-break: keep-all;
-    line-height: 1.3;
-  }
-  .main .swiper-slide .button {
-    font-size: 1.5rem;
-    margin-bottom: 3%;
-    padding: 4%;
-    border-radius: 40px;
-  }
-  .detail-form {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    gap: 20px;
-    margin: 30px auto;
-  }
-  .detail-form-left h1 {
-    font-size: 4vw;
-  }
-  .detail-form-left h6 {
-    font-weight: bold;
-    font-size: 3vw;
-    padding: 2%;
-  }
-  .detail-form-left span::after {
-    position: relative;
-    content: "10%할인";
-    color: #fff;
-    background-color: firebrick;
-    border-radius: 50px;
-    padding: 5px;
-    margin-left: 1%;
-    font-size: 2rem;
-    top: -3px;
-    left: 0;
-  }
-  .detail-form-left span {
-    color: #77bd82;
-  }
-  .detail-form-left p {
-    font-size: 2.5vw;
-    line-height: 1.6;
-  }
-  legend {
-    padding: 1%;
-    font-size: 3rem;
-  }
-  legend ul {
-    text-align: center;
-  }
-  label {
-    font-size: 2rem;
-  }
-  select {
-    outline: none;
-    text-align: center;
-    font-size: 2rem;
-  }
-  .number-input .m,
-  .number-input .p {
-    margin-top: 2%;
-    padding: 3px;
-    font-size: 2rem;
-  }
-  .number-input input {
-    text-align: center;
-    outline: none;
-    width: 10%;
-    height: 1;
-    font-size: 2rem;
-    line-height: 1;
-  }
-  .buy-form .buy {
-    padding: 2%;
-    width: 30%;
-    border: 2px solid #77bd82;
-    background-color: #fff;
-    color: #77bd82;
-    font-size: 2rem;
-  }
-  .buy-form .sold {
-    padding: 2%;
-    width: 30%;
-    border: 2px solid #77bd82;
-    background-color: #77bd82;
-    color: #fff;
-    font-size: 2rem;
-  }
-  .information ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 2;
-    position: relative;
-  }
-  .infoimg img {
-    width: 80%;
-  }
-}
 @media screen and (max-width: 768px) {
   .header {
     position: absolute;
@@ -612,217 +475,135 @@ option:hover {
     padding: 4%;
     border-radius: 40px;
   }
+  .detail-form-left {
+    text-align: center;
+    width: 100%;
+  }
+  .detail-form .price30 {
+    text-decoration: line-through;
+    color: #999;
+  }
+  .detail-form-left h1 {
+    font-size: 4vw;
+    line-height: 2;
+  }
+  .detail-form-left h6 {
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 1%;
+  }
   .detail-form {
     width: 80%;
     height: 100%;
     display: flex;
-    gap: 20px;
-    margin: 30px auto;
+    align-items: center;
+    gap: 5%;
+    margin: 100px auto;
   }
-  .detail-form-left h1 {
-    font-size: 5vw;
+  .detail-form-left p {
+    padding: 2%;
+    color: #666;
+    font-size: 2vw;
   }
-  .detail-form-left h6 {
-    font-weight: bold;
-    font-size: 4vw;
-    padding: 1%;
+  .detail-form-left b {
+    color: #000;
   }
-  .detail-form-left span::after {
+
+  .detail-form-left .price27 {
+    color: #77bd82;
+  }
+  .detail-form-left .price27::after {
     position: relative;
     content: "10%할인";
     color: #fff;
     background-color: firebrick;
     border-radius: 50px;
-    padding: 1%;
     margin-left: 1%;
-    font-size: 2rem;
-    top: -3px;
+    font-size: 1rem;
+    top: -2px;
     left: 0;
   }
-  .detail-form-left p {
-    font-size: 3vw;
-    line-height: 1.6;
+  fieldset {
+    background-color: #77bd8231;
+    text-align: center;
   }
   legend {
-    padding: 1%;
-    font-size: 1.5rem;
+    padding: 5%;
+    font-size: 2vw;
   }
   legend ul {
     text-align: center;
   }
   label {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
   select {
     outline: none;
     text-align: center;
-    font-size: 1.5rem;
-  }
-  .number-input .m,
-  .number-input .p {
-    margin-top: 2%;
-    padding: 3px;
-    font-size: 1.5rem;
-  }
-  .number-input input {
-    text-align: center;
-    outline: none;
-    width: 10%;
-    height: 1;
-    font-size: 1.3rem;
-    line-height: 1;
-  }
-  .buy-form .buy {
-    padding: 2%;
-    width: 30%;
-    border: 2px solid #77bd82;
-    background-color: #fff;
-    color: #77bd82;
-    font-size: 2rem;
-  }
-  .buy-form .sold {
-    padding: 2%;
-    width: 30%;
-    border: 2px solid #77bd82;
-    background-color: #77bd82;
-    color: #fff;
-    font-size: 2rem;
-  }
-  .information ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 2;
-    position: relative;
-  }
-  .infoimg img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 540px) {
-  .header {
-    position: absolute;
-    top: 0.4%;
-  }
-  .menu ul li a {
-    font-size: 1.3rem;
-  }
-  .header-right a {
-    font-size: 0.8rem;
-  }
-  .fa-solid {
-    font-size: small;
-  }
-  .logo a img {
-    width: 100%;
-  }
-  .main .swiper-slide img {
-    width: 100%;
-    height: 450px;
-  }
-  .main-txt {
-    width: 70%;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99999;
-    text-align: center;
-  }
-  .main .swiper-slide .sub {
-    font-size: 2rem;
-    padding-top: 50%;
-  }
-  .main .swiper-slide .smain {
-    font-size: 3rem;
-    word-break: keep-all;
-    line-height: 1.3;
-  }
-  .main .swiper-slide .button {
-    font-size: 1.5rem;
+    font-size: 2vw;
+    border-radius: 5px;
+    border: 1px solid #77bd82;
+    color: #333;
     margin-bottom: 3%;
-    padding: 4%;
-    border-radius: 40px;
-  }
-  .detail-form {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    gap: 20px;
-    margin: 30px auto;
-  }
-  .detail-form-left h1 {
-    font-size: 5vw;
-  }
-  .detail-form-left h6 {
-    font-weight: bold;
-    font-size: 4vw;
-    padding: 1%;
-  }
-  .detail-form-left span::after {
-    position: relative;
-    content: "10%할인";
-    color: #fff;
-    background-color: firebrick;
-    border-radius: 50px;
-    padding: 1%;
-    margin-left: 1%;
-    font-size: 1.5rem;
-    top: -3px;
-    left: 0;
-  }
-  .detail-form-left span {
-    color: #77bd82;
-  }
-  .detail-form-left p {
-    font-size: 3vw;
-    line-height: 1.6;
-  }
-  legend {
-    padding: 1%;
-    font-size: 1.5rem;
-  }
-  legend ul {
-    text-align: center;
-  }
-  label {
-    font-size: 1.5rem;
-  }
-  select {
-    outline: none;
-    text-align: center;
-    font-size: 1.5rem;
   }
   .number-input .m,
   .number-input .p {
-    margin-top: 2%;
-    padding: 3px;
-    font-size: 1.5rem;
+    margin-top: 0.5%;
+    padding: 4px 6px;
+    font-size: 2vw;
+    background: #77bd82;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    border: #fff;
+    cursor: pointer;
+    /* box-shadow: 0px 5px 0px 0px #48744f; */
+  }
+  .number-input .m:hover {
+    background: #48744f;
+
+    /* box-shadow: 0px 0px 0px 0px #48744f; */
+  }
+  .number-input .p:hover {
+    background: #48744f;
+
+    /* box-shadow: 0px 0px 0px 0px #48744f; */
   }
   .number-input input {
     text-align: center;
     outline: none;
     width: 10%;
-    height: 1;
-    font-size: 1.3rem;
+    height: 30px;
+    font-size: 1.2em;
     line-height: 1;
+    border-radius: 5px;
+    border: 1px solid #77bd82;
+    color: #333;
+  }
+  .buy-form {
+    margin-top: 2%;
+    padding-bottom: 5%;
   }
   .buy-form .buy {
-    padding: 2%;
-    width: 30%;
+    margin: 5px;
+    padding: 1%;
     border: 2px solid #77bd82;
     background-color: #fff;
     color: #77bd82;
-    font-size: 2rem;
+    font-size: 2vw;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20%;
   }
   .buy-form .sold {
-    padding: 2%;
-    width: 30%;
+    padding: 1%;
     border: 2px solid #77bd82;
     background-color: #77bd82;
     color: #fff;
-    font-size: 2rem;
+    font-size: 2vw;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20%;
   }
   .information ul {
     display: flex;
@@ -833,8 +614,7 @@ option:hover {
     position: relative;
   }
   .infoimg img {
-    padding-top: 5%;
-    width: 70%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -896,6 +676,9 @@ option:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .detail-form-left {
+    width: 80%;
+  }
   .detail-form-left h1 {
     font-size: 7vw;
   }
@@ -904,7 +687,7 @@ option:hover {
     font-size: 4vw;
     padding: 1%;
   }
-  .detail-form-left span::after {
+  .detail-form-left .price27::after {
     position: relative;
     content: "10%할인";
     color: #fff;
@@ -916,7 +699,7 @@ option:hover {
     top: -3px;
     left: 0;
   }
-  .detail-form-left span {
+  .detail-form-left .price27 {
     color: #77bd82;
   }
   .detail-form-left p {
@@ -925,35 +708,46 @@ option:hover {
     line-height: 1.6;
   }
   legend {
-    padding: 1%;
-    font-size: 1.8rem;
+    line-height: 1;
+    padding: 3%;
+    font-size: 1.5rem;
   }
   legend ul {
     text-align: center;
   }
   label {
     font-size: 1.5rem;
+    margin-top: 5px;
   }
   select {
+    margin-top: 5%;
     outline: none;
     text-align: center;
     font-size: 1.5rem;
+    padding: 1%;
   }
   .number-input .m,
   .number-input .p {
     margin-top: 2%;
     padding: 3px;
     font-size: 1.5rem;
+    width: 7%;
+    height: 20%;
   }
+
   .number-input input {
+    margin-top: 5px;
     text-align: center;
     outline: none;
     width: 10%;
-    height: 1;
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 1.3rem;
+    width: 20%;
+  }
+  .buy-form {
+    margin-top: 20px;
   }
   .buy-form .buy {
+    margin: 5px;
     padding: 2%;
     width: 30%;
     border: 2px solid #77bd82;
@@ -1078,64 +872,78 @@ option:hover {
     margin: 15px auto;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10%;
   }
   .detail-form-left h1 {
     font-size: 8vw;
   }
   .detail-form-left h6 {
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 5vw;
     padding: 3%;
   }
-  .detail-form-left span::after {
+  .detail-form-left .price27::after {
     position: relative;
     content: "10%할인";
     color: #fff;
     background-color: firebrick;
     border-radius: 50px;
-    padding: 3px;
+    padding: 2px;
     margin-left: 1%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     top: -2px;
     left: 0;
   }
-  .detail-form-left span {
+  .detail-form-left .price27 {
     color: #77bd82;
   }
-  .detail-form-left p {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
+
   legend {
-    padding: 5%;
+    line-height: 1;
+    padding: 3%;
     font-size: 1.5rem;
   }
   legend ul {
     text-align: center;
   }
   label {
-    font-size: 1.3rem;
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 5px;
   }
   select {
     outline: none;
     text-align: center;
     font-size: 1.3rem;
+    padding: 1%;
+  }
+  option {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
   }
   .number-input .m,
   .number-input .p {
     margin-top: 2%;
     padding: 3px;
     font-size: 1.5rem;
+    width: 10%;
+    height: 20%;
   }
+
   .number-input input {
+    margin-top: 5px;
     text-align: center;
     outline: none;
-    width: 10%;
-    height: 1;
+    width: 0%;
     font-size: 1.3rem;
-    line-height: 1;
+    width: 20%;
+  }
+  .buy-form {
+    margin-top: 10px;
   }
   .buy-form .buy {
+    margin: 5px;
     padding: 2%;
     width: 30%;
     border: 2px solid #77bd82;

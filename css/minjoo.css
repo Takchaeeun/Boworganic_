@@ -260,11 +260,17 @@
   padding: 1%;
   border-radius: 40px;
 }
-.main .swiper-slide .button:hover {
-  background: #fff;
+.main .swiper-slide .button a {
+  color: #fff;
+}
+.main .swiper-slide .button:hover a {
   color: #000;
   cursor: pointer;
 }
+.main .swiper-slide .button:hover {
+  background-color: #fff;
+}
+
 /* 컨텐츠 */
 .content .text {
   position: relative;
@@ -356,7 +362,7 @@
 .promotion .swiper-button-next i {
   position: absolute;
   font-size: 80px;
-  right: 350px;
+  right: 280px;
   color: #77bd82;
 }
 .promotion .swiper-button-prev::after {
@@ -366,8 +372,80 @@
 .promotion .swiper-button-prev i {
   position: absolute;
   font-size: 80px;
-  left: 350px;
+  left: 280px;
   color: #77bd82;
+}
+@media screen and (max-width: 1350px) {
+  .promotion {
+    position: relative;
+  }
+  .promotion .swiper-button-next::after {
+    display: none;
+  }
+  .promotion .swiper-button-next i {
+    position: absolute;
+    font-size: 80px;
+    right: 200px;
+    color: #77bd82;
+  }
+  .promotion .swiper-button-prev::after {
+    display: none;
+  }
+
+  .promotion .swiper-button-prev i {
+    position: absolute;
+    font-size: 80px;
+    left: 200px;
+    color: #77bd82;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .promotion {
+    position: relative;
+  }
+  .promotion .swiper-button-next::after {
+    display: none;
+  }
+  .promotion .swiper-button-next i {
+    position: absolute;
+    font-size: 80px;
+    right: 150px;
+    color: #77bd82;
+  }
+  .promotion .swiper-button-prev::after {
+    display: none;
+  }
+
+  .promotion .swiper-button-prev i {
+    position: absolute;
+    font-size: 80px;
+    left: 150px;
+    color: #77bd82;
+  }
+}
+@media screen and (max-width: 800px) {
+  .promotion {
+    position: relative;
+  }
+  .promotion .swiper-button-next::after {
+    display: none;
+  }
+  .promotion .swiper-button-next i {
+    position: absolute;
+    font-size: 80px;
+    right: 100px;
+    color: #77bd82;
+  }
+  .promotion .swiper-button-prev::after {
+    display: none;
+  }
+
+  .promotion .swiper-button-prev i {
+    position: absolute;
+    font-size: 80px;
+    left: 100px;
+    color: #77bd82;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu ul li a {
