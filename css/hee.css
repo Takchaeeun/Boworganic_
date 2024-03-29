@@ -1595,6 +1595,7 @@ button.news-more-all {
 
   #page3 .question-btn .toggleBtn {
     font-size: 3.6889vw;
+    padding: 5% 4%;
   }
 
   #page4 .question-btn {
@@ -1602,6 +1603,7 @@ button.news-more-all {
     /* position: absolute;
     top: 70%; */
     height: 75%;
+    margin-top: 13%;
   }
 
   #page4 .question-btn .toggleBtn {
@@ -1620,6 +1622,13 @@ button.news-more-all {
     width: 6%;
   }
 
+  #page4 .fit-bt-button {
+    gap: 54%;
+    /* margin: 5% 0 5%; */
+  }
+
+  #page4 {
+  }
   @keyframes moveUpDown {
     0% {
       transform: translateY(0); /* 시작 지점 */
@@ -1687,7 +1696,7 @@ button.news-more-all {
     margin: 6% 0 3%;
     justify-content: center;
     padding: 0 5%;
-    /* width: 105%; */
+    width: 100%;
     gap: 3%;
   }
 

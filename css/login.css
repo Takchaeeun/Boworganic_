@@ -24,7 +24,7 @@ html {
 }
 
 .login-header-wrap > .header {
-  width: 94%;
+  width: 95%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -58,10 +58,11 @@ html {
   left: 50%;
   /* bottom: 0; */
   transform: translateX(-50%);
-  width: 35%;
   border-radius: 10px;
-  height: 46.875vw;
-  /* height: 900px; */
+  width: 500px;
+  /* width: 35%; */
+  /* height: 46.875vw; */
+  height: 900px;
   margin: -19% auto;
   padding: 4.5% 3%;
   background-color: #fff;
@@ -257,4 +258,118 @@ html {
   width: 50%;
   padding: 3.5% 3%;
   font-size: 1.6rem;
+}
+
+/* @media screen and (max-width: 1600px) {
+  .login-main {
+    height: 47.875vw;
+  }
+} */
+
+@media screen and (max-width: 760px) {
+  .login_wrap {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+    margin-bottom: 100px;
+  }
+
+  .login-header-wrap {
+    display: none;
+  }
+
+  /* 로그인 창 */
+
+  .login-main {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 70px 40px;
+  }
+
+  .login-enter-wrap > input {
+    width: 98%;
+    height: 60px;
+    padding: 0 15px;
+    margin: 1% auto;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    border: 1px solid #777;
+  }
+
+  .login_txt > h1 {
+    margin: 0 0 10px;
+  }
+
+  .login_serch {
+    width: 98%;
+    justify-content: center;
+  }
+
+  .login_serch > a {
+    color: #8d8d8d;
+  }
+
+  .login_serch > span::after {
+    background-color: #8d8d8d;
+  }
+
+  .login_btn-wrap {
+    margin-top: 65px;
+  }
+
+  .login_btn-wrap > button {
+    width: 98%;
+    height: 60px;
+    text-align: center;
+  }
+
+  .login_mid_bg {
+    display: none;
+  }
+
+  .login-enter-wrap {
+    margin: 76px 0 23px;
+  }
+
+  .sns-login-txt {
+    margin: 40px 0 15px;
+  }
+
+  .sns-login-btn {
+    gap: 20px;
+    margin: 0;
+  }
+
+  .sns-login-btn span {
+    display: none;
+  }
+
+  .snsLogin a {
+    display: block;
+    width: 45px;
+  }
+
+  .snsLogin img {
+    margin-bottom: 0;
+  }
+
+  /* 푸터 */
+  .footer-wrap {
+    display: none;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-main {
+    padding: 70px 20px;
+  }
 }
