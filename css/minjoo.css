@@ -328,7 +328,7 @@
   line-height: 1.5;
 }
 .organic .promotion-info .buy {
-  width: 45%;
+  width: 30%;
   margin-top: 20%;
   font-size: 2.5rem;
   /* font-size: 25px; */
@@ -636,7 +636,10 @@
     font-size: 2rem;
     padding: 3%;
     width: 60%;
-    margin: 15% 50px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .organic .promotion-info .title {
     font-size: 3rem;
@@ -798,7 +801,10 @@
     font-size: 2rem;
     padding: 3%;
     width: 80%;
-    margin: 15% 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .organic .promotion-info .title {
     font-size: 2.5rem;
