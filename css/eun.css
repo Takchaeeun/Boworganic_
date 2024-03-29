@@ -113,8 +113,10 @@ transform: translate(-50% , -50%);
 }
 .closeBtn{
   position: absolute;
-  bottom: 4.4%;
-  right: 47%;
+  bottom: 4%;
+  right: 44%;
+  width: 10%;
+  height: 5%;
   align-items: center;
   font-size: 1.3rem;
 }
