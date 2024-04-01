@@ -28,12 +28,10 @@ window.addEventListener("load", function () {
   const topBtn = document.getElementById("top-btn");
   topBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    if (window.scrollY == 5000) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
   // // 제품 구매하기 버튼 스크롤 기능
   // const promoButton = document.getElementById("promo");

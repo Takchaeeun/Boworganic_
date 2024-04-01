@@ -56,11 +56,10 @@
     <script src="js/from.js"></script>
   </head>
   <body>
-    <!-- top button -->
-    <div class="top-button">
-      <a href="#" class="shop-btn" id="shop-btn"><i class="fa-solid fa-arrow-up"></i></a>
+     <!-- top button -->
+     <div class="top-button">
       <a href="#" class="top-btn" id="top-btn">
-        <i class="fa-solid fa-arrow-down" id="top-btn-img"></i>
+        <i class="fa-solid fa-arrow-up" id="top-btn-img"></i>
       </a>
     </div>
     <div class="wrap">
@@ -223,9 +222,13 @@
         else if (xx == "zero") document.getElementById("imageeye").src = "images/minju/5.png";
       }
       function login() {
-        confirm("로그인 페이지로 이동합니다");
+    var confirmation = confirm("로그인 페이지로 이동합니다. 계속하시겠습니까?");
+    if (confirmation == true) {
         document.location.href = "login.html";
+    } else {
+        // 취소할 경우 아무 작업도 하지 않음
     }
+}
 
       // JavaScript로 숫자를 증가하거나 감소시키는 함수
       function adjustNumber(delta, event) {
