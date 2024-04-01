@@ -328,7 +328,6 @@
   line-height: 1.5;
 }
 .organic .promotion-info .buy {
-  width: 30%;
   margin-top: 20%;
   font-size: 2.5rem;
   /* font-size: 25px; */
@@ -336,11 +335,12 @@
   font-weight: 600;
   color: #fff;
   /* padding: 23px 80px; */
-  padding: 3%;
+  padding: 0.3% 3%;
   border-radius: 50px;
   border: 1px solid #77bd82;
   background-color: #77bd82;
   cursor: pointer;
+  /* line-height: 2; */
 }
 .organic .promotion-info .buy a {
   color: #fff;
@@ -635,7 +635,6 @@
   .organic .promotion-info .buy {
     font-size: 2rem;
     padding: 3%;
-    width: 50%;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -742,37 +741,37 @@
     font-size: 20px;
     color: #fff;
   }
-    /*gotop*/
-    .top-button .shop-btn {
-      position: relative;
-      display: inline-block; /* display 속성을 inline-block으로 변경 */
-      width: 30px; /* 너비를 20px로 변경 */
-      height: 30px; /* 높이를 20px로 추가 */
-      border-radius: 50%;
-      line-height: 35px; /* line-height를 20px로 변경 */
-      background-color: #fff;
-      color: #77bd82;
-      font-size: 10px; /* font-size를 10px로 변경 */
-      font-weight: 500;
-      text-align: center;
-      box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
-      letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
-    }
-    .top-button .top-btn {
-      position: relative;
-      display: inline-block; /* display 속성을 inline-block으로 변경 */
-      width: 30px; /* 너비를 20px로 변경 */
-      height: 30px; /* 높이를 20px로 추가 */
-      border-radius: 50%;
-      line-height: 35px; /* line-height를 20px로 변경 */
-      background-color: #77bd82;
-      color: #fff;
-      font-size: 10px; /* font-size를 10px로 변경 */
-      font-weight: 500;
-      text-align: center;
-      box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
-      letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
-    }
+  /*gotop*/
+  .top-button .shop-btn {
+    position: relative;
+    display: inline-block; /* display 속성을 inline-block으로 변경 */
+    width: 30px; /* 너비를 20px로 변경 */
+    height: 30px; /* 높이를 20px로 추가 */
+    border-radius: 50%;
+    line-height: 35px; /* line-height를 20px로 변경 */
+    background-color: #fff;
+    color: #77bd82;
+    font-size: 10px; /* font-size를 10px로 변경 */
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
+    letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
+  }
+  .top-button .top-btn {
+    position: relative;
+    display: inline-block; /* display 속성을 inline-block으로 변경 */
+    width: 30px; /* 너비를 20px로 변경 */
+    height: 30px; /* 높이를 20px로 추가 */
+    border-radius: 50%;
+    line-height: 35px; /* line-height를 20px로 변경 */
+    background-color: #77bd82;
+    color: #fff;
+    font-size: 10px; /* font-size를 10px로 변경 */
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0 rgb(0, 0, 0, 0.3); /* 그림자 크기 조정 */
+    letter-spacing: 0.3px; /* letter-spacing을 0.3px로 변경 */
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -832,13 +831,12 @@
   .organic .promotion-info .buy {
     font-size: 1.3rem;
     padding: 3.3%;
-    width: 50%;
     text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
     line-height: 1;
-    }
+  }
   .organic .promotion-info .title {
     font-size: 2.5rem;
     line-height: 2;
