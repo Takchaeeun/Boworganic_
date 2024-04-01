@@ -28,12 +28,10 @@ window.addEventListener("load", function () {
   const topBtn = document.getElementById("top-btn");
   topBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    if (window.scrollY == 5000) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 $(document).ready(function(){
   // 화면 크기 변경 시 이벤트를 처리하는 함수
