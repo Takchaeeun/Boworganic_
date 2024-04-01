@@ -635,7 +635,7 @@
   .organic .promotion-info .buy {
     font-size: 2rem;
     padding: 3%;
-    width: 60%;
+    width: 50%;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -830,14 +830,15 @@
     display: block;
   }
   .organic .promotion-info .buy {
-    font-size: 2rem;
-    padding: 3%;
-    width: 80%;
+    font-size: 1.3rem;
+    padding: 3.3%;
+    width: 50%;
     text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-  }
+    line-height: 1;
+    }
   .organic .promotion-info .title {
     font-size: 2.5rem;
     line-height: 2;
